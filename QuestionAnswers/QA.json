@@ -1,0 +1,4654 @@
+{
+  "exam_questions_set_1": [
+    {
+      "id": 1,
+      "question_text": "Dressing for blister:",
+      "options": [
+        "Hydrocolloid or foam dressing",
+        "No dressing",
+        "Silver dressing"
+      ],
+      "correct_answer": "Hydrocolloid or foam dressing"
+    },
+    {
+      "id": 2,
+      "question_text": "When do you see P waves before QRS?",
+      "options": [
+        "Fibrillation",
+        "Afibrillation",
+        "Flat asystole",
+        "Continuous fluctuation"
+      ],
+      "correct_answer": "Continuous fluctuation"
+    },
+    {
+      "id": 3,
+      "question_text": "A working time directive sits under which policy?",
+      "options": [
+        "Equality and diversity",
+        "Freedom of info",
+        "Health and safety",
+        "Human resource"
+      ],
+      "correct_answer": "Health and safety"
+    },
+    {
+      "id": 4,
+      "question_text": "A patient with end-of-life care becomes unresponsive, the nurse asks the relative if the patient filled a DNR form. What does she mean?",
+      "options": [
+        "Do not initiate respiratory resuscitation",
+        "Do not run",
+        "Do not initiate cardiopulmonary resuscitation",
+        "Provide care and safety"
+      ],
+      "correct_answer": "Do not initiate cardiopulmonary resuscitation"
+    },
+    {
+      "id": 5,
+      "question_text": "Which medication leads black color stool?",
+      "options": [
+        "Furosemide",
+        "Paracetamol",
+        "Iron"
+      ],
+      "correct_answer": "Iron"
+    },
+    {
+      "id": 6,
+      "question_text": "When you don't understand the accent of your patient, what will you do?",
+      "options": [
+        "Write whatever you hear",
+        "Assume what patient has said",
+        "Seek clarification from patient"
+      ],
+      "correct_answer": "Seek clarification from patient"
+    },
+    {
+      "id": 7,
+      "question_text": "You are dressing the wound of a patient on a surgical ward and are require to do so using the Aseptic Non-Touch Technique (ANTT). Which of the following is the definition of \"asepsis\"?",
+      "options": [
+        "Free from all microorganisms",
+        "Absence of Systematic Inflammatory Response Syndrome (SIRS) criteria",
+        "Free from marks and stains",
+        "Free from pathogenic organisms in sufficient numbers to cause infection"
+      ],
+      "correct_answer": "Free from all microorganisms"
+    },
+    {
+      "id": 8,
+      "question_text": "How would you provide support for a 16-year-old patient to reduce anxiety during physical examination?",
+      "options": [
+        "Provide privacy and dignity",
+        "Remain with the patient and provide support",
+        "Do not intervene and intervene only when the doctor tells you"
+      ],
+      "correct_answer": "Remain with the patient and provide support"
+    },
+    {
+      "id": 9,
+      "question_text": "As a nurse, you are treating a patient who had asthma attack, how would you assess If the medication is effective?",
+      "options": [
+        "Patient can walk at a short distance",
+        "Peak flow",
+        "Normal heart rate",
+        "Normal blood pressure"
+      ],
+      "correct_answer": "Peak flow"
+    },
+    {
+      "id": 10,
+      "question_text": "In hypoglycemic patient after giving oral glucose syrup, when will you check next General Random Blood Sugar (GRBS)?",
+      "options": [
+        "Immediately",
+        "After 5-10 mins",
+        "After 15-20 mins",
+        "After 30 mins"
+      ],
+      "correct_answer": "After 15-20 mins"
+    },
+    {
+      "id": 11,
+      "question_text": "What is the meaning of CBT?",
+      "options": [
+        "Cognitive Behavioral Therapy",
+        "Competency Based Test",
+        "Computer Based Test",
+        "Cognitive Behavioral Test"
+      ],
+      "correct_answer": "Cognitive Behavioral Therapy"
+    },
+    {
+      "id": 12,
+      "question_text": "Barrel chest is noted on patients with:",
+      "options": [
+        "Emphysema",
+        "COPD",
+        "Asthma",
+        "Smokers"
+      ],
+      "correct_answer": "Emphysema"
+    },
+    {
+      "id": 13,
+      "question_text": "How do you know NG tube is in place?",
+      "options": [
+        "Check pH of aspirate",
+        "CT Scan",
+        "Xray",
+        "Introduce air"
+      ],
+      "correct_answer": "Xray"
+    },
+    {
+      "id": 14,
+      "question_text": "Who would you speak with in end-of-life care?",
+      "options": [
+        "Patient first",
+        "Patient and relative together",
+        "Relative"
+      ],
+      "correct_answer": "Patient first"
+    },
+    {
+      "id": 15,
+      "question_text": "Spinal fracture patient, how will you ensure airway?",
+      "options": [
+        "Jaw thrust",
+        "Head tilt",
+        "Open mouth",
+        "Chin lift"
+      ],
+      "correct_answer": "Jaw thrust"
+    },
+    {
+      "id": 16,
+      "question_text": "A staff caring for an isolation patient, where you will keep the records?",
+      "options": [
+        "Inside the patient room",
+        "Outside the wall of room",
+        "Nurse station"
+      ],
+      "correct_answer": "Outside the wall of room"
+    },
+    {
+      "id": 17,
+      "question_text": "What should the nurse check for a patient with catheter in situ?",
+      "options": [
+        "Infection",
+        "Bruising",
+        "Swelling",
+        "Redness"
+      ],
+      "correct_answer": "Infection"
+    },
+    {
+      "id": 18,
+      "question_text": "What will NOT be used for a deaf person?",
+      "options": [
+        "Lip reading",
+        "Actions",
+        "Sign language",
+        "Bacile"
+      ],
+      "correct_answer": "Bacile"
+    },
+    {
+      "id": 19,
+      "question_text": "Who can complete checklist for full care assessment?",
+      "options": [
+        "Trained professional",
+        "Consultant",
+        "Junior doctor",
+        "Relative"
+      ],
+      "correct_answer": "Trained professional"
+    },
+    {
+      "id": 20,
+      "question_text": "When does a nurse take a patient's daily weight?",
+      "options": [
+        "Before breakfast",
+        "At the same time everyday",
+        "After lunch",
+        "Before bedtime"
+      ],
+      "correct_answer": "Before breakfast"
+    },
+    {
+      "id": 21,
+      "question_text": "Group A controlled drugs:",
+      "options": [
+        "Morphine",
+        "Midazolam",
+        "Codeine",
+        "Conjupram"
+      ],
+      "correct_answer": "Morphine"
+    },
+    {
+      "id": 22,
+      "question_text": "Blanchable skin can be assessed by nurse as:",
+      "options": [
+        "Skin that turns red or dark when pressure is applied and returns back suddenly.",
+        "Skin that turns red or dark and returns back slowly.",
+        "Skin that turns white or pale when pressure is applied and returns back immediately.",
+        "Skin that turns white or pale when pressure is applied and returns back slowly."
+      ],
+      "correct_answer": "Skin that turns white or pale when pressure is applied and returns back slowly."
+    },
+    {
+      "id": 23,
+      "question_text": "A newly qualified nurse is not yet well versed when it comes to documentation. A nurse in-charge noticed this is the case and went to report the new nurse to the nurse manager. What could the newly qualified nurse have done in order to prevent this incident?",
+      "options": [
+        "Ignore the report and just continue with what she was doing.",
+        "She could have told the manager beforehand in order to have support and additional training",
+        "Apologize that she was not able to inform her immediate head beforehand, ask for policies of the hospital in relation to documentation."
+      ],
+      "correct_answer": "She could have told the manager beforehand in order to have support and additional training"
+    },
+    {
+      "id": 24,
+      "question_text": "Young, hospitalized children are at risk to develop:",
+      "options": [
+        "Poor mental health",
+        "Neurological disorder",
+        "Cancer",
+        "Will die young"
+      ],
+      "correct_answer": "Poor mental health"
+    },
+    {
+      "id": 25,
+      "question_text": "After an audit round, the manager tells a nurse about the outcome and possible development suggested by the team members. What action will the nurse take?",
+      "options": [
+        "Accept and keep the report in a file for reference purpose.",
+        "Thank the manager and tell her that the suggested action will be looked into in due course.",
+        "Plan how to meet with the manager to discuss the solution."
+      ],
+      "correct_answer": "Thank the manager and tell her that the suggested action will be looked into in due course."
+    },
+    {
+      "id": 26,
+      "question_text": "What are the first action a RN should take on a patient who is having tonic-clonic seizure?",
+      "options": [
+        "Administer sedative medication dosage in 15L and complete A-E assessment.",
+        "Call for help, ensure safe position and apply 15L of oxygen.",
+        "Attach to monitoring, call for help, inform family",
+        "Give patient something to bite on, call for help and attach monitoring."
+      ],
+      "correct_answer": "Call for help, ensure safe position and apply 15L of oxygen."
+    },
+    {
+      "id": 28,
+      "question_text": "Golden treatment for MI:",
+      "options": [
+        "Primary Percutaneous Coronary Intervention (PPCI)",
+        "Coronary Artery Bypass Graft (CABG)",
+        "Thrombolytic",
+        "Peripheral Intravenous Catheter (PIC)"
+      ],
+      "correct_answer": "Primary Percutaneous Coronary Intervention (PPCI)"
+    },
+    {
+      "id": 29,
+      "question_text": "What policy relating to dress is mandatory in all clinical areas in the hospital?",
+      "options": [
+        "Everyone must wear designated uniforms",
+        "Everyone arm must bare below the elbow",
+        "Everyone must wear gloves when examining a patient",
+        "Everyone must wear bespoke hospital footwear"
+      ],
+      "correct_answer": "Everyone arm must bare below the elbow"
+    },
+    {
+      "id": 30,
+      "question_text": "Lithium therapy is indicated for:",
+      "options": [
+        "Bipolar disorder",
+        "Schizophrenia",
+        "Tonic-clonic seizure",
+        "Depression"
+      ],
+      "correct_answer": "Bipolar disorder"
+    },
+    {
+      "id": 31,
+      "question_text": "A client is in the process of turning from male to female. When you want to educate client on catheterization as a nurse what will you do?",
+      "options": [
+        "Teach male catheterization",
+        "Teach female catheterization",
+        "Both"
+      ],
+      "correct_answer": "Both"
+    },
+    {
+      "id": 32,
+      "question_text": "Pain scale of 5 out of 10, what medication will you give?",
+      "options": [
+        "Diclo plus tramadol",
+        "Paracetamol",
+        "Morphine",
+        "Codeine"
+      ],
+      "correct_answer": "Codeine"
+    },
+    {
+      "id": 33,
+      "question_text": "Who is NOT allowed to give medication?",
+      "options": [
+        "Dietician",
+        "Health care assistant",
+        "Nurse practitioner",
+        "Nurse"
+      ],
+      "correct_answer": "Health care assistant"
+    },
+    {
+      "id": 34,
+      "question_text": "Abbey pain scale is used for patients:",
+      "options": [
+        "Birth to 1 year",
+        "Pregnant women",
+        "Dementia patients"
+      ],
+      "correct_answer": "Dementia patients"
+    },
+    {
+      "id": 35,
+      "question_text": "Best valid and accurate research method:",
+      "options": [
+        "Systematic review of descriptive and qualitative method",
+        "Quasi experimental",
+        "Randomized",
+        "Non-randomized"
+      ],
+      "correct_answer": "Systematic review of descriptive and qualitative method"
+    },
+    {
+      "id": 36,
+      "question_text": "For revalidation, how can a nurse give 5 pieces of feedback?",
+      "options": [
+        "Verbal only",
+        "Written or verbally only",
+        "Verbal, written or survey"
+      ],
+      "correct_answer": "Written or verbally only"
+    },
+    {
+      "id": 37,
+      "question_text": "Chemotherapy and hormone waste disposal container:",
+      "options": [
+        "Purple",
+        "Yellow",
+        "Orange",
+        "Black"
+      ],
+      "correct_answer": "Purple"
+    },
+    {
+      "id": 38,
+      "question_text": "Which is the first act on all legal issues?",
+      "options": [
+        "Safeguard act",
+        "Health care act",
+        "Equity act",
+        "Equality act"
+      ],
+      "correct_answer": "Health care act"
+    },
+    {
+      "id": 39,
+      "question_text": "When a patient is having a surgery to switch from male to female you need to teach self-catheterization. What would you do?",
+      "options": [
+        "Discuss with patient what surgery he is undergone and teach him",
+        "Reads the notes",
+        "Teach both male and female catheterization",
+        "Get a doctor to teach as you are not competent"
+      ],
+      "correct_answer": "Teach both male and female catheterization"
+    },
+    {
+      "id": 40,
+      "question_text": "Which one of these notifiable disease needs to be reported on a national level?",
+      "options": [
+        "Chicken pox",
+        "Tuberculosis",
+        "Whooping cough",
+        "Influenza"
+      ],
+      "correct_answer": "Tuberculosis"
+    },
+    {
+      "id": 41,
+      "question_text": "Management of moderate malnutrition in children:",
+      "options": [
+        "Supplementary nutrition",
+        "Immediate hospitalization",
+        "Weekly assessment",
+        "Document intake for 3 days"
+      ],
+      "correct_answer": "Supplementary nutrition"
+    },
+    {
+      "id": 42,
+      "question_text": "How does a senior nurse manage the situation when a staff member informs her that she is pregnant?",
+      "options": [
+        "Inform the health and safety lead",
+        "Undertake the risk management",
+        "Arrange for cover immediately",
+        "Inform other staff"
+      ],
+      "correct_answer": "Undertake the risk management"
+    },
+    {
+      "id": 43,
+      "question_text": "Decerebrated posture in which patients?",
+      "options": [
+        "Hernia",
+        "MI",
+        "Stroke",
+        "Brain Stem Damage"
+      ],
+      "correct_answer": "Brain Stem Damage"
+    },
+    {
+      "id": 44,
+      "question_text": "According to Reporting of Injuries, Diseases and Dangerous Occurrences Regulations (RIDDOR) legislative, what will you do when a staff has an accident at workplace causing fracture of the femur?",
+      "options": [
+        "Report the accident",
+        "Report the accident to a doctor on site",
+        "Record the incidence in a management book"
+      ],
+      "correct_answer": "Report the accident"
+    },
+    {
+      "id": 45,
+      "question_text": "A patient's elder sister who is a nurse and friend requested for the patients result. What will be your action?",
+      "options": [
+        "Give it to her since she is your colleague",
+        "Do not give because the patient has not permitted you and explain your responsibilities",
+        "Give and end your friendship with her",
+        "Do not give but tell her about the result"
+      ],
+      "correct_answer": "Do not give because the patient has not permitted you and explain your responsibilities"
+    },
+    {
+      "id": 46,
+      "question_text": "One of the patients keep on complaining regarding the care, what will you do?",
+      "options": [
+        "Tell the patient to write complain and send via email",
+        "Instruct the patient to complain to in-charge",
+        "Listen carefully and honest solution"
+      ],
+      "correct_answer": "Listen carefully and honest solution"
+    },
+    {
+      "id": 47,
+      "question_text": "There is a policy that urine should be measured every 2 hours. How would a nurse manager evaluate compliance?",
+      "options": [
+        "Ask them to verbalize they are doing it",
+        "Perform clinical audit",
+        "Check nursing notes at the beginning of every shift"
+      ],
+      "correct_answer": "Perform clinical audit"
+    },
+    {
+      "id": 48,
+      "question_text": "What is the average hourly urine production for an adult?",
+      "options": [
+        "0-10 mL/hr",
+        "40-80 mL/hr",
+        "20-30 mL/hr",
+        "100-200 mL/hr"
+      ],
+      "correct_answer": "40-80 mL/hr"
+    },
+    {
+      "id": 49,
+      "question_text": "An obese patient with limited communication wants to lose weight, who should the nurse involve?",
+      "options": [
+        "Occupational therapist, GP dietician and social worker",
+        "Physiotherapist, nurse, GP dietician",
+        "Occupation therapist, psychiatrist",
+        "Physiotherapist and social worker"
+      ],
+      "correct_answer": "Occupational therapist, GP dietician and social worker"
+    },
+    {
+      "id": 50,
+      "question_text": "In dehydration patient, what will you infuse?",
+      "options": [
+        "Crystalloid glucose",
+        "Colloid glucose",
+        "Blood transfusion",
+        "Plasma"
+      ],
+      "correct_answer": "Crystalloid glucose"
+    },
+    {
+      "id": 51,
+      "question_text": "What is patient-centered care?",
+      "options": [
+        "Caring for patient with dignity and respect",
+        "Understanding patients feeling and providing necessary needs accordingly",
+        "Helping patient to gain insight to her problem"
+      ],
+      "correct_answer": "Understanding patients feeling and providing necessary needs accordingly"
+    },
+    {
+      "id": 52,
+      "question_text": "A new RN have problems with making assumptions. Which part of the code she should focus to deliver fundamentals of care effectively?",
+      "options": [
+        "Prioritize people",
+        "Practice effectively",
+        "Prioritize care",
+        "Promote safety"
+      ],
+      "correct_answer": "Prioritize people"
+    },
+    {
+      "id": 53,
+      "question_text": "All of the following are part of palliative care or end-of-life care, except?",
+      "options": [
+        "Giving medication",
+        "Feeding patient",
+        "Resuscitation"
+      ],
+      "correct_answer": "Resuscitation"
+    },
+    {
+      "id": 54,
+      "question_text": "Patient has suicidal thoughts, low mood. When talking to the nurse patient is calm and cooperative:",
+      "options": [
+        "Low risk",
+        "Medium risk",
+        "High risk"
+      ],
+      "correct_answer": "Medium risk"
+    },
+    {
+      "id": 55,
+      "question_text": "Normal urine output in a day?",
+      "options": [
+        "1000-1500 mL",
+        "1500-2000 mL",
+        "2000-2500 mL",
+        "2500-3000 mL"
+      ],
+      "correct_answer": "1500-2000 mL"
+    },
+    {
+      "id": 56,
+      "question_text": "ABCDE approach. Where do monitoring of urine output belong in that approach?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct_answer": "C"
+    },
+    {
+      "id": 57,
+      "question_text": "Patient is having breathlessness. Patient is in the end-of life care. The nurse should:",
+      "options": [
+        "Put the face of the patient in the electric fan",
+        "Give high flow oxygen",
+        "Put paper bag",
+        "Give more sedative"
+      ],
+      "correct_answer": "Give more sedative"
+    },
+    {
+      "id": 58,
+      "question_text": "Which of the following is NOT to cater emergency contraception?",
+      "options": [
+        "Emergency department",
+        "General practitioner",
+        "Sexual Health Team/Clinic",
+        "Pharmacist"
+      ],
+      "correct_answer": "Emergency department"
+    },
+    {
+      "id": 59,
+      "question_text": "The patient brings his own medication to hospital and wants to self-administer. What is your role?",
+      "options": [
+        "Allow him",
+        "Explain to patient about medication before he administers it"
+      ],
+      "correct_answer": "Explain to patient about medication before he administers it"
+    },
+    {
+      "id": 60,
+      "question_text": "Whose responsibility when you see evidence of abuse in the community?",
+      "options": [
+        "All health care workers",
+        "Nurse caring for the patient",
+        "Consultant"
+      ],
+      "correct_answer": "All health care workers"
+    },
+    {
+      "id": 61,
+      "question_text": "Patient has learning disability, and you instruct him to take his medication. The nurse should:",
+      "options": [
+        "Give instruction to the carer",
+        "Give appropriate level of instruction",
+        "Give leaflet",
+        "Explain briefly to the patient the importance of his medicine"
+      ],
+      "correct_answer": "Give appropriate level of instruction"
+    },
+    {
+      "id": 62,
+      "question_text": "What is the meaning of TNA?",
+      "options": [
+        "Trainee Nursing Associate",
+        "Trigeminal Neuralgia Association",
+        "The Nursing Agency"
+      ],
+      "correct_answer": "Trainee Nursing Associate"
+    },
+    {
+      "id": 63,
+      "question_text": "The nurse notice that the patient is violent. The nurse should:",
+      "options": [
+        "Request for restraint",
+        "Inform the other patient"
+      ],
+      "correct_answer": "Request for restraint"
+    },
+    {
+      "id": 64,
+      "question_text": "Nurse committed negligence which result of near death of patient. What analysis cause?",
+      "options": [
+        "Root cause analysis",
+        "Critical incident analysis",
+        "Incident cause analysis"
+      ],
+      "correct_answer": "Root cause analysis"
+    },
+    {
+      "id": 65,
+      "question_text": "On resuming as a unit head and you notice you are short staffed. What type of escalation will the head nurse use?",
+      "options": [
+        "Prompt escalation",
+        "Swift escalation",
+        "Immediate escalation",
+        "Rapid escalation"
+      ],
+      "correct_answer": "Immediate escalation"
+    },
+    {
+      "id": 66,
+      "question_text": "What is the most accurate method to find out bleeding inside the brain?",
+      "options": [
+        "CT Scan",
+        "MRI",
+        "Xray",
+        "USG"
+      ],
+      "correct_answer": "CT Scan"
+    },
+    {
+      "id": 67,
+      "question_text": "A confused patient relative requesting for fitting bed rail as they have it in their house. What will the nurse do?",
+      "options": [
+        "Ensure a bed rail is fixed",
+        "Let a competent person assess risk and consider other factors",
+        "Put patients' bed on the floor",
+        "Ignore relative"
+      ],
+      "correct_answer": "Let a competent person assess risk and consider other factors"
+    },
+    {
+      "id": 68,
+      "question_text": "Congestive heart failure non-infectious sputum color:",
+      "options": [
+        "White",
+        "Green",
+        "Black"
+      ],
+      "correct_answer": "White"
+    },
+    {
+      "id": 69,
+      "question_text": "Optimum position for lung expansion:",
+      "options": [
+        "Prone",
+        "Sitting up",
+        "Lying on one side",
+        "Lying flat"
+      ],
+      "correct_answer": "Sitting up"
+    },
+    {
+      "id": 70,
+      "question_text": "Cause of pediatric cardiac arrest:",
+      "options": [
+        "Hypoxia",
+        "MI",
+        "Anaphylaxis",
+        "CHF"
+      ],
+      "correct_answer": "Hypoxia"
+    },
+    {
+      "id": 71,
+      "question_text": "Difference in health status:",
+      "options": [
+        "Health equities",
+        "Health equalities",
+        "Health informatics",
+        "Health inequities"
+      ],
+      "correct_answer": "Health inequities"
+    },
+    {
+      "id": 72,
+      "question_text": "A patient with temperature of 34.5 C. you already gave the patient a warm blanket & warm drinks, but the patient is still shivering. What will be your next action?",
+      "options": [
+        "Get a warming device to give warmth slowly",
+        "Provide extra warmth blanket",
+        "Give a warm bath",
+        "Mobilized the patient"
+      ],
+      "correct_answer": "Get a warming device to give warmth slowly"
+    },
+    {
+      "id": 73,
+      "question_text": "Patients husband that was waited several hours to see his wife and is shouting:",
+      "options": [
+        "Take him to a private room and discuss with him",
+        "Give personal space and avoid provocation",
+        "Accompany him to see his wife"
+      ],
+      "correct_answer": "Take him to a private room and discuss with him"
+    },
+    {
+      "id": 74,
+      "question_text": "When patient is being monitored in PACU, how frequent do you monitor his BP, PR, RR and record?",
+      "options": [
+        "Every 5 minutes",
+        "Every 15 minutes",
+        "Once an hour",
+        "Continuously"
+      ],
+      "correct_answer": "Every 5 minutes"
+    },
+    {
+      "id": 75,
+      "question_text": "What will the RN do after they have gotten NMC pin?",
+      "options": [
+        "Endorsement",
+        "Induction",
+        "Orientation",
+        "Training"
+      ],
+      "correct_answer": "Induction"
+    },
+    {
+      "id": 76,
+      "question_text": "When assessment an unresponsive patient, what is the appropriate way to get a pain response?",
+      "options": [
+        "Sternal rub",
+        "Nail bed pressure",
+        "Pinching of the era",
+        "A trapezium squeeze"
+      ],
+      "correct_answer": "A trapezium squeeze"
+    },
+    {
+      "id": 77,
+      "question_text": "A patient suffered from CVA and is now affected with dysphagia, what should NOT be an indication to this type of patient?",
+      "options": [
+        "Place the patient in sitting/upright position during and after eating",
+        "Water or clear fluid should be given",
+        "Instruct the patient to use a straw to drink water",
+        "Review the patient's ability to swallow and note the extent of facial paralysis"
+      ],
+      "correct_answer": "Water or clear fluid should be given"
+    },
+    {
+      "id": 78,
+      "question_text": "Which one is NOT considered a medication?",
+      "options": [
+        "Whole blood",
+        "Albumin",
+        "Blood clotting factor",
+        "Antibodies"
+      ],
+      "correct_answer": "Whole blood"
+    },
+    {
+      "id": 79,
+      "question_text": "Discharge process: When does discharge become difficult?",
+      "options": [
+        "Awaiting carer",
+        "Awaiting physician",
+        "Awaiting medication",
+        "Awaiting assessment"
+      ],
+      "correct_answer": "Awaiting assessment"
+    },
+    {
+      "id": 80,
+      "question_text": "Ways to maximize wound healing:",
+      "options": [
+        "Good blood flow",
+        "Daily dressing",
+        "Moist environment"
+      ],
+      "correct_answer": "Good blood flow"
+    },
+    {
+      "id": 81,
+      "question_text": "A patient is on end-of-life care, he has severe pain, he doesn't know how to use medical device which is using for pain relief:",
+      "options": [
+        "Instruct the patient that the pharmacist will come and explain",
+        "Give leaflet regarding the device",
+        "Explain about medical device and make the patient completely understand"
+      ],
+      "correct_answer": "Explain about medical device and make the patient completely understand"
+    },
+    {
+      "id": 82,
+      "question_text": "Reminiscence, de-escalation and distraction are types of?",
+      "options": [
+        "Therapy service",
+        "Therapy classes",
+        "Therapeutic intervention"
+      ],
+      "correct_answer": "Therapeutic intervention"
+    },
+    {
+      "id": 83,
+      "question_text": "How many leads are there in ECG?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "correct_answer": "12"
+    },
+    {
+      "id": 84,
+      "question_text": "Symptoms of bipolar disorder?",
+      "options": [
+        "Mania and depression",
+        "Hallucinations",
+        "Delusions",
+        "Ecstasy"
+      ],
+      "correct_answer": "Mania and depression"
+    },
+    {
+      "id": 85,
+      "question_text": "RN influence on health policy protects the quality of care by access to:",
+      "options": [
+        "Fund and opportunity",
+        "Funding",
+        "Resources and opportunity",
+        "Fund and resources"
+      ],
+      "correct_answer": "Resources and opportunity"
+    },
+    {
+      "id": 86,
+      "question_text": "Students did not administer IM in her mid-year performance:",
+      "options": [
+        "The nurse should create an opportunity and plan with the other nurses",
+        "Tell her it's not good",
+        "Tell her she would need to contact the university for the actual plan"
+      ],
+      "correct_answer": "The nurse should create an opportunity and plan with the other nurses"
+    },
+    {
+      "id": 87,
+      "question_text": "Abby's pain scale is used for:",
+      "options": [
+        "Cognitive disability",
+        "Women in labor",
+        "Children above 8",
+        "Children below 1"
+      ],
+      "correct_answer": "Cognitive disability"
+    },
+    {
+      "id": 88,
+      "question_text": "A clinical need to examine a patient after spine surgery. What will you use to turn them?",
+      "options": [
+        "Log roll to the bed",
+        "Slide method to the side",
+        "Hoist to the bed",
+        "Advise the patient to sit at the end of the bed"
+      ],
+      "correct_answer": "Log roll to the bed"
+    },
+    {
+      "id": 89,
+      "question_text": "Endotracheal tube is used for?",
+      "options": [
+        "Feeding unconscious patients",
+        "Ensuring airway",
+        "Diagnostic testing"
+      ],
+      "correct_answer": "Ensuring airway"
+    },
+    {
+      "id": 90,
+      "question_text": "A nursing agency sends a new nurse, while taking handover the nurse says this is my first job at the hospital. What will the nurse do?",
+      "options": [
+        "Leave as she is not responsible",
+        "Enquire about the staff and inform authorities",
+        "Handover anyway"
+      ],
+      "correct_answer": "Enquire about the staff and inform authorities"
+    },
+    {
+      "id": 91,
+      "question_text": "The act of speaking out for people and relatives their decision called:",
+      "options": [
+        "Disclosure",
+        "Confidentiality",
+        "Advocacy",
+        "Confrontation"
+      ],
+      "correct_answer": "Advocacy"
+    },
+    {
+      "id": 92,
+      "question_text": "Pressure score grades that are regarded as critical incident:",
+      "options": [
+        "3",
+        "3 & 4",
+        "1, 2, 3 & 4",
+        "4"
+      ],
+      "correct_answer": "3 & 4"
+    },
+    {
+      "id": 93,
+      "question_text": "When a nurse handover at the end of shift to a colleague. What must be provided?",
+      "options": [
+        "Verbal digital or written information",
+        "Clear verbal information and instructions",
+        "Clear verbal, digital, or written information and instructions"
+      ],
+      "correct_answer": "Clear verbal, digital, or written information and instructions"
+    },
+    {
+      "id": 94,
+      "question_text": "A team leader implements a practice in an area of work how do they demonstrate its effectiveness?",
+      "options": [
+        "Provide evidence of the improvement through regular audit and feedback to the team and wider organizations.",
+        "Everyone know that the change was necessary and that is needed to happen so no evaluation needs to be made.",
+        "Once the change is embedded ask staff if they are happy with the change and if it has made a difference.",
+        "The evidence from the research demonstrates the need for a change in practice."
+      ],
+      "correct_answer": "Provide evidence of the improvement through regular audit and feedback to the team and wider organizations."
+    },
+    {
+      "id": 95,
+      "question_text": "When completing handwritten notes which if the following represents best practice in documentation?",
+      "options": [
+        "Writing a name, designation date and time of entry",
+        "Writing a name, nursing rank and date",
+        "Providing a signature printing a name designation, date, entry of time",
+        "Providing a signature, designation and date of birth"
+      ],
+      "correct_answer": "Providing a signature printing a name designation, date, entry of time"
+    },
+    {
+      "id": 96,
+      "question_text": "What is the response of parents that confirms that the health education message regarding dehydration has been effective?",
+      "options": [
+        "The parents restrict fluid intake when the child has diarrhea.",
+        "The parents state they will observe they will observe the child for darkening urine and an increasing respiratory rate.",
+        "Dehydration will not be an issue if the child is taking sips of water.",
+        "The parents state they would consider restlessness as an early sign of dehydration."
+      ],
+      "correct_answer": "The parents state they will observe they will observe the child for darkening urine and an increasing respiratory rate."
+    },
+    {
+      "id": 97,
+      "question_text": "What nursing approach does a nurse take when working with people with learning disabilities in planning for their personnel needs?",
+      "options": [
+        "Use pictures and easy read materials",
+        "Explain the procedures to their relatives",
+        "Give them time to read the leaflet",
+        "Read the leaflet to the client in loud voice"
+      ],
+      "correct_answer": "Use pictures and easy read materials"
+    },
+    {
+      "id": 98,
+      "question_text": "When a safeguarding incident is being disclosed what action does a nurse take?",
+      "options": [
+        "Ensure you tape a conversation on mobile service.",
+        "Ensure them that you will not tell anyone else.",
+        "Pause the person until you can have another present person.",
+        "Explain what you will do next with the information they disclose."
+      ],
+      "correct_answer": "Explain what you will do next with the information they disclose."
+    },
+    {
+      "id": 99,
+      "question_text": "What is the cause of action for the nurse if there is a spillage of hazardous substance?",
+      "options": [
+        "Use beach towels to absorb the spillage and dispose of this accordingly.",
+        "Contact the clinic supervisor for advice and to send someone to help.",
+        "Refer to the guidance on the control of substance hazardous to health regulations.",
+        "Cover displayed with sheets and keep the area clear of people."
+      ],
+      "correct_answer": "Cover displayed with sheets and keep the area clear of people."
+    },
+    {
+      "id": 100,
+      "question_text": "What equipment can be used to give 2L of oxygen?",
+      "options": [
+        "Continuous positive airway pressure",
+        "Humidified oxygen",
+        "Nasal cannula",
+        "Reservoir mask"
+      ],
+      "correct_answer": "Nasal cannula"
+    },
+    {
+      "id": 101,
+      "question_text": "A nurse is flushing NG tube and noticed the patient to cough a lot. What should be the action of the nurse?",
+      "options": [
+        "Continue with the procedure and inform the doctor.",
+        "Continue and check the placement with litmus paper.",
+        "Remove it as it might be an indication that tube is in the airway."
+      ],
+      "correct_answer": "Remove it as it might be an indication that tube is in the airway."
+    },
+    {
+      "id": 102,
+      "question_text": "How to prevent catheter infection?",
+      "options": [
+        "Sterilize it daily",
+        "Keep area dry",
+        "Use soap and water",
+        "Educate patient and family on the care"
+      ],
+      "correct_answer": "Educate patient and family on the care"
+    },
+    {
+      "id": 103,
+      "question_text": "Who is responsible to start discharge planning?",
+      "options": [
+        "First contact",
+        "Second contact",
+        "Third contact",
+        "Fourth contact"
+      ],
+      "correct_answer": "First contact"
+    },
+    {
+      "id": 104,
+      "question_text": "How to take an infected sheet for washing according to UK Standard?",
+      "options": [
+        "Take in red plastic bag that disintegrates in high temperature",
+        "Use red linen bag that allows washing in high temperature",
+        "Orange bag...",
+        "Clear bag..."
+      ],
+      "correct_answer": "Take in red plastic bag that disintegrates in high temperature"
+    },
+    {
+      "id": 106,
+      "question_text": "A client is conducting research on 8 patients with complex needs. He wants to know their views on the health care receive. What type of research is conducted?",
+      "options": [
+        "Patient questionnaire",
+        "Survey",
+        "Focus group",
+        "Qualitative research"
+      ],
+      "correct_answer": "Focus group"
+    },
+    {
+      "id": 107,
+      "question_text": "Patient is angry. Therapeutic communication used:",
+      "options": [
+        "You seem upset..."
+      ],
+      "correct_answer": "You seem upset..."
+    },
+    {
+      "id": 108,
+      "question_text": "Which of the following physical changes should a person taking oral contraceptive should be educated on?",
+      "options": [
+        "Weight gain",
+        "DVT",
+        "Amenorrhea",
+        "Increased bleeding"
+      ],
+      "correct_answer": "DVT"
+    },
+    {
+      "id": 109,
+      "question_text": "Sickle cell disease is most common in which ethnic group?",
+      "options": [
+        "Africans",
+        "Latin Americans",
+        "Caucasians"
+      ],
+      "correct_answer": "Africans"
+    },
+    {
+      "id": 110,
+      "question_text": "When do you gain consent from a patient and consider it valid?",
+      "options": [
+        "Only if a patient has the mental capacity to give consent",
+        "Only before a clinical procedure",
+        "Only after a clinical procedure",
+        "None of the above"
+      ],
+      "correct_answer": "Only if a patient has the mental capacity to give consent"
+    },
+    {
+      "id": 111,
+      "question_text": "You are carrying out wound dressing with a new product, what is your intervention as a nurse?",
+      "options": [
+        "Talk to the nurse after at the end of the shift about how to do wound care.",
+        "Do not remove the previous dressing and apply the new products over it",
+        "Refer to another practitioner for patient's safety until you gain your competency and skills.",
+        "Leave the dressing without doing it."
+      ],
+      "correct_answer": "Refer to another practitioner for patient's safety until you gain your competency and skills."
+    },
+    {
+      "id": 112,
+      "question_text": "What method of long-time feeding is appropriate for a patient with difficulty swallowing in a chronic condition?",
+      "options": [
+        "Gastrostomy",
+        "Parenteral feeding",
+        "IV",
+        "NGT feeding"
+      ],
+      "correct_answer": "Gastrostomy"
+    },
+    {
+      "id": 114,
+      "question_text": "There is a policy that do not suction patient on Endotracheal tube in your place of work. What should you do in an emergency when a patient needs suctioning?",
+      "options": [
+        "Do it",
+        "Watch the patients closely and wait till the next morning.",
+        "Call the physiotherapist on call there is an emergency as they are trained for it.",
+        "Wait for the physiotherapist till the next morning."
+      ],
+      "correct_answer": "Call the physiotherapist on call there is an emergency as they are trained for it."
+    },
+    {
+      "id": 115,
+      "question_text": "There is a prescription with dose but without number of giving, what should you do?",
+      "options": [
+        "Assume the dose based on your experience",
+        "Call the prescriber to confirm the dosage",
+        "Omit and leave for the next shift"
+      ],
+      "correct_answer": "Call the prescriber to confirm the dosage"
+    },
+    {
+      "id": 116,
+      "question_text": "Age of consent for organ donation?",
+      "options": [
+        "Above 16",
+        "Above 18",
+        "Above 21",
+        "No consent needed"
+      ],
+      "correct_answer": "Above 18"
+    },
+    {
+      "id": 117,
+      "question_text": "Which instrument is used to visualize the vocal cords during endotracheal procedure?",
+      "options": [
+        "Laryngoscope",
+        "Bougie",
+        "Endoscope"
+      ],
+      "correct_answer": "Laryngoscope"
+    },
+    {
+      "id": 118,
+      "question_text": "Which one cannot be given subcutaneously?",
+      "options": [
+        "NS",
+        "ND+ Potassium",
+        "5% Dextrose",
+        "25% D"
+      ],
+      "correct_answer": "ND+ Potassium"
+    },
+    {
+      "id": 119,
+      "question_text": "How will you assess hemodynamic stability and perfusion?",
+      "options": [
+        "Skin turgor",
+        "GCS",
+        "Capillary refill"
+      ],
+      "correct_answer": "Capillary refill"
+    },
+    {
+      "id": 121,
+      "question_text": "Most common vein for phlebotomy?",
+      "options": [
+        "Cephalic",
+        "Femoral",
+        "Popliteal",
+        "Jugular"
+      ],
+      "correct_answer": "Cephalic"
+    },
+    {
+      "id": 122,
+      "question_text": "Having knowledge and using it for the good of patient is called?",
+      "options": [
+        "Health literacy",
+        "Health knowledge",
+        "Health education",
+        "Health intellect"
+      ],
+      "correct_answer": "Health education"
+    },
+    {
+      "id": 123,
+      "question_text": "Other name for cancer related weight loss?",
+      "options": [
+        "Anorexia",
+        "Bulimia Nervosa",
+        "Cachexia",
+        "Slimming"
+      ],
+      "correct_answer": "Cachexia"
+    },
+    {
+      "id": 124,
+      "question_text": "Women who are vulnerable to domestic abuse?",
+      "options": [
+        "Under 18",
+        "Over 18",
+        "Pregnant women",
+        "Elderly"
+      ],
+      "correct_answer": "Under 18"
+    },
+    {
+      "id": 125,
+      "question_text": "A patients HR 150, RR 40, what will you do?",
+      "options": [
+        "Initiate hospital central emergency code",
+        "Bring emergency bell & continuously assess ABCDE",
+        "Call for help & reassess vital signs",
+        "Administer oxygen, position patient flat on bed, attach to monitoring"
+      ],
+      "correct_answer": "Bring emergency bell & continuously assess ABCDE"
+    },
+    {
+      "id": 126,
+      "question_text": "EBP- Evidence Based Practice:",
+      "options": [
+        "Collaboration with EBP skills and knowledge",
+        "Only skills",
+        "Only knowledge"
+      ],
+      "correct_answer": "Collaboration with EBP skills and knowledge"
+    },
+    {
+      "id": 127,
+      "question_text": "What is a biological hazard?",
+      "options": [
+        "HIV",
+        "Cytotoxic medicines",
+        "Linens"
+      ],
+      "correct_answer": "HIV"
+    },
+    {
+      "id": 128,
+      "question_text": "The following are early signs of Alzheimer's Disease:",
+      "options": [
+        "Lapses in memory",
+        "Pacing movement",
+        "Language difficulty"
+      ],
+      "correct_answer": "Lapses in memory"
+    },
+    {
+      "id": 129,
+      "question_text": "You are with a dementia patient and there is fire outbreak, what will you do?",
+      "options": [
+        "Leave the patient and run for your dear life",
+        "Follow other staff",
+        "Use your instinct at that time",
+        "Follow the policy and procedure"
+      ],
+      "correct_answer": "Follow the policy and procedure"
+    },
+    {
+      "id": 130,
+      "question_text": "If you're not competent to transport a sample for investigation, what would you do?",
+      "options": [
+        "Take it anyway",
+        "Ask the senior to help you as you do not know",
+        "Inform you do not know and give it to someone else"
+      ],
+      "correct_answer": "Ask the senior to help you as you do not know"
+    },
+    {
+      "id": 131,
+      "question_text": "Personality disorder affects:",
+      "options": [
+        "Their behavior interrupts self and others",
+        "Only others",
+        "Only self"
+      ],
+      "correct_answer": "Their behavior interrupts self and others"
+    },
+    {
+      "id": 133,
+      "question_text": "A patient complained about the treatment, what should the head nurse do?",
+      "options": [
+        "Tell the nurse to be extra careful so such will not happen next time.",
+        "Investigate but do not implicate the nurse involved",
+        "Beg patient not to file an official complaint",
+        "Investigate and give a constructive and honest opinion."
+      ],
+      "correct_answer": "Investigate and give a constructive and honest opinion."
+    },
+    {
+      "id": 134,
+      "question_text": "A nurse will administer a drug through the buccal by:",
+      "options": [
+        "Absorption from the skin using a patch",
+        "Under the tongue",
+        "Between the tongue and cheek",
+        "Through the nostrils"
+      ],
+      "correct_answer": "Between the tongue and cheek"
+    },
+    {
+      "id": 135,
+      "question_text": "How often should feedback be given to a new staff nurse?",
+      "options": [
+        "Continuously",
+        "At the end of the shift",
+        "When on annual leave"
+      ],
+      "correct_answer": "Continuously"
+    },
+    {
+      "id": 137,
+      "question_text": "You receive the laboratory result of the patient, but she is still in the bathroom. How will deliver the result?",
+      "options": [
+        "Update her through the phone",
+        "Wait for another chance to talk and discuss it privately.",
+        "Let the nursing assistant do it",
+        "Leave the results on the bedside table."
+      ],
+      "correct_answer": "Wait for another chance to talk and discuss it privately."
+    },
+    {
+      "id": 138,
+      "question_text": "The patient was given different options of diagnostic test and treatments. The patient was given:",
+      "options": [
+        "Informed consent",
+        "Informed choice",
+        "Informed care"
+      ],
+      "correct_answer": "Informed choice"
+    },
+    {
+      "id": 139,
+      "question_text": "Which one of the following is the advantage of multi-agency working offers when protecting those at risk from abuse?",
+      "options": [
+        "Practitioner professional development",
+        "Improved community protection",
+        "Shared communication",
+        "More professional support"
+      ],
+      "correct_answer": "More professional support"
+    },
+    {
+      "id": 140,
+      "question_text": "A patient is being prepared for surgery and was placed on NPO. What is the purpose of NPO?",
+      "options": [
+        "Prevention of aspiration pneumonia",
+        "To facilitate induction of pre-op meds",
+        "For abdominal procedures",
+        "To decrease production of fluids"
+      ],
+      "correct_answer": "Prevention of aspiration pneumonia"
+    },
+    {
+      "id": 141,
+      "question_text": "Most common serious injury affecting nurses, health care user and relatives is?",
+      "options": [
+        "Needle prick injury",
+        "Split and fall",
+        "Cancer",
+        "Neurological disorder"
+      ],
+      "correct_answer": "Split and fall"
+    },
+    {
+      "id": 142,
+      "question_text": "A bed bound patient requested to see care report card which is on the table away from the bed. What is the nurse response?",
+      "options": [
+        "Shift the table on the bed",
+        "Ignore and continue what you're doing.",
+        "Ask the patient why she's requesting for the report.",
+        "Move the table near the bed"
+      ],
+      "correct_answer": "Move the table near the bed"
+    },
+    {
+      "id": 143,
+      "question_text": "A patient was diagnosed with Rheumatoid Arthritis, they asked the nurse the cause. The nurse response is:",
+      "options": [
+        "Medication",
+        "Autoimmune disorder",
+        "Bacteria",
+        "Exercise and diet"
+      ],
+      "correct_answer": "Autoimmune disorder"
+    },
+    {
+      "id": 144,
+      "question_text": "What is the primary treatment for anaphylaxis?",
+      "options": [
+        "Intravenous adrenaline",
+        "Oral antihistamine",
+        "Intramuscular adrenaline",
+        "Oral steroids"
+      ],
+      "correct_answer": "Intramuscular adrenaline"
+    },
+    {
+      "id": 145,
+      "question_text": "Post CABG non-infectious sputum color?",
+      "options": [
+        "Red",
+        "Green",
+        "White",
+        "Brown"
+      ],
+      "correct_answer": "White"
+    },
+    {
+      "id": 146,
+      "question_text": "A 16-year-old needs to be physically examined by the doctor, but she is not cooperating. What is your action as a nurse?",
+      "options": [
+        "Stand still and do nothing",
+        "Encourage and show support for the child with non-verbal communication like gestures and stand with the patient.",
+        "Encourage the relative to talk and stay with the patient."
+      ],
+      "correct_answer": "Encourage and show support for the child with non-verbal communication like gestures and stand with the patient."
+    },
+    {
+      "id": 147,
+      "question_text": "How can you manage decreased secretions in a patient in the end-of-life?",
+      "options": [
+        "Airway adjunct and suction",
+        "Analgesic and repositioning",
+        "Sedation and position",
+        "Hyoscine hydrobromide and positioning"
+      ],
+      "correct_answer": "Hyoscine hydrobromide and positioning"
+    },
+    {
+      "id": 148,
+      "question_text": "What kind of medication should 2 nurses administer and monitor in the ward?",
+      "options": [
+        "Nifedipine",
+        "Paracetamol",
+        "Morphine",
+        "NSAIDS"
+      ],
+      "correct_answer": "Morphine"
+    },
+    {
+      "id": 149,
+      "question_text": "A patient disclosed some sensitive information to a nurse and ask the nurse to keep it secret. As a nurse, what will you do?",
+      "options": [
+        "Keep the information confidential",
+        "Tell the patient that all information will be shared with the relevant staff",
+        "Inform the relatives",
+        "Keep the information as the secret to maintaining the dignity of the profession"
+      ],
+      "correct_answer": "Tell the patient that all information will be shared with the relevant staff"
+    },
+    {
+      "id": 150,
+      "question_text": "Which of the following patients is at risk of type 2 respiratory failure?",
+      "options": [
+        "Those receiving IV therapy",
+        "Those with urinary catheter",
+        "Carbon dioxide retaining patient"
+      ],
+      "correct_answer": "Carbon dioxide retaining patient"
+    },
+    {
+      "id": 151,
+      "question_text": "A 20-year-old male patient has a BMI of 20 kg/m2. He is?",
+      "options": [
+        "Underweight",
+        "Normal",
+        "Overweight",
+        "Obese"
+      ],
+      "correct_answer": "Normal"
+    },
+    {
+      "id": 152,
+      "question_text": "Prion disease is related to which of the following condition?",
+      "options": [
+        "Myocardial infarction",
+        "Chron's disease",
+        "Creutzfeldt-jakob disease"
+      ],
+      "correct_answer": "Creutzfeldt-jakob disease"
+    },
+    {
+      "id": 153,
+      "question_text": "Mental disorder is more common among which group?",
+      "options": [
+        "Elderly",
+        "Women",
+        "Men",
+        "Young people"
+      ],
+      "correct_answer": "Young people"
+    },
+    {
+      "id": 154,
+      "question_text": "When you collect, interpret, save and apply information for health purposes is called?",
+      "options": [
+        "Learning",
+        "Health education",
+        "Health literacy",
+        "Information processing"
+      ],
+      "correct_answer": "Health literacy"
+    },
+    {
+      "id": 155,
+      "question_text": "Which procedure involves 2 nurses?",
+      "options": [
+        "Admission of patient",
+        "Counseling the patient",
+        "Serving controlled drug"
+      ],
+      "correct_answer": "Serving controlled drug"
+    },
+    {
+      "id": 156,
+      "question_text": "When a nurse is giving information about the patient medication and the patient responded that, “The information is not relevant”. What is your action as a nurse?",
+      "options": [
+        "Inform the head nurse",
+        "Ask why the patient said information is not relevant",
+        "Insist that he must listen to you",
+        "Leave the patient and come back later to continue"
+      ],
+      "correct_answer": "Ask why the patient said information is not relevant"
+    },
+    {
+      "id": 157,
+      "question_text": "A patient refused the injection and ask the nurse, “What injection is this and it might not be needed”. What should the nurse response?",
+      "options": [
+        "Do not give the injection and record the reason",
+        "Explain briefly what the injection is for and its benefit"
+      ],
+      "correct_answer": "Explain briefly what the injection is for and its benefit"
+    },
+    {
+      "id": 158,
+      "question_text": "Which therapy is NOT used in pyrexia?",
+      "options": [
+        "Fan therapy",
+        "IV and cold drink",
+        "Removal of clothing",
+        "Showering"
+      ],
+      "correct_answer": "Showering"
+    },
+    {
+      "id": 159,
+      "question_text": "DVT occurs in:",
+      "options": [
+        "People who completed a surgery that lasted for 2 hours.",
+        "Person who is immobile and with prolong hospitalization",
+        "Person who has loves wearing stockings",
+        "People with varicose veins"
+      ],
+      "correct_answer": "Person who is immobile and with prolong hospitalization"
+    },
+    {
+      "id": 160,
+      "question_text": "How can a new staff attain knowledge in the clinical area?",
+      "options": [
+        "Preceptorship",
+        "Internship",
+        "Study time",
+        "Induction"
+      ],
+      "correct_answer": "Preceptorship"
+    },
+    {
+      "id": 161,
+      "question_text": "A nurse working in children ward want to do vital sign for children and notice a distress child. What is the nurse action?",
+      "options": [
+        "Ignore the child and continue the vital sign for others",
+        "Attend to the distressed child and take them together to do their vital sign",
+        "Ask the attendant/assistant to do vitals while you attend to distress child.",
+        "Inform the head nurse about the distress child and continue your vitals."
+      ],
+      "correct_answer": "Ask the attendant/assistant to do vitals while you attend to distress child."
+    },
+    {
+      "id": 162,
+      "question_text": "What is a person's normal core temperature?",
+      "options": [
+        "36-38",
+        "36.5-38.5",
+        "34-36",
+        "36-37.5"
+      ],
+      "correct_answer": "36-37.5"
+    },
+    {
+      "id": 163,
+      "question_text": "In which of the following demonstrates the use of open-ended questions?",
+      "options": [
+        "How may I help you?",
+        "Are you looking for the nurse?",
+        "Do you need help?",
+        "What are you looking for?"
+      ],
+      "correct_answer": "How may I help you?"
+    },
+    {
+      "id": 164,
+      "question_text": "An Alzheimer patient who has fever due to UTI is experiencing shakiness. What medicine should be given?",
+      "options": [
+        "Co-careldopa (Sinemet)",
+        "Co-amoxiclav (Augmentin)",
+        "Co-codamol",
+        "Co-Q10"
+      ],
+      "correct_answer": "Co-careldopa (Sinemet)"
+    },
+    {
+      "id": 165,
+      "question_text": "A patient presents with confusion, slurred speech, rash, difficulty in breathing that is very fast. What is likely the condition?",
+      "options": [
+        "Asthma",
+        "Sepsis",
+        "Anaphylaxis",
+        "Measles"
+      ],
+      "correct_answer": "Sepsis"
+    },
+    {
+      "id": 166,
+      "question_text": "Hemophilia is common in which ethnic group?",
+      "options": [
+        "Asian",
+        "African",
+        "Caucasian",
+        "Latin"
+      ],
+      "correct_answer": "Caucasian"
+    },
+    {
+      "id": 167,
+      "question_text": "A patient is on 4 hourly observations. A nurse notices that observations have not been done for 12 hours. What action does the nurse take?",
+      "options": [
+        "Check the observations and report the issue to the ward manager.",
+        "The observations were normal, so no action is needed",
+        "Speak to the who was on duty when the observations were missed and tell her not to do it.",
+        "Report the issue to the ward manager and complete an incident form."
+      ],
+      "correct_answer": "Report the issue to the ward manager and complete an incident form."
+    },
+    {
+      "id": 168,
+      "question_text": "What factor to consider ensuring safe staffing?",
+      "options": [
+        "Ethnicity",
+        "Age group",
+        "Skill mix",
+        "Contracted hours"
+      ],
+      "correct_answer": "Skill mix"
+    },
+    {
+      "id": 169,
+      "question_text": "Who are at high risk of taking IV drugs?",
+      "options": [
+        "People below 16",
+        "Illiterate people",
+        "Poor nutrition"
+      ],
+      "correct_answer": "People below 16"
+    },
+    {
+      "id": 170,
+      "question_text": "When removing a closed system vacuum wound drain, what should the nurse consider?",
+      "options": [
+        "Says routine drain removal is doctor's role.",
+        "Have the tissue viability nurse to remove it.",
+        "Remove the drain gradually by pulling on it.",
+        "Releases the vacuum and gently remove it"
+      ],
+      "correct_answer": "Releases the vacuum and gently remove it"
+    },
+    {
+      "id": 171,
+      "question_text": "Annual training required for nurses:",
+      "options": [
+        "BLS",
+        "Clinical governance training",
+        "Record keeping training",
+        "IV training"
+      ],
+      "correct_answer": "BLS"
+    },
+    {
+      "id": 172,
+      "question_text": "A pediatric patient with learning disabilities presents with smooth philtrum, low body weight, hyperactivity and poor concentration. What is the cause of these symptoms?",
+      "options": [
+        "Pediatric alcohol syndrome",
+        "Fetal ethanol syndrome",
+        "Pediatric alcoholism",
+        "Fetal alcohol syndrome"
+      ],
+      "correct_answer": "Fetal alcohol syndrome"
+    },
+    {
+      "id": 173,
+      "question_text": "Which of the following is an acceptable way of moving a patient from a bed to a trolley?",
+      "options": [
+        "A bear hugs",
+        "An Australian lift",
+        "Completing a risk assessment",
+        "Canvas and poles"
+      ],
+      "correct_answer": "Completing a risk assessment"
+    },
+    {
+      "id": 174,
+      "question_text": "Mr. Bill is a known diabetic patient who has had an injury for one week and is not healing. What is your role as a nurse?",
+      "options": [
+        "Measure the wound and note any change in size",
+        "Refer to Mr. Bill to see a GP immediately",
+        "Dress wound and send him home",
+        "Apply tight dressing to prevent infection"
+      ],
+      "correct_answer": "Refer to Mr. Bill to see a GP immediately"
+    },
+    {
+      "id": 175,
+      "question_text": "An elderly frail patient is due to be discharged home the patient says that they live alone but their notes say they live with their family they do not manage alone. What action does a nurse take?",
+      "options": [
+        "Nothing as patient probably be alright",
+        "Check the details on file discuss a home care package",
+        "Get a patient address and plan a visit to see them",
+        "Tell them it is better if they go into permanent care"
+      ],
+      "correct_answer": "Check the details on file discuss a home care package"
+    },
+    {
+      "id": 176,
+      "question_text": "What is the first line treatment for acute asthma?",
+      "options": [
+        "NSAIDS, oxygen, adrenaline",
+        "Steroids, oxygen, adrenaline",
+        "Adrenaline, oxygen, paracetamol"
+      ],
+      "correct_answer": "Steroids, oxygen, adrenaline"
+    },
+    {
+      "id": 177,
+      "question_text": "A protractor is in mentoring a new nurse in the ward and a consultant comes in from rounds. What is the best action to be taken by the protractor?",
+      "options": [
+        "Let the nurse do the rounds with the consultant as this is the best way to learn",
+        "Do the rounds with the consultant and leave the new nurse in the duty room as she knew",
+        "Volunteer to do the rounds with the consultant and new nurse",
+        "Tell the consultant to come back later"
+      ],
+      "correct_answer": "Volunteer to do the rounds with the consultant and new nurse"
+    },
+    {
+      "id": 178,
+      "question_text": "A patient with dementia who fell twice and lives with her husband wants to be discharged back home. What measures should the patient take?",
+      "options": [
+        "Allow to go back with husband",
+        "Invite friend to help them",
+        "Engage a social worker in her care"
+      ],
+      "correct_answer": "Engage a social worker in her care"
+    },
+    {
+      "id": 179,
+      "question_text": "A patient is returning home from hospital. They will spend several weeks in a residential facility, followed by community support. In order to ensure a positive process, what action does a nurse take?",
+      "options": [
+        "Allow the patient to arrange any community service to allow them to be independent",
+        "Give discharge information to the care facility who will liaise with others",
+        "Copy all agencies into the discharge plan correspondence",
+        "Ask the patient to contact their general practitioner to follow up on services needed"
+      ],
+      "correct_answer": "Give discharge information to the care facility who will liaise with others"
+    },
+    {
+      "id": 180,
+      "question_text": "Who takes care of the nails of Diabetic patients?",
+      "options": [
+        "Chiropodist/Podiatrist",
+        "HCA",
+        "Tissue viability nurse",
+        "Diabetic nurse"
+      ],
+      "correct_answer": "Chiropodist/Podiatrist"
+    },
+    {
+      "id": 181,
+      "question_text": "Which of the following traits could be linked to an assertive approach to communication?",
+      "options": [
+        "Timorous, halting speech with contributions that are vague and unclear",
+        "Dominating discussion with a raised voice and being correctly threatening",
+        "Seeking workable compromise",
+        "Using in congruent verbal and nonverbal messages"
+      ],
+      "correct_answer": "Seeking workable compromise"
+    },
+    {
+      "id": 182,
+      "question_text": "What are the signs of postpartum psychosis, EXCEPT?",
+      "options": [
+        "Depression",
+        "Loss of inhibitions",
+        "Physical discomfort",
+        "Hallucinating"
+      ],
+      "correct_answer": "Physical discomfort"
+    },
+    {
+      "id": 183,
+      "question_text": "If a critical incident occurs, a nurse will?",
+      "options": [
+        "Report and reflect on the case to contribute to debriefing and ongoing learning.",
+        "Undertake a literature review",
+        "Focus on reflection-in-action",
+        "Report the incident to the Care Quality Commission"
+      ],
+      "correct_answer": "Report and reflect on the case to contribute to debriefing and ongoing learning."
+    },
+    {
+      "id": 184,
+      "question_text": "A person with BMI of 28 kg/m2 is:",
+      "options": [
+        "Overweight",
+        "Underweight",
+        "Obese",
+        "Normal weight"
+      ],
+      "correct_answer": "Overweight"
+    },
+    {
+      "id": 185,
+      "question_text": "A patient visited the A&E department. How will you inform the patient's GP after discharge?",
+      "options": [
+        "Send a discharge summary",
+        "Send all the patient's hospital documents to the GP"
+      ],
+      "correct_answer": "Send a discharge summary"
+    },
+    {
+      "id": 186,
+      "question_text": "Before proceeding to explain the care plan to the patient. What should a nurse ensure?",
+      "options": [
+        "Does the patient have communication aids",
+        "The patient is happy to talk",
+        "Does the patient feel comfortable"
+      ],
+      "correct_answer": "Does the patient have communication aids"
+    },
+    {
+      "id": 187,
+      "question_text": "A doctor called 8 patients with dementia to get information for his project. What type of research study is this?",
+      "options": [
+        "Focus group",
+        "Group discussion",
+        "Quantitative research"
+      ],
+      "correct_answer": "Focus group"
+    },
+    {
+      "id": 188,
+      "question_text": "Patient came to hospital he was diagnosed with otitis media. As per NICE Score 2 and given analgesics. Patient complained that he doesn't received any antibiotics. What is he next step?",
+      "options": [
+        "Give discharge summary",
+        "Evidence based practice and discharge instruction",
+        "Explain evidence-based practice",
+        "Explain when need to seek medical attention"
+      ],
+      "correct_answer": "Evidence based practice and discharge instruction"
+    },
+    {
+      "id": 189,
+      "question_text": "How can the community provide support to a person with mental illness?",
+      "options": [
+        "Reduce work loads",
+        "Provide close community",
+        "Develop hobby or faith"
+      ],
+      "correct_answer": "Provide close community"
+    },
+    {
+      "id": 190,
+      "question_text": "A mentally stable patient is requesting to participate in the kitchen and this act is approved as part of his care, what will you do as a nurse?",
+      "options": [
+        "Don't allow the patients",
+        "Fill risk assessment form",
+        "Refer to the occupational therapist for approval",
+        "Allow the patient and give safety guidelines"
+      ],
+      "correct_answer": "Allow the patient and give safety guidelines"
+    },
+    {
+      "id": 191,
+      "question_text": "The patient using a PCA is on morphine. He experienced dizziness and RR is 7. What should the nurse do?",
+      "options": [
+        "Stop the pump, assess ABCDE and prepare or administer Naloxone",
+        "Continue the pump and administer Naloxone",
+        "Stop the pump and administer Naloxone and paracetamol"
+      ],
+      "correct_answer": "Stop the pump, assess ABCDE and prepare or administer Naloxone"
+    },
+    {
+      "id": 192,
+      "question_text": "A patient visited the clinic and said he's an alcoholic. What will the nurse advice to the patient to prevent ill-effects of alcohol?",
+      "options": [
+        "Alcohol is the most common reasons of vehicular accidents",
+        "Refer the patient to an alcohol group",
+        "Educate the patient about the negative effects of alcohol in the body",
+        "Advice the patient to avoid alcohol to save money"
+      ],
+      "correct_answer": "Educate the patient about the negative effects of alcohol in the body"
+    },
+    {
+      "id": 193,
+      "question_text": "The doctor ordered a patient to be weighed so as to calculate his drug but patient refuse. What will be your next action?",
+      "options": [
+        "Report to the doctor and wait for other instructions",
+        "Report to the nursing team that patient refused care",
+        "Assume and give the doctor a report"
+      ],
+      "correct_answer": "Report to the doctor and wait for other instructions"
+    },
+    {
+      "id": 194,
+      "question_text": "A nurse reported to the head nurse about a colleague bullying her. What should the head nurse do?",
+      "options": [
+        "Advice then to settle amicably",
+        "Warn the colleague",
+        "Investigate and act according to the hospital bully policy"
+      ],
+      "correct_answer": "Investigate and act according to the hospital bully policy"
+    },
+    {
+      "id": 195,
+      "question_text": "The doctor is busy with his assessments and asks the nurse to insert IV cannula to a patient. What would be the nurse best response?",
+      "options": [
+        "Do it and ask senior nurse to supervise",
+        "Refuse to do it as you are not trained in cannulating patient",
+        "Ask a colleague to supervise",
+        "Do it since it's the doctor's order"
+      ],
+      "correct_answer": "Refuse to do it as you are not trained in cannulating patient"
+    },
+    {
+      "id": 197,
+      "question_text": "Garbo had alcohol intoxication and her mother is worried about his health. What should the nurse do?",
+      "options": [
+        "Respect his decision and do nothing",
+        "Allow her mother to talk to him",
+        "Educate him on the effect of alcohol and possible rehabilitation"
+      ],
+      "correct_answer": "Educate him on the effect of alcohol and possible rehabilitation"
+    },
+    {
+      "id": 200,
+      "question_text": "Roughly, what percentage of room air is oxygen?",
+      "options": [
+        "15%",
+        "28%",
+        "20%/21%",
+        "10%"
+      ],
+      "correct_answer": "20%/21%"
+    },
+    {
+      "id": 201,
+      "question_text": "What is the purpose of using PPE?",
+      "options": [
+        "To prevent the nurse and the patient from infection"
+      ],
+      "correct_answer": "To prevent the nurse and the patient from infection"
+    },
+    {
+      "id": 202,
+      "question_text": "A patient requires financial education. What does the nurse should be knowledgeable of?",
+      "options": [
+        "Genomics",
+        "Knowledge in Health Economics",
+        "Knowledge in Anatomy",
+        "Knowledge in Children's Health"
+      ],
+      "correct_answer": "Knowledge in Health Economics"
+    },
+    {
+      "id": 203,
+      "question_text": "The patient is hesitant to share about their sexual health. What should the nurse do?",
+      "options": [
+        "Carefully explore the patient's preferences",
+        "Respect the patient's preferences"
+      ],
+      "correct_answer": "Carefully explore the patient's preferences"
+    },
+    {
+      "id": 204,
+      "question_text": "The patient is recovering from a stroke and the nurse encourage him to join the group, but the patient refused. What should you do as a nurse?",
+      "options": [
+        "Accept the patient's decision because it's their right",
+        "Encourage the patient to sit and ask to join next time",
+        "Do nothing"
+      ],
+      "correct_answer": "Encourage the patient to sit and ask to join next time"
+    },
+    {
+      "id": 206,
+      "question_text": "A patient with stress, anxiety and sleeplessness. Who will he visit?",
+      "options": [
+        "A 111 service",
+        "A walk-in center",
+        "A general practitioner",
+        "Emergency department"
+      ],
+      "correct_answer": "A general practitioner"
+    },
+    {
+      "id": 207,
+      "question_text": "Device used for Blood Pressure?",
+      "options": [
+        "Thermometer",
+        "Sphygmomanometer"
+      ],
+      "correct_answer": "Sphygmomanometer"
+    },
+    {
+      "id": 208,
+      "question_text": "When do you start to monitor the patient who is receiving BT?",
+      "options": [
+        "60 mins",
+        "30 min",
+        "15 min",
+        "45 mins"
+      ],
+      "correct_answer": "15 min"
+    },
+    {
+      "id": 209,
+      "question_text": "What is the aim of patient collaboration?",
+      "options": [
+        "Patient development event",
+        "Staff development event",
+        "Patient development experience"
+      ],
+      "correct_answer": "Patient development experience"
+    },
+    {
+      "id": 210,
+      "question_text": "COPD is caused by what lifestyle related condition?",
+      "options": [
+        "Smoking",
+        "Eating habits"
+      ],
+      "correct_answer": "Smoking"
+    },
+    {
+      "id": 211,
+      "question_text": "The nurse cares for an elderly patient with moderate hearing loss. The nurse should teach the patient's family to use which of the following approaches when speaking to the patient?",
+      "options": [
+        "Raise your voice until the patient is able to hear you",
+        "Face the patient and speak slowly using a high voice",
+        "Face the patient and speak slowly using a slightly lowered voice",
+        "Use facial expressions and speak as you would formally",
+        "Go to a different room without noise or less distractions"
+      ],
+      "correct_answer": "Go to a different room without noise or less distractions"
+    },
+    {
+      "id": 212,
+      "question_text": "What does a nurse observe when assessing the respiration of a patient with breathing difficulties?",
+      "options": [
+        "Rate, pattern, and evidence of cyanosis",
+        "Presence of symmetrical movement of both sides of chest and equal breath sounds",
+        "Ability to speak in full sentences, ease of breathing, rate pattern, evidence of cyanosis",
+        "Ease of breathing, rate, pattern, and evidence of cyanosis"
+      ],
+      "correct_answer": "Ability to speak in full sentences, ease of breathing, rate pattern, evidence of cyanosis"
+    },
+    {
+      "id": 213,
+      "question_text": "A patient is on pain. What should the nurse consider in assessment?",
+      "options": [
+        "Restlessness, DOB and complains of chest pain",
+        "Type of pain and where it radiates"
+      ],
+      "correct_answer": "Type of pain and where it radiates"
+    },
+    {
+      "id": 214,
+      "question_text": "Which is found in higher concentration in the extracellular fluid?",
+      "options": [
+        "Calcium",
+        "Chloride",
+        "Sodium",
+        "Potassium"
+      ],
+      "correct_answer": "Sodium"
+    },
+    {
+      "id": 215,
+      "question_text": "Signs and symptoms of early fluid volume deficit, except:",
+      "options": [
+        "Decreased urine output",
+        "Decreased PR",
+        "Concentrated urine",
+        "Decreased skin turgor"
+      ],
+      "correct_answer": "Decreased PR"
+    },
+    {
+      "id": 216,
+      "question_text": "Which of these are airborne infections?",
+      "options": [
+        "Norovirus, chickenpox, measles",
+        "Norovirus, influenza",
+        "Chickenpox, norovirus, influenza"
+      ],
+      "correct_answer": "Norovirus, chickenpox, measles"
+    },
+    {
+      "id": 217,
+      "question_text": "Which of the following is an example of an open-minded question?",
+      "options": [
+        "Do you need anything?",
+        "Is there something I can help you with?",
+        "Are you available today, as a friend?",
+        "How may I help you today?"
+      ],
+      "correct_answer": "How may I help you today?"
+    },
+    {
+      "id": 218,
+      "question_text": "What does pyrexia mean?",
+      "options": [
+        "Fluctuating body temperature",
+        "Increase in body temperature",
+        "Normal body temperature",
+        "Decreased body temperature"
+      ],
+      "correct_answer": "Increase in body temperature"
+    },
+    {
+      "id": 219,
+      "question_text": "IV morphine was initiated, what should you monitor?",
+      "options": [
+        "BP",
+        "Respiration",
+        "Skin perfusion"
+      ],
+      "correct_answer": "Respiration"
+    },
+    {
+      "id": 221,
+      "question_text": "You observe the HCA that he toilets the patient in a commode in the lounge. When confronted the HCA said that the patient is used to it since the mother does at home. What should the nurse do?",
+      "options": [
+        "Report to senior nurse",
+        "Move patient to a private area and discuss further",
+        "Report to safeguarding personnel in charge",
+        "Report to police"
+      ],
+      "correct_answer": "Move patient to a private area and discuss further"
+    },
+    {
+      "id": 222,
+      "question_text": "Working together to achieve the best interest for people is a collaborative effort among?",
+      "options": [
+        "Doctors",
+        "Agencies",
+        "Professionals"
+      ],
+      "correct_answer": "Professionals"
+    },
+    {
+      "id": 223,
+      "question_text": "What is the published book of NMC?",
+      "options": [
+        "The book of nursing",
+        "The code",
+        "The standard of nursing practice",
+        "Guidelines to become a UK nurse/x"
+      ],
+      "correct_answer": "The code"
+    },
+    {
+      "id": 224,
+      "question_text": "How to get BMI?",
+      "options": [
+        "Height divided by waist circumference",
+        "Weight x height",
+        "Weight x height squared"
+      ],
+      "correct_answer": "Weight x height squared"
+    },
+    {
+      "id": 225,
+      "question_text": "What are the factors of BMI?",
+      "options": [
+        "Height and waist circumference",
+        "Weight and waist",
+        "Height and weight"
+      ],
+      "correct_answer": "Height and weight"
+    },
+    {
+      "id": 226,
+      "question_text": "You notice that while waiting for surgery the patient is anxious. What is the nurse' best response?",
+      "options": [
+        "Provide leaflet for the patient to read and answer questions to alleviate anxiety",
+        "Refer to senior nurse",
+        "Tell the doctor the patient is anxious",
+        "Explain the procedure and ensure the patient understands the surgery well to ease anxiety"
+      ],
+      "correct_answer": "Explain the procedure and ensure the patient understands the surgery well to ease anxiety"
+    },
+    {
+      "id": 227,
+      "question_text": "What should the management provide for the nurse whose child died?",
+      "options": [
+        "Vacation leave",
+        "Sick leave",
+        "Debriefing"
+      ],
+      "correct_answer": "Debriefing"
+    },
+    {
+      "id": 228,
+      "question_text": "The patient's surgery at 8 am is postponed until afternoon. What should the nurse's best response?",
+      "options": [
+        "Write in the patient's note",
+        "Inform family",
+        "Ensure the patient has IV fluids"
+      ],
+      "correct_answer": "Ensure the patient has IV fluids"
+    },
+    {
+      "id": 229,
+      "question_text": "You notice that the patient has difficulty understanding the explanation of the doctor about his surgery. What should the nurse do?",
+      "options": [
+        "Provide something to read about the surgery",
+        "Validate the patient's understanding about the surgery with the doctor's present",
+        "Tell the doctor to repeat information"
+      ],
+      "correct_answer": "Validate the patient's understanding about the surgery with the doctor's present"
+    },
+    {
+      "id": 230,
+      "question_text": "BMI of the patient is 32 and was not given advise to a diet. What is the nurses best intervention?",
+      "options": [
+        "Leave as it is the patient does not need intervention",
+        "Suggest diet regimen without taking consideration of the BMI",
+        "Bring the topic on the team meeting and suggest diet with sensitive topic on the BMI",
+        "Continue diet as BMI is normal"
+      ],
+      "correct_answer": "Bring the topic on the team meeting and suggest diet with sensitive topic on the BMI"
+    },
+    {
+      "id": 231,
+      "question_text": "HCA and nurse need to transfer a patient to another bed. However, nurse looks for slide board in another room yet didn't find one. The nurse asks the HCA that they look in another station when nurse came back the patient was already transferred. What should the nurse do?",
+      "options": [
+        "Check the patient for abrasion",
+        "Report to nurse in charge",
+        "Request for more slide board"
+      ],
+      "correct_answer": "Check the patient for abrasion"
+    },
+    {
+      "id": 232,
+      "question_text": "Which verbalization hints depression?",
+      "options": [
+        "I am worthless",
+        "I am obese",
+        "My father died that's why I am into reading books"
+      ],
+      "correct_answer": "I am worthless"
+    },
+    {
+      "id": 233,
+      "question_text": "An art loving patient does not communicate verbally with the team which communication means is appropriate for him?",
+      "options": [
+        "Emails",
+        "Written communication",
+        "Visual art therapy",
+        "Writing a letter"
+      ],
+      "correct_answer": "Visual art therapy"
+    },
+    {
+      "id": 234,
+      "question_text": "Marrying age in UK? (Old)",
+      "options": [
+        "18",
+        "16",
+        "21"
+      ],
+      "correct_answer": "16"
+    },
+    {
+      "id": 235,
+      "question_text": "Marrying age in UK? (New)",
+      "options": [
+        "18",
+        "16",
+        "21"
+      ],
+      "correct_answer": "18"
+    },
+    {
+      "id": 236,
+      "question_text": "The mother of a patient gives the nurse money. What should the nurse do?",
+      "options": [
+        "Say thank you to the mother",
+        "Get the money and put in the team fund",
+        "Return the money to the mother",
+        "Buy a personal book and show the mother"
+      ],
+      "correct_answer": "Return the money to the mother"
+    },
+    {
+      "id": 237,
+      "question_text": "Sign of sepsis:",
+      "options": [
+        "Blanch skin patches",
+        "Low urine output",
+        "High urine output",
+        "Hypotension"
+      ],
+      "correct_answer": "Low urine output"
+    },
+    {
+      "id": 238,
+      "question_text": "First line drug for patient experiencing pyrexia with body malaise:",
+      "options": [
+        "Paracetamol",
+        "NSAIDs"
+      ],
+      "correct_answer": "Paracetamol"
+    },
+    {
+      "id": 239,
+      "question_text": "The patient asked to see the nurse as a friend after last clinical.... What should the nurse do?",
+      "options": [
+        "Give your number to keep in touch",
+        "Suggest to GP to be under your care again",
+        "Tell the professional relationship ends there",
+        "Arrange schedule 2 weeks after"
+      ],
+      "correct_answer": "Tell the professional relationship ends there"
+    },
+    {
+      "id": 240,
+      "question_text": "A patient has suicidal tendencies and was referred to a facility assessment that he is no longer suicidal, was calm and requested to go home. What should the nurse do?",
+      "options": [
+        "Let the patient go home without ff up",
+        "Let patient go home and follow up in the community",
+        "Referred under section 5 of mental capacity"
+      ],
+      "correct_answer": "Referred under section 5 of mental capacity"
+    },
+    {
+      "id": 241,
+      "question_text": "The MP (Member of Parliament) visit your hospital, what will the nurse ask the MP to address the concern on nurse staffing level?",
+      "options": [
+        "Add incentives to encourage nurses to work extra shift",
+        "Advertise to the nursing students to work in the trust once qualified",
+        "Ask to meet the HR team and plan on recruitment campaign"
+      ],
+      "correct_answer": "Ask to meet the HR team and plan on recruitment campaign"
+    },
+    {
+      "id": 242,
+      "question_text": "You observe a nurse doing a sterile dressing and dropped the old dressing in the sterile pack and continue the procedure. What will you do?",
+      "options": [
+        "Inform your senior and tell the nurse to stop the procedure",
+        "Tell the nurse to stop and get a dressing pack and start the procedure all over",
+        "Leave her since it didn't take much time",
+        "Tell her to change the dressing pack and then continue"
+      ],
+      "correct_answer": "Tell the nurse to stop and get a dressing pack and start the procedure all over"
+    },
+    {
+      "id": 243,
+      "question_text": "A nurse dropped tweezers on patient bed during dressing in front of a student, what will the nurse do?",
+      "options": [
+        "Tell the student about the error and tell to get another set of tweezers and continue",
+        "Ignore the situation because it will not give a big affection to",
+        "You should tell the student to pick it up and put it at the bottom of the trolley",
+        "Tell the student to stop and get a new dressing pack"
+      ],
+      "correct_answer": "Tell the student about the error and tell to get another set of tweezers and continue"
+    },
+    {
+      "id": 244,
+      "question_text": "How many ml/kg/hr urine output an adult make?",
+      "options": [
+        "0.1",
+        "0.3",
+        "0.5",
+        "0.7"
+      ],
+      "correct_answer": "0.5"
+    },
+    {
+      "id": 245,
+      "question_text": "First line management for patient with Pulmonary Edema caused by Chronic Heart Failure:",
+      "options": [
+        "Antibiotics",
+        "Diuretics",
+        "Chest drainage",
+        "Analgesic"
+      ],
+      "correct_answer": "Diuretics"
+    },
+    {
+      "id": 246,
+      "question_text": "The NHS Long Term Care Plan (2019) focuses on the key area:",
+      "options": [
+        "Making sure everyone has best start in life",
+        "Delivering world class care for major health problem",
+        "Supporting people to age well"
+      ],
+      "correct_answer": "Supporting people to age well"
+    },
+    {
+      "id": 247,
+      "question_text": "What are the nursing priorities when helping in an emergency in a practice setting?",
+      "options": [
+        "Only act in an emergency within limit of knowledge and competence",
+        "Ensure that all patients are informed on what is happening",
+        "Responds to all instructions from the crisis lead",
+        "Instructs all colleague to help with the emergency"
+      ],
+      "correct_answer": "Only act in an emergency within limit of knowledge and competence"
+    },
+    {
+      "id": 248,
+      "question_text": "When a patient is discharged from an acute setting. How is the GP informed about their inpatient care?",
+      "options": [
+        "Copy of all inpatient notes are sent",
+        "The GP will hone their hospital to retrieve the information when required",
+        "The patient is required to make an appointment and brief the doctor",
+        "Discharge summary is sent"
+      ],
+      "correct_answer": "Discharge summary is sent"
+    },
+    {
+      "id": 249,
+      "question_text": "An unstable diabetic type 1 patient following a big toe amputation is discharged. What is the main safety priority?",
+      "options": [
+        "Stabilize patient mobility",
+        "Diabetic referral",
+        "Stabilize blood glucose level",
+        "Carer education"
+      ],
+      "correct_answer": "Stabilize blood glucose level"
+    },
+    {
+      "id": 250,
+      "question_text": "A unit supports nursing students, how does a RN ensure that the students are competent to carry out tasks that are delegated to them?",
+      "options": [
+        "Ask the student to keep written records of their practice",
+        "Ensure practice assessor collects evidence from supervisor, students, and service users to assess proficiency",
+        "Ensure that all students read the policy and procedure manuals",
+        "Ensure that each student has an assessor and practice supervisor"
+      ],
+      "correct_answer": "Ensure practice assessor collects evidence from supervisor, students, and service users to assess proficiency"
+    },
+    {
+      "id": 251,
+      "question_text": "Which 2 medications are given to patients in end-of-life care to ease symptoms?",
+      "options": [
+        "Morphine & Midazolam",
+        "Ketamine & Chlorphenamine",
+        "Narcan & Prednisone",
+        "Propofol & Adrenaline"
+      ],
+      "correct_answer": "Morphine & Midazolam"
+    },
+    {
+      "id": 252,
+      "question_text": "How many days after death is patient in Muslim faith buried?",
+      "options": [
+        "4 days post death",
+        "1 day post death",
+        "1 week post death",
+        "10 days post death"
+      ],
+      "correct_answer": "1 day post death"
+    },
+    {
+      "id": 253,
+      "question_text": "What is the color of syringe used to give medications via NGT?",
+      "options": [
+        "Red",
+        "Blue",
+        "Purple",
+        "Clear"
+      ],
+      "correct_answer": "Purple"
+    },
+    {
+      "id": 254,
+      "question_text": "Which checklist was released in 2009 to...in theatre?",
+      "options": [
+        "WHO Safer Surgical Checklist",
+        "WHO Surgical Safer Checklist",
+        "WHO Safety Surgical Checklist",
+        "WHO Surgical Safety Checklist"
+      ],
+      "correct_answer": "WHO Surgical Safety Checklist"
+    },
+    {
+      "id": 255,
+      "question_text": "Trafficking is what type of abuse?",
+      "options": [
+        "Physical abuse",
+        "Financial abuse",
+        "Emotional",
+        "Modern day slavery"
+      ],
+      "correct_answer": "Modern day slavery"
+    },
+    {
+      "id": 256,
+      "question_text": "Patients feel pain and is given paracetamol. The nurse know paracetamol can be given with what medication?",
+      "options": [
+        "Morphine",
+        "Co-codamol",
+        "Pethidine",
+        "Tramadol"
+      ],
+      "correct_answer": "Morphine"
+    },
+    {
+      "id": 257,
+      "question_text": "You are supervising a student in medication round when the student forgot to ask the patient's name. what should the nurse do?",
+      "options": [
+        "Asks the student to stop the medication and silently tell the correct procedure",
+        "Take over and point out the students mistake after the rounds",
+        "Report the student..."
+      ],
+      "correct_answer": "Asks the student to stop the medication and silently tell the correct procedure"
+    },
+    {
+      "id": 258,
+      "question_text": "The importance of correct staffing was reinforced by which report?",
+      "options": [
+        "The Francis Report",
+        "The Conan Report",
+        "The Drake Report",
+        "The Baker Report"
+      ],
+      "correct_answer": "The Francis Report"
+    },
+    {
+      "id": 259,
+      "question_text": "A client has experienced a tonic/clonic seizure. They are now breathing normally and have normal circulation, but they have not yet gained consciousness. What nursing action will maintain their safety?",
+      "options": [
+        "Give the client a water to drink",
+        "Make a note of the duration of seizure",
+        "Try to wake the client",
+        "Place the client in recovery position"
+      ],
+      "correct_answer": "Place the client in recovery position"
+    },
+    {
+      "id": 260,
+      "question_text": "What is the normal hemoglobin value on female client?",
+      "options": [
+        "10.5-12.5",
+        "12.5-14.5",
+        "15.0-20.0",
+        "20.0-25.0"
+      ],
+      "correct_answer": "12.5-14.5"
+    },
+    {
+      "id": 261,
+      "question_text": "Which cannot cause sepsis?",
+      "options": [
+        "Traumatic brain injury",
+        "Bowel proliferation",
+        "Diarrhea",
+        "UTI"
+      ],
+      "correct_answer": "Traumatic brain injury"
+    },
+    {
+      "id": 262,
+      "question_text": "Peripherally Inserted Central Catheter (PICC) tip is usually located in which part?",
+      "options": [
+        "Superior vena cava",
+        "Aortic artery",
+        "Right atrial valve"
+      ],
+      "correct_answer": "Superior vena cava"
+    },
+    {
+      "id": 263,
+      "question_text": "What is the purpose of augmentative alternative communication?",
+      "options": [
+        "To provide the best opportunities for developing language and communication",
+        "To teach numeracy skills",
+        "To encourage activity if daily living",
+        "To support literacy skills"
+      ],
+      "correct_answer": "To provide the best opportunities for developing language and communication"
+    },
+    {
+      "id": 264,
+      "question_text": "There is an outbreak of MRSA, where should samples be taken from?",
+      "options": [
+        "Skin, groin, and armpit",
+        "Skin, eyes, and ears",
+        "Skin, armpit, groin, and nose"
+      ],
+      "correct_answer": "Skin, armpit, groin, and nose"
+    },
+    {
+      "id": 265,
+      "question_text": "When treating an adult patient with mental illness. What should you have in mind?",
+      "options": [
+        "An adult patient has the same risk of physical illness as the one without mental illness",
+        "Risk is higher in patients with mental health disorders than adults without mental illness",
+        "Risk is lower in patients with mental health disorders than adults without mental illness"
+      ],
+      "correct_answer": "Risk is higher in patients with mental health disorders than adults without mental illness"
+    },
+    {
+      "id": 266,
+      "question_text": "Reminiscence therapy is used for which one:",
+      "options": [
+        "PTSD",
+        "Children",
+        "Dementia"
+      ],
+      "correct_answer": "Dementia"
+    },
+    {
+      "id": 267,
+      "question_text": "Which disease has been eradicated by vaccination?",
+      "options": [
+        "Smallpox",
+        "Ebola",
+        "Flu"
+      ],
+      "correct_answer": "Smallpox"
+    },
+    {
+      "id": 268,
+      "question_text": "Dilated pupil can be seen in patient with?",
+      "options": [
+        "Increased ICP",
+        "Seizure",
+        "Decreased ICP"
+      ],
+      "correct_answer": "Increased ICP"
+    },
+    {
+      "id": 269,
+      "question_text": "A patient with COPD retaining CO2, what is the target oxygen concentration?",
+      "options": [
+        "92-96",
+        "98-100",
+        "82-88",
+        "88-92"
+      ],
+      "correct_answer": "88-92"
+    },
+    {
+      "id": 270,
+      "question_text": "What is the most appropriate route for giving fluids in end of life?",
+      "options": [
+        "Subcutaneous",
+        "Oral",
+        "IV"
+      ],
+      "correct_answer": "Subcutaneous"
+    },
+    {
+      "id": 271,
+      "question_text": "What is the first line of action in urinary retention?",
+      "options": [
+        "Antibiotics",
+        "Diuretic",
+        "Catheterization",
+        "Fluid replacement"
+      ],
+      "correct_answer": "Catheterization"
+    },
+    {
+      "id": 272,
+      "question_text": "In a major accident, what age limit is considered as a pediatric case?",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "15"
+      ],
+      "correct_answer": "15"
+    },
+    {
+      "id": 273,
+      "question_text": "A patient follows you on social media. What do you do?",
+      "options": [
+        "Accept request after patient discharge",
+        "Accept right away",
+        "Politely explain don't accept as it's against the law",
+        "Politely explain don't accept as it's against the professional ethics"
+      ],
+      "correct_answer": "Politely explain don't accept as it's against the professional ethics"
+    },
+    {
+      "id": 274,
+      "question_text": "What is the ratio of patient to a nurse in ICU with mechanical ventilator?",
+      "options": [
+        "1:1",
+        "1:2",
+        "1:4",
+        "1:6"
+      ],
+      "correct_answer": "1:1"
+    },
+    {
+      "id": 275,
+      "question_text": "Among the following, which is not likely to give day after pill?",
+      "options": [
+        "Pharmacy",
+        "Emergency Department",
+        "Sex clinic",
+        "General Practitioner"
+      ],
+      "correct_answer": "Emergency Department"
+    },
+    {
+      "id": 276,
+      "question_text": "Who should NOT be directly involved in the care of patient who is likely suicidal?",
+      "options": [
+        "Parents",
+        "Child's friend",
+        "Social care",
+        "Child mental council"
+      ],
+      "correct_answer": "Child's friend"
+    },
+    {
+      "id": 277,
+      "question_text": "When communicating with a partially deaf patient, which of these is appropriate?",
+      "options": [
+        "Speak loudly",
+        "Speak normally",
+        "Lower your voice"
+      ],
+      "correct_answer": "Speak normally"
+    },
+    {
+      "id": 278,
+      "question_text": "An MP from a parliament wants to discuss with a nurse about nursing shifts in a hospital, what should you do?",
+      "options": [
+        "Tell him to discuss it in the parliament",
+        "Tell him to discuss recruitment with staff",
+        "Discuss staffing with HR",
+        "Fund a nursing student for a post"
+      ],
+      "correct_answer": "Discuss staffing with HR"
+    },
+    {
+      "id": 279,
+      "question_text": "Who CANNOT teach smoke cessation program?",
+      "options": [
+        "Pharmacist",
+        "RN",
+        "School nurse",
+        "Physiotherapist"
+      ],
+      "correct_answer": "Physiotherapist"
+    },
+    {
+      "id": 280,
+      "question_text": "How many compressions to a ventilation?",
+      "options": [
+        "30:2",
+        "15:2",
+        "30:1"
+      ],
+      "correct_answer": "30:2"
+    },
+    {
+      "id": 281,
+      "question_text": "What does key performance indicator measure?",
+      "options": [
+        "Achievement",
+        "Success",
+        "Inconsistency",
+        "Failure"
+      ],
+      "correct_answer": "Success"
+    },
+    {
+      "id": 282,
+      "question_text": "In the last days and hours of a patient, any important discussions about the relative and family, complete the sentence.",
+      "options": [
+        "Should be discussed separately",
+        "Discussed using simple sentences",
+        "Using medical terms",
+        "With an interpreter"
+      ],
+      "correct_answer": "Discussed using simple sentences"
+    },
+    {
+      "id": 283,
+      "question_text": "A patient has a heel sore and dresses it regularly, what would aid wound healing?",
+      "options": [
+        "Good diabetes control and adequate hydration",
+        "Good diabetes control and mobility",
+        "Complete bed rest and increase fluid intake",
+        "Complete bed rest and adequate hydration"
+      ],
+      "correct_answer": "Complete bed rest and adequate hydration"
+    },
+    {
+      "id": 284,
+      "question_text": "A male patient has mild incontinence and pain passing urine, a urine test was ordered. What other should be done?",
+      "options": [
+        "Sexual screening/Referral",
+        "Bladder scan",
+        "Blood tests"
+      ],
+      "correct_answer": "Blood tests"
+    },
+    {
+      "id": 285,
+      "question_text": "How many tetanus vaccination doses does a person need to develop immunity?",
+      "options": [
+        "5",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_answer": "5"
+    },
+    {
+      "id": 286,
+      "question_text": "Which of these isn't part of adequate clinical practice or so?",
+      "options": [
+        "Leadership",
+        "Governance",
+        "Education",
+        "Research"
+      ],
+      "correct_answer": "Governance"
+    },
+    {
+      "id": 287,
+      "question_text": "What type of oxygen does a patient with cardiac arrest need?",
+      "options": [
+        "5-10L of normal oxygen",
+        "15L non-rebreather",
+        "15L Bag Valve Mask",
+        "No oxygen required"
+      ],
+      "correct_answer": "15L Bag Valve Mask"
+    },
+    {
+      "id": 288,
+      "question_text": "Who in the department should monitor shifts?",
+      "options": [
+        "Medic",
+        "Chief nurse",
+        "Senior nurse"
+      ],
+      "correct_answer": "Chief nurse"
+    },
+    {
+      "id": 289,
+      "question_text": "A newly admitted client told you that he wishes to top smoking & sought advice for the same. What will you do?",
+      "options": [
+        "Talk patient about possible measures for smoking cessation",
+        "Refer him to GP",
+        "Introduce him to your colleague who stopped smoking",
+        "Instruct him to read something regarding smoking cessation"
+      ],
+      "correct_answer": "Talk patient about possible measures for smoking cessation"
+    },
+    {
+      "id": 290,
+      "question_text": "You are to take consent from a new patient in the A&E unit for physical examination, but you are in doubt about the ability of the patient to give consent. Which of the following is correct?",
+      "options": [
+        "Only patients with mental health needs are regarded as incompetent to give consent",
+        "All patients are assumed to have the ability to give consent until they are established to be having mental health challenges",
+        "All patients should be assessed for competency by a senior practitioner during the admission assessment"
+      ],
+      "correct_answer": "All patients are assumed to have the ability to give consent until they are established to be having mental health challenges"
+    },
+    {
+      "id": 291,
+      "question_text": "An adult patient in our care has a temperature reading of 37.5 C. What is the interpretation of the finding?",
+      "options": [
+        "The patient has a mild fever and might indicate infection",
+        "The patient has a too low body temperature",
+        "The patient's temperature is normal"
+      ],
+      "correct_answer": "The patient's temperature is normal"
+    },
+    {
+      "id": 292,
+      "question_text": "A patient with neurological conditions began to show signs of mental disability, who should attend to the patient?",
+      "options": [
+        "Physician",
+        "Neurology specialist team",
+        "Mental health specialist"
+      ],
+      "correct_answer": "Mental health specialist"
+    },
+    {
+      "id": 293,
+      "question_text": "A child tells you that she is being abused by her grandfather but tells you to keep it a secret. What is the best response?",
+      "options": [
+        "Confront the child's mother about the grandfather's behavior",
+        "Tell the child that you will keep the secret but report to the charge nurse afterward",
+        "Keep the secret as the child is entitled to confidentiality",
+        "Explain to the child that you can't keep a secret as it is essential to prevent further abuse"
+      ],
+      "correct_answer": "Explain to the child that you can't keep a secret as it is essential to prevent further abuse"
+    },
+    {
+      "id": 294,
+      "question_text": "What is the correct about blood transfusion procedure?",
+      "options": [
+        "The patient should be placed in sitting position 30 mins prior to transfusion",
+        "The patient should be given a drink before the procedure",
+        "Baseline assessment should be taken and recorded prior to transfusion"
+      ],
+      "correct_answer": "Baseline assessment should be taken and recorded prior to transfusion"
+    },
+    {
+      "id": 295,
+      "question_text": "Normal amount of urine passed by an adult per hour:",
+      "options": [
+        "1.2 mL",
+        "1.4 mL",
+        "1.5 mL",
+        "1.7 mL"
+      ],
+      "correct_answer": "1.5 mL"
+    },
+    {
+      "id": 296,
+      "question_text": "How many breaths are given to a patient who has been in the incident of drowning?",
+      "options": [
+        "5",
+        "3",
+        "2",
+        "4"
+      ],
+      "correct_answer": "5"
+    },
+    {
+      "id": 297,
+      "question_text": "De-escalation can be used for which of the following?",
+      "options": [
+        "Depression",
+        "Sadness",
+        "Anger",
+        "Illness"
+      ],
+      "correct_answer": "Anger"
+    },
+    {
+      "id": 298,
+      "question_text": "Which team should be contacted while making a discharge plan for a patient that requires a complex discharge plan?",
+      "options": [
+        "Social worker team",
+        "Physiotherapy team",
+        "District nurses' team"
+      ],
+      "correct_answer": "Social worker team"
+    },
+    {
+      "id": 299,
+      "question_text": "You committed a medication error in your shift, what action will you do?",
+      "options": [
+        "Report the incidence to the charge nurse, observe the patient, summon the patient's physician, and be prepared to apologize to the patient",
+        "Tell your colleague and not any other person",
+        "You don't need to tell anybody, only observe for any adverse reaction in the patient"
+      ],
+      "correct_answer": "Report the incidence to the charge nurse, observe the patient, summon the patient's physician, and be prepared to apologize to the patient"
+    },
+    {
+      "id": 300,
+      "question_text": "For a patient with suicidal thoughts, what important questions would you ask?",
+      "options": [
+        "Occupation",
+        "Marital status",
+        "Pets",
+        "Children"
+      ],
+      "correct_answer": "Occupation"
+    },
+    {
+      "id": 301,
+      "question_text": "How do you give fluid to an end-of-life patient at home?",
+      "options": [
+        "Orally",
+        "Nasogastric",
+        "Parenterally",
+        "Subcutaneously"
+      ],
+      "correct_answer": "Subcutaneously"
+    },
+    {
+      "id": 302,
+      "question_text": "A patient has anaphylaxis, what triage call room would he be in?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_answer": "1"
+    },
+    {
+      "id": 303,
+      "question_text": "A patient with delirium at end stage of life. What to do?",
+      "options": [
+        "Give haloperidol and other sedative",
+        "Allow relatives around",
+        "Limit arousal and stimulation"
+      ],
+      "correct_answer": "Give haloperidol and other sedative"
+    },
+    {
+      "id": 304,
+      "question_text": "If patient has some bias and is not corrected and leads to what?",
+      "options": [
+        "Hospital risk",
+        "Health inequality",
+        "Health economics"
+      ],
+      "correct_answer": "Health inequality"
+    },
+    {
+      "id": 305,
+      "question_text": "Score of NEWS for a confused patient?",
+      "options": [
+        "8",
+        "4",
+        "2",
+        "3"
+      ],
+      "correct_answer": "3"
+    },
+    {
+      "id": 306,
+      "question_text": "A BMI of 38 will affect which patient?",
+      "options": [
+        "DM 1",
+        "DM 2",
+        "Hyperthyroidism",
+        "Hypothyroidism"
+      ],
+      "correct_answer": "DM 2"
+    },
+    {
+      "id": 307,
+      "question_text": "Recognizing and reporting any situations, behaviors or error resulting in poor patient care outcomes is?",
+      "options": [
+        "Principle of care",
+        "Principle of profession",
+        "Principle of candour",
+        "Principle of courage"
+      ],
+      "correct_answer": "Principle of candour"
+    },
+    {
+      "id": 308,
+      "question_text": "Which is NOT the principle of mental capacity?",
+      "options": [
+        "Right to have a care plan",
+        "Assume the patient have the capacity",
+        "Give support to take decision",
+        "Find out best interest"
+      ],
+      "correct_answer": "Right to have a care plan"
+    },
+    {
+      "id": 309,
+      "question_text": "A patient with learning disability is angry with you when providing care. What will be your action?",
+      "options": [
+        "Disclose your feelings & continue care",
+        "Refuse care to the patient",
+        "Discuss your feelings with your nurse-in-charge know about this particular behavior and reaction and act accordingly",
+        "Request to send another person instead of you"
+      ],
+      "correct_answer": "Discuss your feelings with your nurse-in-charge know about this particular behavior and reaction and act accordingly"
+    },
+    {
+      "id": 310,
+      "question_text": "Pediatric Warning Signs Score of 8 receives. What clinical response?",
+      "options": [
+        "No escalation required",
+        "2 hourly observations",
+        "Immediate escalation to a senior clinician",
+        "4 hourly observation"
+      ],
+      "correct_answer": "Immediate escalation to a senior clinician"
+    },
+    {
+      "id": 311,
+      "question_text": "TDS meaning:",
+      "options": [
+        "Three times day"
+      ],
+      "correct_answer": "Three times day"
+    },
+    {
+      "id": 312,
+      "question_text": "Oropharyngeal airway is recommended, what is your first action?",
+      "options": [
+        "Slide airway over the tongue and into position",
+        "Use the suction",
+        "Sit the patient up",
+        "Head tilt and check the mouth"
+      ],
+      "correct_answer": "Head tilt and check the mouth"
+    },
+    {
+      "id": 313,
+      "question_text": "Phosphate enemas are used to treat what?",
+      "options": [
+        "Fecal impaction",
+        "Pain in the rectum",
+        "Diarrhea",
+        "Mild constipation"
+      ],
+      "correct_answer": "Mild constipation"
+    },
+    {
+      "id": 314,
+      "question_text": "Non-diabetic patient normal glucose level:",
+      "options": [
+        "6.5-9.5 mmol",
+        "7.9-9.8 mmol",
+        "4.0-7.8 mmol",
+        "5.0-9 mmol"
+      ],
+      "correct_answer": "4.0-7.8 mmol"
+    },
+    {
+      "id": 315,
+      "question_text": "Maximizing resource in practice is related to health to:",
+      "options": [
+        "Economics",
+        "Safety",
+        "Technology",
+        "Risk"
+      ],
+      "correct_answer": "Economics"
+    },
+    {
+      "id": 316,
+      "question_text": "Most common emotion that a person given a terminal diagnosis will feel:",
+      "options": [
+        "Anger",
+        "Denial",
+        "Guilt",
+        "Joy"
+      ],
+      "correct_answer": "Denial"
+    },
+    {
+      "id": 317,
+      "question_text": "What should NOT be done when a child is cannulated?",
+      "options": [
+        "Watching videos",
+        "Listening to music",
+        "Read books",
+        "Tickling the child"
+      ],
+      "correct_answer": "Tickling the child"
+    },
+    {
+      "id": 318,
+      "question_text": "Type 1 DM early signs and symptoms are?",
+      "options": [
+        "Weight gain",
+        "Weight loss, blurred vision",
+        "Ketones in urine, polydipsia and polyuria"
+      ],
+      "correct_answer": "Ketones in urine, polydipsia and polyuria"
+    },
+    {
+      "id": 319,
+      "question_text": "When a patient is at high risk for suicide within what time the mental health professional should attend him?",
+      "options": [
+        "Immediately",
+        "Within 24 hours",
+        "Within 48 hours"
+      ],
+      "correct_answer": "Immediately"
+    },
+    {
+      "id": 320,
+      "question_text": "A nurse has been diagnosed with chickenpox and has been advices not to attend planned study day. Why is this advice given?",
+      "options": [
+        "To prevent infection to others",
+        "To prevent irritation of the spot",
+        "To prevent condition from worsening",
+        "To prevent cross infection of the public"
+      ],
+      "correct_answer": "To prevent cross infection of the public"
+    },
+    {
+      "id": 321,
+      "question_text": "A young person with complex needs is being transferred to the adolescent unit which is a considerable distance from his relative. The patient is unhappy about this transfer. What should the nurse do?",
+      "options": [
+        "Tell the family to respect the skills and expertise of the doctors who have planned the transfer to meet patient's needs",
+        "The person requires complex care which can only be provided in a distant specialist need",
+        "Nurse should raise the complaints and issues in the next team meeting",
+        "Report and document preferences regarding the transfer promptly and provide an explanation"
+      ],
+      "correct_answer": "The person requires complex care which can only be provided in a distant specialist need"
+    },
+    {
+      "id": 322,
+      "question_text": "Who is likely to use illicit drugs?",
+      "options": [
+        "Out of school at 16",
+        "Homeless people",
+        "Jobless people",
+        "Sick people"
+      ],
+      "correct_answer": "Out of school at 16"
+    },
+    {
+      "id": 323,
+      "question_text": "The 5 moments of handwashing are all, EXCEPT?",
+      "options": [
+        "Washing hands after touching patient",
+        "Washing hands before touching patient",
+        "Washing hands after procedure involving body fluids",
+        "Washing hands before procedure involving body fluids"
+      ],
+      "correct_answer": "Washing hands before procedure involving body fluids"
+    },
+    {
+      "id": 324,
+      "question_text": "Who is in charge in overall community health?",
+      "options": [
+        "Public health nurse",
+        "RN",
+        "Practice Nurse",
+        "Community Matron"
+      ],
+      "correct_answer": "Community Matron"
+    },
+    {
+      "id": 325,
+      "question_text": "How will the nurse assess the quality of care given to the patient through which of the following?",
+      "options": [
+        "Reflective process",
+        "Clinical benchmarking",
+        "Peer and patient response",
+        "All of the above"
+      ],
+      "correct_answer": "All of the above"
+    },
+    {
+      "id": 326,
+      "question_text": "The patient experienced head trauma. He was on anti-thrombolytic medication. Which diagnostic exam is best to do?",
+      "options": [
+        "Xray",
+        "MRI",
+        "CT Scan"
+      ],
+      "correct_answer": "CT Scan"
+    },
+    {
+      "id": 327,
+      "question_text": "A patient has NEWS score of 5, what action is appropriate?",
+      "options": [
+        "Transfer to ICU",
+        "Physician review",
+        "Increase observation"
+      ],
+      "correct_answer": "Physician review"
+    },
+    {
+      "id": 328,
+      "question_text": "Which of the following will prevent effective listening?",
+      "options": [
+        "The experience of the professional/professional level",
+        "The patient speaks different language/language difference",
+        "Noise level of room"
+      ],
+      "correct_answer": "Noise level of room"
+    },
+    {
+      "id": 329,
+      "question_text": "You noticed that a nurse forgot an entry to a patient's chart, and you are about to do handover, what will be your best action?",
+      "options": [
+        "Leave a space for the nurse to write her entry on her shift",
+        "Ask one staff in the nurse's same group to do the entry",
+        "Fill out the entry and do make sure to finish it promptly/timely manner",
+        "Continue the handover omitting the missed entry"
+      ],
+      "correct_answer": "Fill out the entry and do make sure to finish it promptly/timely manner"
+    },
+    {
+      "id": 330,
+      "question_text": "A person calls and only wants to be attached by a female nurse, what should be your most appropriate response?",
+      "options": [
+        "Only I'm available and free",
+        "Call back tomorrow",
+        "Call back later",
+        "Encourage the client to tell you why he only wants a female and help him further"
+      ],
+      "correct_answer": "Encourage the client to tell you why he only wants a female and help him further"
+    },
+    {
+      "id": 331,
+      "question_text": "The nurse is preparing to change the TPN solution bag and tubing. The patient's central venous line is located in the right subclavian vein. The nurse asks the client to take which essential action during the tubing change?",
+      "options": [
+        "Take a deep breath, hold it, and bear down",
+        "Breath normally",
+        "Exhale slowly and evenly",
+        "Turn the head to the right"
+      ],
+      "correct_answer": "Take a deep breath, hold it, and bear down"
+    },
+    {
+      "id": 332,
+      "question_text": "What to do if you noticed your patient developed allergic reactions to the drug?",
+      "options": [
+        "Write in yellow card and inform prescriber",
+        "Inform prescriber",
+        "Document and inform the supervisor",
+        "Continue assessment",
+        "Administer antihistamine"
+      ],
+      "correct_answer": "Write in yellow card and inform prescriber"
+    },
+    {
+      "id": 333,
+      "question_text": "The patient feels down, anxious and reported to have sleeplessness. Whom will the patient seek first?",
+      "options": [
+        "A walk-in center",
+        "General Practitioner",
+        "111 service",
+        "Emergency unit"
+      ],
+      "correct_answer": "General Practitioner"
+    },
+    {
+      "id": 334,
+      "question_text": "Which nursing delivery model is based on production and efficiency model and stresses a task-oriented approach?",
+      "options": [
+        "Case management",
+        "Primary nursing",
+        "Differentiated practice",
+        "Function method"
+      ],
+      "correct_answer": "Function method"
+    },
+    {
+      "id": 335,
+      "question_text": "You're to go change patient's dressing at home, what will you do?",
+      "options": [
+        "Request the patient clean the area, remove pets, close windows",
+        "Request the patient clean the area before the nurse arrives and remove their own dressings",
+        "Clean surfaces with alcohol-based wipes, open the window decontaminate the patient's hands",
+        "Remove pet, close windows, clean surfaces with alcohol-based wipes"
+      ],
+      "correct_answer": "Remove pet, close windows, clean surfaces with alcohol-based wipes"
+    },
+    {
+      "id": 336,
+      "question_text": "How do you evaluate adequate staffing for a shift?",
+      "options": [
+        "Gender",
+        "Age",
+        "Skill mix",
+        "Contract hours"
+      ],
+      "correct_answer": "Skill mix"
+    },
+    {
+      "id": 337,
+      "question_text": "What is a mineral corticoid secreted by the adrenal cortex in response to increased osmolarity and/or decreased blood pressure?",
+      "options": [
+        "Testosterone",
+        "Aldosterone",
+        "Androgen",
+        "Methyltestosterone"
+      ],
+      "correct_answer": "Androgen"
+    },
+    {
+      "id": 338,
+      "question_text": "Score of NEWS for a confused patient:",
+      "options": [
+        "8",
+        "4",
+        "2",
+        "3"
+      ],
+      "correct_answer": "3"
+    },
+    {
+      "id": 339,
+      "question_text": "A patient is returning home from hospital. They will spend several weeks in a residential facility, followed by community support. To ensure a positive process, what action does a nurse take?",
+      "options": [
+        "Allow the patient to arrange any community service to allow them to be independent",
+        "Give discharge information to the care facility who will liaise with others",
+        "Copy all agencies into the discharge plan correspondence",
+        "Ask the patient to contact their general practitioner to follow up on services needed"
+      ],
+      "correct_answer": "Give discharge information to the care facility who will liaise with others"
+    },
+    {
+      "id": 340,
+      "question_text": "She reads about the Path Goal Theory. Which of the following behaviors is manifested by the leader who uses this theory?",
+      "options": [
+        "Recognizes staff for going beyond expectations by giving them citations",
+        "Challenges the staff to take individual accountability for their practice",
+        "Admonishes staff for being laggard",
+        "Reminds staff about the sanctions for nonperformance"
+      ],
+      "correct_answer": "Recognizes staff for going beyond expectations by giving them citations"
+    },
+    {
+      "id": 341,
+      "question_text": "ST elevation is found in which condition?",
+      "options": [
+        "1st degree heart block",
+        "MI",
+        "endocarditis",
+        "Pericarditis"
+      ],
+      "correct_answer": "MI"
+    },
+    {
+      "id": 342,
+      "question_text": "How many times more likely is an obese child more likely to get diabetes?",
+      "options": [
+        "2x",
+        "3x",
+        "4x",
+        "5x"
+      ],
+      "correct_answer": "4x"
+    },
+    {
+      "id": 343,
+      "question_text": "How many practice hours is required for a RN nurse for revalidation?",
+      "options": [
+        "350",
+        "400",
+        "450",
+        "500"
+      ],
+      "correct_answer": "450"
+    },
+    {
+      "id": 344,
+      "question_text": "How does a RN ensure that the students are competent to carry out tasks that are delegated to them?",
+      "options": [
+        "Ask the student to keep writing records of their practice",
+        "Ensure that all students with the policies and procedure manuals",
+        "Ensure practice assessor collect evidence from supervisors' students and service users to access proficiency",
+        "Ensure that each student has an assessor and practice supervisor"
+      ],
+      "correct_answer": "Ensure practice assessor collect evidence from supervisors' students and service users to access proficiency"
+    },
+    {
+      "id": 345,
+      "question_text": "One of your health care assistants came to you saying that she could not continue with her work rounds due to bad back. What will you do first?",
+      "options": [
+        "Send her home and cover her work for yourself",
+        "Document the incident and report to the manager",
+        "Assess your colleagues back and administer pian killers",
+        "Ring for agency staff to cover the shift"
+      ],
+      "correct_answer": "Document the incident and report to the manager"
+    },
+    {
+      "id": 346,
+      "question_text": "Where is chemotherapy and hormone medication disposed of?",
+      "options": [
+        "Purple lidded sharps container or bags",
+        "Yellow sharps container or bag",
+        "Recycling waste",
+        "Black bag waste"
+      ],
+      "correct_answer": "Purple lidded sharps container or bags"
+    },
+    {
+      "id": 347,
+      "question_text": "A nurse who is working in outpatient observes that a lot of similar information is given to the patient verbally on a daily basis how can this be minimized?",
+      "options": [
+        "Raise the findings at a team meeting",
+        "Encourage the nursing staff to make notes on their conversations for the patients to take home so patient remember the information",
+        "Develop a leaflet or handouts which can be used to aid discussion and is something for patients to take home",
+        "Give the patients some paper so that they can make notes to help them remember the information"
+      ],
+      "correct_answer": "Develop a leaflet or handouts which can be used to aid discussion and is something for patients to take home"
+    },
+    {
+      "id": 348,
+      "question_text": "A patient with a learning disability trips over and needs to go to an accident and emergency department for an examination they become distressed by the noisy waiting room by the EQUITY Act (2010). What do the staff offer the patient?",
+      "options": [
+        "Tough call out a GP for a home visit to prevent a hospital trip",
+        "Staff provide the person with a learning disability a quiet place to wait",
+        "Staff let him jump the queue and see him when he arrives",
+        "Staff offer medication to calm the patient when he arrives"
+      ],
+      "correct_answer": "Staff provide the person with a learning disability a quiet place to wait"
+    },
+    {
+      "id": 349,
+      "question_text": "Which of the following terms refer to the degree to which the instrument measures what it is supposed to measure?",
+      "options": [
+        "Sensitivity",
+        "Meaning fullness",
+        "Reliability",
+        "Validity"
+      ],
+      "correct_answer": "Validity"
+    },
+    {
+      "id": 350,
+      "question_text": "When she presents the nursing procedures to be followed, she refers to what type of standards?",
+      "options": [
+        "Criteria",
+        "Outcome",
+        "Process"
+      ],
+      "correct_answer": "Process"
+    },
+    {
+      "id": 351,
+      "question_text": "She knows that performance appraisal consists of the following activities, EXCEPT?",
+      "options": [
+        "Setting specific standards and activities for individual performance",
+        "Focusing activity on the correction of identified behavior",
+        "Determine areas of strength and weakness",
+        "Using agency standards as a guide"
+      ],
+      "correct_answer": "Focusing activity on the correction of identified behavior"
+    },
+    {
+      "id": 352,
+      "question_text": "A client elects to have epidural anesthesia to relieve the discomfort of labor. Following the initiation of epidural anesthesia, the nurse should give priority?",
+      "options": [
+        "Checking for cervical dilation",
+        "Placing the client in a supine position",
+        "Checking the patient's blood pressure",
+        "Obtaining an FHR"
+      ],
+      "correct_answer": "Checking the patient's blood pressure"
+    },
+    {
+      "id": 353,
+      "question_text": "He plans to use Likert Scale to determine:",
+      "options": [
+        "Compliance to expected standards",
+        "Degree of acceptance",
+        "Degree of agreement and disagreement",
+        "Level of satisfaction"
+      ],
+      "correct_answer": "Degree of agreement and disagreement"
+    },
+    {
+      "id": 354,
+      "question_text": "A patient undergoing chemotherapy is at risk for neutropenia. Which of the following is the most accurate advice a nurse should give a patient to reduce this risk?",
+      "options": [
+        "Monitor your temperature twice a day and report if it elevates by 2 degrees",
+        "Monitor your temperature daily and report if it elevated by 1 degree",
+        "Monitor your temperature daily and seek help if it is slightly elevated",
+        "Monitor your temperature 4 hourly and report any abnormalities"
+      ],
+      "correct_answer": "Monitor your temperature twice a day and report if it elevates by 2 degrees"
+    },
+    {
+      "id": 355,
+      "question_text": "Mr. X responded well to his NGT feeding and will continue for 3 more days at a constant rate of 80 mL/hr until the next review by the dietician. Evidence-based practice suggests that to keep its potency, flushing is needed to be done:",
+      "options": [
+        "Every 8 hours",
+        "Every 12 hours",
+        "Every 24 hours",
+        "Only as required",
+        "Every 4 hours"
+      ],
+      "correct_answer": "Every 4 hours"
+    },
+    {
+      "id": 356,
+      "question_text": "Ventilation and chest compressions is better than Defibrillation:",
+      "options": [
+        "Asystole"
+      ],
+      "correct_answer": "Asystole"
+    },
+    {
+      "id": 357,
+      "question_text": "To whom you report communicable diseases?",
+      "options": [
+        "Public Health England (PHE)"
+      ],
+      "correct_answer": "Public Health England (PHE)"
+    },
+    {
+      "id": 358,
+      "question_text": "Services used by external contractors:",
+      "options": [
+        "Domestic services",
+        "Community services",
+        "...Trust",
+        "Acute trust"
+      ],
+      "correct_answer": "Domestic services"
+    },
+    {
+      "id": 359,
+      "question_text": "How many bandages used for venous ulcer?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct_answer": "4"
+    },
+    {
+      "id": 360,
+      "question_text": "A patient with hypothyroidism is having pain 6 on 1-10 scale in the right hip due to recent surgery. Which of the following medications is appropriate for this patient?",
+      "options": [
+        "Fentanyl",
+        "Tylenol",
+        "Morphine",
+        "Dilaudid"
+      ],
+      "correct_answer": "Tylenol"
+    },
+    {
+      "id": 361,
+      "question_text": "A nurse was concerned about treatment of students in the ward:",
+      "options": [
+        "Freedom of info policy",
+        "Whistle blowing policy",
+        "Flexible policy",
+        "Information sharing policy"
+      ],
+      "correct_answer": "Whistle blowing policy"
+    },
+    {
+      "id": 362,
+      "question_text": "Breastfeeding prevents:",
+      "options": [
+        "Hepatitis",
+        "Hemolytic Disorders",
+        "Sudden Infant Death Syndrome",
+        "Sickle cell"
+      ],
+      "correct_answer": "Sudden Infant Death Syndrome"
+    },
+    {
+      "id": 363,
+      "question_text": "What is the initial sign of compensated shock?",
+      "options": [
+        "Hypotension",
+        "Rapid respiratory rate",
+        "Hypoxia",
+        "Increased UO"
+      ],
+      "correct_answer": "Rapid respiratory rate"
+    },
+    {
+      "id": 364,
+      "question_text": "What is the initial step before administering IM injections?",
+      "options": [
+        "Wear apron and wash your hands",
+        "Wash hands",
+        "Wear an apron, wash hands, and clean the site"
+      ],
+      "correct_answer": "Wear an apron, wash hands, and clean the site"
+    },
+    {
+      "id": 365,
+      "question_text": "In a challenging situation, how does a nurse communicate?",
+      "options": [
+        "Face to face",
+        "Letter",
+        "Email",
+        "Phone"
+      ],
+      "correct_answer": "Face to face"
+    },
+    {
+      "id": 366,
+      "question_text": "What are the nursing priorities when helping in an emergency in a practice setting?",
+      "options": [
+        "Only act in an emergency within the limit of knowledge and competence",
+        "Ensure that all patients are informed on what is happening",
+        "Responds to all instructions from the crisis lead",
+        "Instructs all colleagues to help with the emergency"
+      ],
+      "correct_answer": "Only act in an emergency within the limit of knowledge and competence"
+    },
+    {
+      "id": 367,
+      "question_text": "The Care Quality Commission (CQC) describes compassion as what?",
+      "options": [
+        "Smart confidence",
+        "Creative commitment",
+        "Intelligent kindness",
+        "Gifted courage"
+      ],
+      "correct_answer": "Intelligent kindness"
+    },
+    {
+      "id": 368,
+      "question_text": "Which client has the highest risk for bacteremia?",
+      "options": [
+        "Client with an implanted infusion port",
+        "Client with a peripherally inserted IV line",
+        "Client with a peripherally inserted central catheter (PICC) line",
+        "Client with a central venous catheter (CVC)"
+      ],
+      "correct_answer": "Client with a central venous catheter (CVC)"
+    },
+    {
+      "id": 369,
+      "question_text": "A new nurse did not take the BP correctly, as a nurse in charge what would you do?",
+      "options": [
+        "Immediately tell the nurse that it is not correct in front of the patient",
+        "Inform the nurse afterward and teach her how to do it in the correct way",
+        "Recheck the BP once she is done and change the records"
+      ],
+      "correct_answer": "Inform the nurse afterward and teach her how to do it in the correct way"
+    },
+    {
+      "id": 370,
+      "question_text": "What is an intraosseous device used for?",
+      "options": [
+        "Artery",
+        "Vein",
+        "Bone marrow"
+      ],
+      "correct_answer": "Bone marrow"
+    },
+    {
+      "id": 371,
+      "question_text": "The first technique to use in examining patient's abdomen is:",
+      "options": [
+        "Palpation",
+        "Auscultation",
+        "Percussion",
+        "Inspection"
+      ],
+      "correct_answer": "Inspection"
+    },
+    {
+      "id": 372,
+      "question_text": "An independent client has frequent tonic-clonic seizure. What can you do to maintain her dignity?",
+      "options": [
+        "Let her have a bath independently without supervision",
+        "Let her shower independently but supervise her behind closed doors",
+        "Supervise her behind a screen"
+      ],
+      "correct_answer": "Supervise her behind a screen"
+    },
+    {
+      "id": 373,
+      "question_text": "Why do you need to monitor a patient with hypoxia?",
+      "options": [
+        "It must be carefully documented",
+        "Prolonged hypoxia can lead to bradycardia",
+        "To provide holistic care",
+        "It is part of the initial assessment"
+      ],
+      "correct_answer": "Prolonged hypoxia can lead to bradycardia"
+    },
+    {
+      "id": 374,
+      "question_text": "What is it called when you disclose a medication error to a patient and their relatives?",
+      "options": [
+        "Duty of candour",
+        "Disclosure",
+        "Raise of concern",
+        "Escalation"
+      ],
+      "correct_answer": "Duty of candour"
+    },
+    {
+      "id": 375,
+      "question_text": "A patient cannot sleep at night due to dental pain, as a nurse what will be your advice?",
+      "options": [
+        "Lie down and apply heat pad to the area",
+        "Sleep upright and take analgesic before bed",
+        "Have a warm bath and take some sleeping aid after"
+      ],
+      "correct_answer": "Sleep upright and take analgesic before bed"
+    },
+    {
+      "id": 376,
+      "question_text": "What method is it when you combine quantitative and qualitative method?",
+      "options": [
+        "Double method",
+        "Mixed method",
+        "Double scoping",
+        "Mixed scoping"
+      ],
+      "correct_answer": "Mixed method"
+    },
+    {
+      "id": 377,
+      "question_text": "Which of the following approaches creates a barrier to communication?",
+      "options": [
+        "Using to many different skills during a single interaction",
+        "Giving advise rather than encouraging the patient to problem solve",
+        "Allowing the patient to become too anxious before changing the subject",
+        "Focusing on what the patient is saying rather than on the skill"
+      ],
+      "correct_answer": "Giving advise rather than encouraging the patient to problem solve"
+    },
+    {
+      "id": 378,
+      "question_text": "The patient is on a wheelchair, in what position will the nurse put herself when speaking with the patient?",
+      "options": [
+        "Beside the patient",
+        "At the back of the patient",
+        "3 meters apart from the patient",
+        "45-degree angle"
+      ],
+      "correct_answer": "3 meters apart from the patient"
+    },
+    {
+      "id": 379,
+      "question_text": "You witnessed somebody is choking, the person is still conscious and still able to cough what you will do?",
+      "options": [
+        "Perform blind finger sweep",
+        "5 chests thrust",
+        "5 back slap",
+        "Call 911 and wait for them to arrive"
+      ],
+      "correct_answer": "5 back slap"
+    },
+    {
+      "id": 380,
+      "question_text": "National Reporting and Learning System (NRLS):",
+      "options": [
+        "Patient safety incident report"
+      ],
+      "correct_answer": "Patient safety incident report"
+    },
+    {
+      "id": 381,
+      "question_text": "Clinical audit:",
+      "options": [
+        "It improves standard care and healthcare outcomes",
+        "It improves quality of care and healthcare outcomes"
+      ],
+      "correct_answer": "It improves quality of care and healthcare outcomes"
+    },
+    {
+      "id": 382,
+      "question_text": "You're about to provide a negative feedback to a student. Where is the best place to give it?",
+      "options": [
+        "In the staff room",
+        "In a quiet place with no disturbance",
+        "Outside work",
+        "In the ward base and with other healthcare professionals"
+      ],
+      "correct_answer": "In a quiet place with no disturbance"
+    },
+    {
+      "id": 383,
+      "question_text": "A patient had an arterial bleeding in her arm in home care, what would you do?",
+      "options": [
+        "Apply pressure and raise her arm while help in on the way"
+      ],
+      "correct_answer": "Apply pressure and raise her arm while help in on the way"
+    },
+    {
+      "id": 384,
+      "question_text": "You noticed a health care professional did not wash his hands before handling the patient, what will you do?",
+      "options": [
+        "Ignore because he is a doctor as you cannot tell him because you are just a nurse",
+        "Politely remind him he did not was hands after he has seen patient and are alone",
+        "Politely remind him he did not wash hands in front of patients and other healthcare professionals"
+      ],
+      "correct_answer": "Politely remind him he did not was hands after he has seen patient and are alone"
+    },
+    {
+      "id": 385,
+      "question_text": "Stoma formation:",
+      "options": [
+        "IBS and IBD",
+        "IBD and Chron's disease",
+        "Diverticular disease and colon cancer"
+      ],
+      "correct_answer": "IBD and Chron's disease"
+    },
+    {
+      "id": 386,
+      "question_text": "Which is NOT an act under safeguarding for elderly abuse?",
+      "options": [
+        "Sexual abuse",
+        "Financial abuse",
+        "Neglect",
+        "Self-harm"
+      ],
+      "correct_answer": "Self-harm"
+    },
+    {
+      "id": 387,
+      "question_text": "Theory of Dorothea Orem:",
+      "options": [
+        "Self-care Deficit"
+      ],
+      "correct_answer": "Self-care Deficit"
+    },
+    {
+      "id": 388,
+      "question_text": "Theory of Sister Calista Roy: Adaptation Model of Nursing",
+      "options": [
+        "Believe in holistic care including....four modes: physiological, self-concept, role function, and interdependence."
+      ],
+      "correct_answer": "Believe in holistic care including....four modes: physiological, self-concept, role function, and interdependence."
+    },
+    {
+      "id": 389,
+      "question_text": "Angle of subcutaneous injection for DM patient:",
+      "options": [
+        "90-degree",
+        "45-degree",
+        "60-degree",
+        "80-degree"
+      ],
+      "correct_answer": "90-degree"
+    },
+    {
+      "id": 390,
+      "question_text": "Subcutaneous injection is given at what angle?",
+      "options": [
+        "90-degree",
+        "45-degree",
+        "60-degree",
+        "80-degree"
+      ],
+      "correct_answer": "45-degree"
+    },
+    {
+      "id": 391,
+      "question_text": "4 themes of NMC code:",
+      "options": [
+        "Prioritize people, practice effectively, preserve safety and promote professionalism and trust."
+      ],
+      "correct_answer": "Prioritize people, practice effectively, preserve safety and promote professionalism and trust."
+    },
+    {
+      "id": 392,
+      "question_text": "Pandemic:",
+      "options": [
+        "is a disease outbreak that spreads across countries or continents"
+      ],
+      "correct_answer": "is a disease outbreak that spreads across countries or continents"
+    },
+    {
+      "id": 393,
+      "question_text": "6 C's:",
+      "options": [
+        "Care, compassion, courage, communication, commitment, and competence"
+      ],
+      "correct_answer": "Care, compassion, courage, communication, commitment, and competence"
+    },
+    {
+      "id": 394,
+      "question_text": "Self-administration of a patient with learning disability:",
+      "options": [
+        "Stop the patient to take their medicine and consult with the team members",
+        "Allow the patient to drink the medication then consult with the team members"
+      ],
+      "correct_answer": "Stop the patient to take their medicine and consult with the team members"
+    },
+    {
+      "id": 395,
+      "question_text": "BMI of 30 with hypertension:",
+      "options": [
+        "Risk for stroke"
+      ],
+      "correct_answer": "Risk for stroke"
+    },
+    {
+      "id": 396,
+      "question_text": "Site for vaccination:",
+      "options": [
+        "Deltoid"
+      ],
+      "correct_answer": "Deltoid"
+    },
+    {
+      "id": 397,
+      "question_text": "You used the machine in taking the blood pressure of the pt. The result is BP- 60/30 mmHg, and the patient is conscious and coherent. What will you do next?",
+      "options": [
+        "Elevate the leg of the patient",
+        "Recheck the BP using the manual sphygmomanometer"
+      ],
+      "correct_answer": "Recheck the BP using the manual sphygmomanometer"
+    },
+    {
+      "id": 398,
+      "question_text": "Genital mutation:",
+      "options": [
+        "Caucasian and African women under 18"
+      ],
+      "correct_answer": "Caucasian and African women under 18"
+    },
+    {
+      "id": 399,
+      "question_text": "Medication for alcohol dependency:",
+      "options": [
+        "Disulfiram (Antabuse)"
+      ],
+      "correct_answer": "Disulfiram (Antabuse)"
+    },
+    {
+      "id": 400,
+      "question_text": "MUST",
+      "options": [
+        "Malnutrition Universal Screening Tool"
+      ],
+      "correct_answer": "Malnutrition Universal Screening Tool"
+    },
+    {
+      "id": 401,
+      "question_text": "Anatomy:",
+      "options": [
+        "A field in the biological sciences concerned with the identification and description of the body structures of living things"
+      ],
+      "correct_answer": "A field in the biological sciences concerned with the identification and description of the body structures of living things"
+    },
+    {
+      "id": 402,
+      "question_text": "Showing understanding of what has been said by repeating key points to the patient is called:",
+      "options": [
+        "Active listening",
+        "Active lifestyle",
+        "Active labor",
+        "Active learning"
+      ],
+      "correct_answer": "Active listening"
+    },
+    {
+      "id": 403,
+      "question_text": "What is an appropriate task to delegate to a nursing support worker?",
+      "options": [
+        "Personal care",
+        "Drug round",
+        "IV medication",
+        "Ward round"
+      ],
+      "correct_answer": "Personal care"
+    },
+    {
+      "id": 404,
+      "question_text": "A patient is admitted to the ward with symptoms of acute diarrhea. What should your initial management be?",
+      "options": [
+        "Assessment, protective isolation, universal precautions",
+        "Assessment, source isolation, antibiotic therapy",
+        "Assessment, protective isolation, antimotility medication",
+        "Assessment, source isolation, universal precautions"
+      ],
+      "correct_answer": "Assessment, source isolation, universal precautions"
+    },
+    {
+      "id": 405,
+      "question_text": "A community nurse is visiting a patient at home to give them information on their condition, however, they cannot speak or understand English. What will you do?",
+      "options": [
+        "Cancel the visit as it is pointless if the patient does not understand",
+        "Leave the information leaflet and hope they understand it",
+        "Use sign language to give the information",
+        "Book an interpreter to accompany them"
+      ],
+      "correct_answer": "Book an interpreter to accompany them"
+    },
+    {
+      "id": 406,
+      "question_text": "How does the nurse respond to a patient using challenging behavior?",
+      "options": [
+        "Place the patient in another room",
+        "Ask the patient to stop the behavior",
+        "Ignore the challenging behavior",
+        "Use a therapeutic approach"
+      ],
+      "correct_answer": "Use a therapeutic approach"
+    },
+    {
+      "id": 407,
+      "question_text": "If a critical incident occurs, a nurse will?",
+      "options": [
+        "Report and reflect on the case to contribute to debriefing and ongoing learning",
+        "Undertake a literature review",
+        "Focus on reflection-in-action",
+        "Report the incident to the Care Quality Commission (CQC)"
+      ],
+      "correct_answer": "Report and reflect on the case to contribute to debriefing and ongoing learning"
+    },
+    {
+      "id": 408,
+      "question_text": "A nurse is working with a patient who says he drinks excessive alcohol how will the nurse respond to prevent ill health?",
+      "options": [
+        "Offer education on the effects of alcohol in the body",
+        "Offer education on the risk of accidents after drinking",
+        "Offer advice on saving money by cutting down excessive drinking",
+        "Offer information about alcohol rehabilitation unit"
+      ],
+      "correct_answer": "Offer information about alcohol rehabilitation unit"
+    },
+    {
+      "id": 409,
+      "question_text": "Which therapeutic communication technique is being used in nurse-client interaction?",
+      "options": [
+        "Exploring",
+        "Formulating a plan of care",
+        "Making observations",
+        "Encouraging comparison"
+      ],
+      "correct_answer": "Exploring"
+    },
+    {
+      "id": 410,
+      "question_text": "The nurse has the role of protecting the patient from the clinical environment, which of the following actions won't necessarily protect the patient?",
+      "options": [
+        "Arranging medicines properly",
+        "Repairing medical equipment",
+        "Keeping the floor not slippery",
+        "Air-conditioning the room"
+      ],
+      "correct_answer": "Air-conditioning the room"
+    },
+    {
+      "id": 411,
+      "question_text": "Common clinical manifestation of an adolescent with appendicitis:",
+      "options": [
+        "Abdominal pain and vomiting",
+        "Central abdominal pain radiating to the right iliac fossa with vomiting, low-grade pyrexia",
+        "Left iliac pain with vomiting, high temperature, and a rash"
+      ],
+      "correct_answer": "Central abdominal pain radiating to the right iliac fossa with vomiting, low-grade pyrexia"
+    },
+    {
+      "id": 412,
+      "question_text": "A nurse practitioner is a member of which group?",
+      "options": [
+        "Multiprofessional",
+        "The management team",
+        "The leadership team"
+      ],
+      "correct_answer": "Multiprofessional"
+    },
+    {
+      "id": 413,
+      "question_text": "A patient complaining of restlessness and inability to sleep at night, what is your advice to him?",
+      "options": [
+        "Tell him to reduce caffeine intake",
+        "Use phone and music",
+        "Have periods of rest during the day"
+      ],
+      "correct_answer": "Tell him to reduce caffeine intake"
+    },
+    {
+      "id": 414,
+      "question_text": "Which allied professional can undertake emergency roles after undergoing specific training?",
+      "options": [
+        "Radiographers",
+        "Pharmacists",
+        "Paramedics",
+        "Sport rehabilitation specialist"
+      ],
+      "correct_answer": "Paramedics"
+    },
+    {
+      "id": 415,
+      "question_text": "Spirometry is used to diagnose which disease condition?",
+      "options": [
+        "Stroke",
+        "Cardiovascular disease",
+        "Diabetes",
+        "Respiratory disease"
+      ],
+      "correct_answer": "Respiratory disease"
+    },
+    {
+      "id": 416,
+      "question_text": "Under the Yellow Card Scheme, you must report the following, EXCEPT:",
+      "options": [
+        "Faulty brakes on a wheelchair",
+        "Suspected side effects to blood factor, except immunoglobulin products",
+        "Counterfeit or fake medicines or medical devices"
+      ],
+      "correct_answer": "Suspected side effects to blood factor, except immunoglobulin products"
+    },
+    {
+      "id": 417,
+      "question_text": "A patient is on his 3rd day with antibiotic therapy due to a lower respiratory tract infection. He presented 3 bouts of bloody diarrhea. What would be the likely cause?",
+      "options": [
+        "Clostridium difficile has penetrated the intestine",
+        "This indicates the release of histamine in the body",
+        "Urinary tract infection has worsened",
+        "Develops allergies"
+      ],
+      "correct_answer": "Clostridium difficile has penetrated the intestine"
+    },
+    {
+      "id": 418,
+      "question_text": "An opioid adverse reaction is?",
+      "options": [
+        "Wheezes and shallow breathing, sleepiness",
+        "Slow and shallow breathing, sleepiness",
+        "Rapid and shallow breathing, sleepiness",
+        "All of the above"
+      ],
+      "correct_answer": "Slow and shallow breathing, sleepiness"
+    },
+    {
+      "id": 419,
+      "question_text": "What is the common cause of airway obstruction in unconscious patients?",
+      "options": [
+        "Tongue falling back",
+        "Foreign object stuck in the throat",
+        "Edema in the neck due to oxygen supply",
+        "None of the above"
+      ],
+      "correct_answer": "Tongue falling back"
+    },
+    {
+      "id": 420,
+      "question_text": "Common minor disorder of pregnancy?",
+      "options": [
+        "Vomiting",
+        "Abdominal pain",
+        "Headache",
+        "Heartburn"
+      ],
+      "correct_answer": "Heartburn"
+    },
+    {
+      "id": 421,
+      "question_text": "DOLS meaning:",
+      "options": [
+        "Deprivation of Liberty Safeguards"
+      ],
+      "correct_answer": "Deprivation of Liberty Safeguards"
+    },
+    {
+      "id": 422,
+      "question_text": "What are the 4 ethical principles in nursing?",
+      "options": [
+        "Autonomy, beneficence, nonmaleficence, and justice"
+      ],
+      "correct_answer": "Autonomy, beneficence, nonmaleficence, and justice"
+    },
+    {
+      "id": 423,
+      "question_text": "Major incident:",
+      "options": [
+        "Any occurrence that presents serious threat to the health of the community or causes such numbers or types of casualties, as to require special arrangements to be implemented"
+      ],
+      "correct_answer": "Any occurrence that presents serious threat to the health of the community or causes such numbers or types of casualties, as to require special arrangements to be implemented"
+    },
+    {
+      "id": 424,
+      "question_text": "Cyclizine:",
+      "options": [
+        "used in prevention and treatment of nausea, vomiting, and dizziness associated with motion sickness"
+      ],
+      "correct_answer": "used in prevention and treatment of nausea, vomiting, and dizziness associated with motion sickness"
+    },
+    {
+      "id": 425,
+      "question_text": "Mental Capacity:",
+      "options": [
+        "The ability to use and understand information to make a decision, and communicate any decision made"
+      ],
+      "correct_answer": "The ability to use and understand information to make a decision, and communicate any decision made"
+    },
+    {
+      "id": 426,
+      "question_text": "Type of feedback without bias:",
+      "options": [
+        "Talk to nurse team",
+        "Incident form",
+        "Talk to relative",
+        "Talk to patient"
+      ],
+      "correct_answer": "Talk to nurse team"
+    },
+    {
+      "id": 427,
+      "question_text": "BMI normal range:",
+      "options": [
+        "18.5-24.9"
+      ],
+      "correct_answer": "18.5-24.9"
+    },
+    {
+      "id": 428,
+      "question_text": "Clinical assessment tool for stool:",
+      "options": [
+        "Bristol Stool Chart"
+      ],
+      "correct_answer": "Bristol Stool Chart"
+    },
+    {
+      "id": 429,
+      "question_text": "Pillars of advanced nursing practice?",
+      "options": [
+        "Clinical practice, leadership and management, education, and research"
+      ],
+      "correct_answer": "Clinical practice, leadership and management, education, and research"
+    },
+    {
+      "id": 430,
+      "question_text": "NICE:",
+      "options": [
+        "National Institute for Health and Care Excellence: identifies good practice using the best available evidence-based information for health, public health and social care professionals"
+      ],
+      "correct_answer": "National Institute for Health and Care Excellence: identifies good practice using the best available evidence-based information for health, public health and social care professionals"
+    },
+    {
+      "id": 431,
+      "question_text": "PDSA:",
+      "options": [
+        "Plan-Do-Study-Act"
+      ],
+      "correct_answer": "Plan-Do-Study-Act"
+    },
+    {
+      "id": 432,
+      "question_text": "What does \"Standard Precaution” means caring for a patient?",
+      "options": [
+        "High-level precautions which include all disposable beddings and utensils for all health care staff",
+        "Basic infection prevention and control measures which include hand hygiene and safe disposal of all waste by all staff at all times",
+        "Taking precautions when handling blood and high-risk body fluids for relevant medical personnel",
+        "Selective precautions which involve safe disposal of clinical waste for all personnel involved in the care process"
+      ],
+      "correct_answer": "Basic infection prevention and control measures which include hand hygiene and safe disposal of all waste by all staff at all times"
+    },
+    {
+      "id": 433,
+      "question_text": "Nitrites in urine are mostly found in:",
+      "options": [
+        "Pregnant women",
+        "Man",
+        "Children",
+        "Females"
+      ],
+      "correct_answer": "Females"
+    },
+    {
+      "id": 434,
+      "question_text": "Early sign of phlebitis:",
+      "options": [
+        "Slight pain and redness",
+        "Increased WBC",
+        "Pyrexia",
+        "Swelling"
+      ],
+      "correct_answer": "Slight pain and redness"
+    },
+    {
+      "id": 435,
+      "question_text": "What is the most suitable therapy for a 5-year-old experiencing psychological trauma?",
+      "options": [
+        "Trauma-Focused Cognitive Behavioral Therapy"
+      ],
+      "correct_answer": "Trauma-Focused Cognitive Behavioral Therapy"
+    },
+    {
+      "id": 436,
+      "question_text": "What is complex care?",
+      "options": [
+        "Is person-centered specialist support for someone with a chronic or long-term health condition, who requires extra assistance to manage their symptoms and day-to-day activities to enable a high quality of life"
+      ],
+      "correct_answer": "Is person-centered specialist support for someone with a chronic or long-term health condition, who requires extra assistance to manage their symptoms and day-to-day activities to enable a high quality of life"
+    },
+    {
+      "id": 437,
+      "question_text": "Self-determination theory:",
+      "options": [
+        "People are motivated to grow and change by three innate and universal psychological needs: competence, connection/relatedness, and autonomy"
+      ],
+      "correct_answer": "People are motivated to grow and change by three innate and universal psychological needs: competence, connection/relatedness, and autonomy"
+    },
+    {
+      "id": 438,
+      "question_text": "Gingivitis cause:",
+      "options": [
+        "Build-up of plaque (not fully removing plaques)"
+      ],
+      "correct_answer": "Build-up of plaque (not fully removing plaques)"
+    },
+    {
+      "id": 439,
+      "question_text": "Patient experiences in the last 48 hours of life?",
+      "options": [
+        "Dyspnea, upper airway secretions, and lucidity"
+      ],
+      "correct_answer": "Dyspnea, upper airway secretions, and lucidity"
+    },
+    {
+      "id": 440,
+      "question_text": "Warwick-Edinburgh Mental Well-being Scale (WEMWS) measures:",
+      "options": [
+        "Mental health illness",
+        "Cognitive impairment"
+      ],
+      "correct_answer": "Mental health illness"
+    },
+    {
+      "id": 441,
+      "question_text": "A patient had sepsis, when will you give broad spectrum antibiotics for culture?",
+      "options": [
+        "Immediately before containing blood culture as sepsis is included",
+        "Immediately once after blood sample is collected",
+        "Immediately after obtaining blood culture as an infection is recognized",
+        "None of the above"
+      ],
+      "correct_answer": "Immediately after obtaining blood culture as an infection is recognized"
+    },
+    {
+      "id": 442,
+      "question_text": "DATIX:",
+      "options": [
+        "Trust electronic incident report system"
+      ],
+      "correct_answer": "Trust electronic incident report system"
+    },
+    {
+      "id": 443,
+      "question_text": "Hypokalemia correction is done via:",
+      "options": [
+        "IV bolus",
+        "Infusion via pump"
+      ],
+      "correct_answer": "Infusion via pump"
+    },
+    {
+      "id": 444,
+      "question_text": "Therapeutic communication:",
+      "options": [
+        "Ensure patient gain insights",
+        "Keep conversation goal-centered"
+      ],
+      "correct_answer": "Keep conversation goal-centered"
+    },
+    {
+      "id": 445,
+      "question_text": "How to fully understand Mental Illness?",
+      "options": [
+        "7-day training in GP",
+        "Mental health..."
+      ],
+      "correct_answer": "Mental health..."
+    },
+    {
+      "id": 446,
+      "question_text": "How to know the improvement or about status of patient with cognitive impairment?",
+      "options": [
+        "Discharge summary",
+        "GP",
+        "About me/Passport"
+      ],
+      "correct_answer": "About me/Passport"
+    },
+    {
+      "id": 447,
+      "question_text": "Priority before wound dressing:",
+      "options": [
+        "Handwashing"
+      ],
+      "correct_answer": "Handwashing"
+    },
+    {
+      "id": 448,
+      "question_text": "To prevent infection, nurse advices a patient to:",
+      "options": [
+        "Keep the urine catheter bag below the bladder",
+        "On level with the bladder",
+        "Any level doesn't make any difference",
+        "Above the bladder"
+      ],
+      "correct_answer": "Keep the urine catheter bag below the bladder"
+    },
+    {
+      "id": 449,
+      "question_text": "Upon visiting an elderly at home, the nurse found him unconscious, what should be your initial action as a nurse?",
+      "options": [
+        "Call for family",
+        "Call an ambulance",
+        "Call a GP",
+        "Assess ABCDE"
+      ],
+      "correct_answer": "Assess ABCDE"
+    },
+    {
+      "id": 450,
+      "question_text": "The numbers written below the nurse's name and signature:",
+      "options": [
+        "Board registration number",
+        "Date of employment",
+        "Employment number"
+      ],
+      "correct_answer": "Board registration number"
+    },
+    {
+      "id": 452,
+      "question_text": "Symptom commonly present in pregnant woman:",
+      "options": [
+        "Headache",
+        "Hair loss",
+        "Abdominal pain and nausea",
+        "Heartburn"
+      ],
+      "correct_answer": "Heartburn"
+    },
+    {
+      "id": 453,
+      "question_text": "You're working as a nurse on an emergency department when a major incident has happened. Who should lead the nursing team?",
+      "options": [
+        "Chief nurse",
+        "Senior nurse of the shift"
+      ],
+      "correct_answer": "Senior nurse of the shift"
+    },
+    {
+      "id": 454,
+      "question_text": "Hemoptysis:",
+      "options": [
+        "Blood in vomit",
+        "Blood in stool",
+        "Blood in sputum",
+        "Blood in urine"
+      ],
+      "correct_answer": "Blood in sputum"
+    },
+    {
+      "id": 455,
+      "question_text": "Most patients with long term conditions usually does not comply with:",
+      "options": [
+        "Rest",
+        "Exercise",
+        "Their medications"
+      ],
+      "correct_answer": "Their medications"
+    },
+    {
+      "id": 456,
+      "question_text": "Statutory principle of Mental Capacity Act, except?",
+      "options": [
+        "Right to make eccentric and unwise decision",
+        "Right to make their own decision",
+        "Right to have a care plan",
+        "Presumption of capacity"
+      ],
+      "correct_answer": "Right to make eccentric and unwise decision"
+    },
+    {
+      "id": 457,
+      "question_text": "Parkinson's taking madopar:",
+      "options": [
+        "With food",
+        "With water",
+        "Give on time",
+        "Give at night only"
+      ],
+      "correct_answer": "Give on time"
+    }
+  ],
+  "state_exams": [],
+  "question_answer_table": []
+}
