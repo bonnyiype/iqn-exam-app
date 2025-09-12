@@ -67,13 +67,7 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Ensure default exam duration is 110 minutes even if persisted settings differ
-  useEffect(() => {
-    if (settings.minutes !== 110) {
-      updateSettings({ minutes: 110 });
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // Remove fixed default duration; duration will be set to number of questions when building the exam
 
   // Start a new exam from QA.json using ALL available questions
   const startNewExamFromQA = () => {
@@ -86,6 +80,10 @@ function App() {
     }
     const built = buildExamFromQuestions(questions, 'IQN Practice Exam');
     setExam(built);
+    // Set duration to number of questions (minutes)
+    if (settings.minutes !== questions.length) {
+      updateSettings({ minutes: questions.length });
+    }
     setQACoverage(order, cursor);
     startSession(`exam_${Date.now()}`);
     setStage('exam');
