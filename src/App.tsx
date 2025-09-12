@@ -87,9 +87,15 @@ function App() {
     setQACoverage(order, cursor);
     startSession(`exam_${Date.now()}`);
     setStage('exam');
-    timer.reset();
-    timer.start();
   };
+
+  // Ensure timer reflects current settings.minutes (number of questions) when exam starts
+  useEffect(() => {
+    if (stage === 'exam' && exam) {
+      timer.reset();
+      timer.start();
+    }
+  }, [stage, settings.minutes, exam]);
 
   // Handle answer selection
   const pickAnswer = (question: any, key: any) => {
