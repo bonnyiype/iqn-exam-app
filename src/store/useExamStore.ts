@@ -16,6 +16,9 @@ interface ExamStore {
   qaOrder: number[] | null;
   qaCursor: number;
 
+  // Exam sets state
+  selectedSet: number;
+
   // Actions
   setStage: (stage: Stage) => void;
   setRawText: (text: string) => void;
@@ -23,6 +26,7 @@ interface ExamStore {
   updateSettings: (settings: Partial<ExamSettings>) => void;
   setTestReport: (report: any) => void;
   setQACoverage: (order: number[], cursor: number) => void;
+  setSelectedSet: (setNumber: number) => void;
 
   // Session Actions
   startSession: (examId: string) => void;
@@ -52,6 +56,7 @@ export const useExamStore = create<ExamStore>()(
       testReport: null,
       qaOrder: null,
       qaCursor: 0,
+      selectedSet: 1,
 
       // Actions
       setStage: (stage) => set({ stage }),
@@ -61,6 +66,7 @@ export const useExamStore = create<ExamStore>()(
         set((state) => ({ settings: { ...state.settings, ...newSettings } })),
       setTestReport: (testReport) => set({ testReport }),
       setQACoverage: (order, cursor) => set({ qaOrder: order, qaCursor: cursor }),
+      setSelectedSet: (selectedSet) => set({ selectedSet }),
 
       // Session Actions
       startSession: (examId) => set({
@@ -178,7 +184,8 @@ export const useExamStore = create<ExamStore>()(
         exam: state.exam,
         session: state.session,
         qaOrder: state.qaOrder,
-        qaCursor: state.qaCursor
+        qaCursor: state.qaCursor,
+        selectedSet: state.selectedSet
       })
     }
   )

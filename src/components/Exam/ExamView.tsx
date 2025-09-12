@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ChevronLeft, ChevronRight, Timer, Flag, Pause, Play, 
-  AlertCircle, CheckCircle2, Circle, Square
+  AlertCircle, CheckCircle2, Circle, Square, Eye
 } from 'lucide-react';
 import { Button, Card, CardContent, Badge, Progress, Modal } from '../ui';
 import { ExamData, Question, ChoiceKey } from '../../types';
@@ -48,6 +48,7 @@ export const ExamView: React.FC<ExamViewProps> = ({
 }) => {
   const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [showTimeWarning, setShowTimeWarning] = useState(false);
+  const [reveal, setReveal] = useState<Record<number, boolean>>({});
   const q = exam.questions[index];
   const selected = answers[q.id] || [];
   const isFlagged = flaggedQuestions.includes(q.id);
@@ -76,6 +77,12 @@ export const ExamView: React.FC<ExamViewProps> = ({
     d: () => q.choices.some(c => c.key === 'D') && pick(q, 'D'),
     e: () => q.choices.some(c => c.key === 'E') && pick(q, 'E'),
   }, !isPaused);
+
+  const isCorrectKey = (key: ChoiceKey) => (q.correct || []).includes(key);
+
+  const handleReveal = () => {
+    setReveal(prev => ({ ...prev, [q.id]: true }));
+  };
 
   const handleSubmit = () => {
     setShowSubmitModal(false);
@@ -144,25 +151,36 @@ export const ExamView: React.FC<ExamViewProps> = ({
                   </Badge>
                 )}
               </div>
-              
-              {settings.showTimer && (
-                <div className="flex items-center gap-3">
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={isPaused ? onResume : onPause}
-                  >
-                    {isPaused ? <Play size={18} /> : <Pause size={18} />}
-                  </Button>
-                  <div className={cn(
-                    "flex items-center gap-2 font-mono text-lg",
-                    totalSeconds < 300 && "text-red-600 dark:text-red-400"
-                  )}>
-                    <Timer size={20} />
-                    <span>{formatTime(totalSeconds)}</span>
+              <div className="flex items-center gap-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleReveal}
+                  disabled={!q.correct || q.correct.length === 0 || reveal[q.id]}
+                  title={(!q.correct || q.correct.length === 0) ? 'No answer data available' : 'Reveal correct answer'}
+                >
+                  <Eye size={16} />
+                  Show Answer
+                </Button>
+                {settings.showTimer && (
+                  <div className="flex items-center gap-3">
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={isPaused ? onResume : onPause}
+                    >
+                      {isPaused ? <Play size={18} /> : <Pause size={18} />}
+                    </Button>
+                    <div className={cn(
+                      "flex items-center gap-2 font-mono text-lg",
+                      totalSeconds < 300 && "text-red-600 dark:text-red-400"
+                    )}>
+                      <Timer size={20} />
+                      <span>{formatTime(totalSeconds)}</span>
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
+              </div>
             </div>
 
             {/* Progress */}
@@ -178,6 +196,11 @@ export const ExamView: React.FC<ExamViewProps> = ({
               <h3 className="text-xl lg:text-2xl font-medium leading-relaxed text-gray-900 dark:text-gray-100">
                 {q.text}
               </h3>
+              {reveal[q.id] && q.correct && q.correct.length > 0 && (
+                <div className="mt-2 text-sm text-emerald-700 dark:text-emerald-300">
+                  Correct: {q.correct.join(', ')}
+                </div>
+              )}
               {q.category && (
                 <Badge variant="secondary" className="mt-2">
                   {q.category}
@@ -189,6 +212,7 @@ export const ExamView: React.FC<ExamViewProps> = ({
             <div className="space-y-3">
               {q.choices.map((choice) => {
                 const isSelected = selected.includes(choice.key);
+                const isCorrect = reveal[q.id] && isCorrectKey(choice.key);
                 const Icon = q.multi ? (isSelected ? CheckCircle2 : Square) : (isSelected ? Circle : Circle);
                 
                 return (
@@ -202,6 +226,7 @@ export const ExamView: React.FC<ExamViewProps> = ({
                       isSelected
                         ? "bg-indigo-50 dark:bg-indigo-900/20 border-indigo-500 dark:border-indigo-400"
                         : "bg-white dark:bg-gray-900/50 border-gray-200 dark:border-gray-700",
+                      isCorrect && "border-emerald-500 bg-emerald-50/60 dark:bg-emerald-900/20",
                       "hover:border-indigo-400 dark:hover:border-indigo-500",
                       "focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     )}

@@ -6,7 +6,7 @@ import { Button, Badge } from './components/ui';
 import { useExamStore } from './store/useExamStore';
 import { useTimer } from './hooks/useTimer';
 import { calcSummary, shuffleInPlace } from './utils/helpers';
-import { loadAllQAQuestions, pickWithCoverage, buildExamFromQuestions } from './utils/qaLoader';
+import { loadAllQAQuestions, pickWithCoverage, buildExamFromQuestions, getExamSetQuestions } from './utils/qaLoader';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -34,7 +34,9 @@ function App() {
     // resetAll,
     qaOrder,
     qaCursor,
-    setQACoverage
+    setQACoverage,
+    selectedSet,
+    setSelectedSet
   } = useExamStore();
 
   const timer = useTimer({
@@ -69,20 +71,20 @@ function App() {
 
   // Remove fixed default duration; duration will be set to number of questions when building the exam
 
-  // Start a new exam from QA.json using ALL available questions
+  // Start a new exam from QA.json using questions for the selected set
   const startNewExamFromQA = () => {
     const all = loadAllQAQuestions();
-    const sampleSize = all.length;
-    const { selected, order, cursor } = pickWithCoverage(all, qaOrder || undefined, qaCursor, sampleSize);
-    let questions = shuffleInPlace(selected);
+    let questions = getExamSetQuestions(all, selectedSet, 100, 15);
+    const { order, cursor } = pickWithCoverage(questions, qaOrder || undefined, qaCursor, questions.length);
+    questions = shuffleInPlace(questions);
     if (settings.shuffleChoices) {
       questions = questions.map(q => ({ ...q, choices: shuffleInPlace([...q.choices]) }));
     }
-    const built = buildExamFromQuestions(questions, 'IQN Practice Exam');
+    const built = buildExamFromQuestions(questions, `IQN Practice Exam • Set ${selectedSet}`);
     setExam(built);
-    // Set duration to number of questions (minutes)
-    if (settings.minutes !== questions.length) {
-      updateSettings({ minutes: questions.length });
+    // Fixed timing per set: 100 minutes
+    if (settings.minutes !== 100) {
+      updateSettings({ minutes: 100 });
     }
     setQACoverage(order, cursor);
     startSession(`exam_${Date.now()}`);
@@ -172,6 +174,17 @@ function App() {
             <div className="flex items-center gap-3">
               {/* Stage Navigation (Builder removed) */}
               <div className="flex items-center gap-2 p-1 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm rounded-xl">
+                <select
+                  value={selectedSet}
+                  onChange={(e) => setSelectedSet(Number(e.target.value))}
+                  className="text-sm rounded-lg bg-white/70 dark:bg-gray-900/60 border border-gray-300 dark:border-gray-700 px-2 py-1"
+                  aria-label="Select Exam Set"
+                >
+                  {Array.from({ length: 15 }, (_, i) => i + 1).map((n) => (
+                    <option key={n} value={n}>Set {n}</option>
+                  ))}
+                  <option value={16}>Set 16 (Remainder)</option>
+                </select>
                 <Button
                   variant={stage === 'exam' ? 'primary' : 'ghost'}
                   size="sm"

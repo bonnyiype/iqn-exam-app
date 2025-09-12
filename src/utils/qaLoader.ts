@@ -39,6 +39,30 @@ export function loadAllQAQuestions(): Question[] {
   });
 }
 
+// Partition all questions into 15 sets of up to 100 each, last set contains remainder
+export function partitionIntoSets(all: Question[], setSize = 100, totalSets = 15): Question[][] {
+  const sorted = [...all].sort((a, b) => a.id - b.id);
+  const sets: Question[][] = [];
+  let idx = 0;
+  for (let s = 0; s < totalSets; s++) {
+    const slice = sorted.slice(idx, idx + setSize);
+    if (slice.length === 0) break;
+    sets.push(slice);
+    idx += setSize;
+  }
+  // If any remaining questions after totalSets*setSize, push them into a final set
+  if (idx < sorted.length) {
+    sets.push(sorted.slice(idx));
+  }
+  return sets;
+}
+
+export function getExamSetQuestions(all: Question[], setNumber: number, setSize = 100, totalSets = 15): Question[] {
+  const sets = partitionIntoSets(all, setSize, totalSets);
+  const index = Math.max(1, Math.min(setNumber, sets.length)) - 1;
+  return sets[index] || [];
+}
+
 export function buildExamFromQuestions(questions: Question[], title = 'IQN Exam'): ExamData {
   return {
     title,
