@@ -6,7 +6,6 @@ import { Button, Badge } from './components/ui';
 import { useExamStore } from './store/useExamStore';
 import { useTimer } from './hooks/useTimer';
 import { calcSummary, shuffleInPlace } from './utils/helpers';
-import { cn } from './utils/helpers';
 import { loadAllQAQuestions, pickWithCoverage, buildExamFromQuestions } from './utils/qaLoader';
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
     exam,
     settings,
     session,
-    testReport,
+    // testReport,
     setStage,
     setExam,
     updateSettings,
@@ -32,7 +31,7 @@ function App() {
     pauseSession,
     resumeSession,
     endSession,
-    resetAll,
+    // resetAll,
     qaOrder,
     qaCursor,
     setQACoverage
@@ -45,7 +44,7 @@ function App() {
         submitExam();
       }
     },
-    onWarning: (timeLeft) => {
+    onWarning: () => {
       // Handle warning
     },
     warningTime: settings.timeWarningMinutes * 60
@@ -64,7 +63,7 @@ function App() {
 
   // Always start a fresh exam from QA.json on first mount (ensures new set on refresh)
   useEffect(() => {
-    startNewExamFromQA(110);
+    startNewExamFromQA();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -76,9 +75,10 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Start a new exam from QA.json with coverage and 110 random questions
-  const startNewExamFromQA = (sampleSize: number = 110) => {
+  // Start a new exam from QA.json using ALL available questions
+  const startNewExamFromQA = () => {
     const all = loadAllQAQuestions();
+    const sampleSize = all.length;
     const { selected, order, cursor } = pickWithCoverage(all, qaOrder || undefined, qaCursor, sampleSize);
     let questions = shuffleInPlace(selected);
     if (settings.shuffleChoices) {
@@ -94,11 +94,11 @@ function App() {
   };
 
   // Handle answer selection
-  const pickAnswer = (question: any, key: string) => {
+  const pickAnswer = (question: any, key: any) => {
     if (!session) return;
     
     const current = session.answers[question.id] || [];
-    let next: string[];
+    let next: any[];
     
     if (question.multi) {
       next = current.includes(key) 
@@ -189,7 +189,7 @@ function App() {
                 <Button
                   variant="secondary"
                   size="sm"
-                  onClick={() => startNewExamFromQA(110)}
+                  onClick={() => startNewExamFromQA()}
                 >
                   New Exam
                 </Button>
@@ -280,8 +280,8 @@ function App() {
                 answers={session.answers}
                 flaggedQuestions={session.flaggedQuestions}
                 summary={summary}
-                onRestart={() => startNewExamFromQA(110)}
-                onRetake={() => startNewExamFromQA(110)}
+                onRestart={() => startNewExamFromQA()}
+                onRetake={() => startNewExamFromQA()}
               />
             </motion.div>
           )}
