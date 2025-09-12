@@ -156,8 +156,8 @@ export const ExamView: React.FC<ExamViewProps> = ({
                   variant="outline"
                   size="sm"
                   onClick={handleReveal}
-                  disabled={!q.correct || q.correct.length === 0 || reveal[q.id]}
-                  title={(!q.correct || q.correct.length === 0) ? 'No answer data available' : 'Reveal correct answer'}
+                  disabled={Boolean(reveal[q.id])}
+                  title={'Reveal correct answer'}
                 >
                   <Eye size={16} />
                   Show Answer
@@ -196,10 +196,16 @@ export const ExamView: React.FC<ExamViewProps> = ({
               <h3 className="text-xl lg:text-2xl font-medium leading-relaxed text-gray-900 dark:text-gray-100">
                 {q.text}
               </h3>
-              {reveal[q.id] && q.correct && q.correct.length > 0 && (
-                <div className="mt-2 text-sm text-emerald-700 dark:text-emerald-300">
-                  Correct: {q.correct.join(', ')}
-                </div>
+              {reveal[q.id] && (
+                q.correct && q.correct.length > 0 ? (
+                  <div className="mt-2 text-sm text-emerald-700 dark:text-emerald-300">
+                    Correct: {q.correct.join(', ')}
+                  </div>
+                ) : (
+                  <div className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                    No answer data available for this question.
+                  </div>
+                )
               )}
               {q.category && (
                 <Badge variant="secondary" className="mt-2">
