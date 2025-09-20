@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { 
+import {
   CheckCircle, XCircle, Download, Save, RefreshCcw, Settings,
-  ChevronDown, ChevronUp, Flag, TrendingUp, Clock, Award,
-  FileText, BarChart
+  ChevronDown, ChevronUp, Flag, Clock, Award,
+  BarChart
 } from 'lucide-react';
 import { Button, Card, CardHeader, CardTitle, CardContent, Badge, Progress } from '../ui';
 import { ExamData, ResultSummary, ChoiceKey } from '../../types';

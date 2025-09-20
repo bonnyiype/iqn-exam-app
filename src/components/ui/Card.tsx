@@ -13,7 +13,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
       ? 'rounded-2xl backdrop-blur-md bg-white/30 dark:bg-black/30 border border-white/20 dark:border-white/10 shadow-xl'
       : 'rounded-2xl shadow-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800';
 
-    const MotionDiv = animated ? motion.div : 'div';
+    const MotionDiv: any = animated ? motion.div : 'div';
     const animationProps = animated ? {
       initial: { opacity: 0, y: 20 },
       animate: { opacity: 1, y: 0 },

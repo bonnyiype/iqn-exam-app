@@ -46,7 +46,7 @@ interface ExamStore {
 
 export const useExamStore = create<ExamStore>()(
   persist(
-    (set, get) => ({
+    (set, _get) => ({
       // Initial state
       stage: 'builder',
       rawText: '',

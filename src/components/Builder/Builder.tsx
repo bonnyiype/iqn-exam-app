@@ -4,7 +4,7 @@ import {
   Upload, FileText, ClipboardPaste, Settings, Play, 
   ListChecks, Beaker, AlertCircle, CheckCircle 
 } from 'lucide-react';
-import { Button, Card, CardHeader, CardTitle, CardContent, Toggle, Badge, Modal } from '../ui';
+import { Button, Card, CardHeader, CardTitle, CardContent, Toggle, Badge } from '../ui';
 import { parseMock } from '../../utils/parser';
 import { ExamSettings, ParseError } from '../../types';
 import { SAMPLE_TEXT } from '../../utils/sampleData';

@@ -11,7 +11,7 @@ export function useTimer({ duration, onTimeUp, onWarning, warningTime = 300 }: U
   const [timeLeft, setTimeLeft] = useState(duration);
   const [isRunning, setIsRunning] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const warningTriggeredRef = useRef(false);
 
   useEffect(() => {
