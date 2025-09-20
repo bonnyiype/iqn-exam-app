@@ -78,6 +78,11 @@ Key environment variables for the API:
 | `LICENSE_JWT_SECRET` | Secret used to verify JWT signatures (change this in production). |
 | `LICENSE_ALLOWED_KEYS` | Optional comma-separated whitelist of license IDs allowed to download the bank. |
 | `CLIENT_ORIGINS` | Comma-separated origins permitted by CORS (defaults to `http://localhost:5173`). |
+| `LICENSE_DB_PATH` | Optional path to the JSON database used for license storage (defaults to `./data/license-db.json`). |
+| `ADMIN_API_KEY` | Shared secret required to access admin license management endpoints. |
+| `STRIPE_SECRET_KEY` | Stripe secret key used to create Checkout sessions (set for paid licenses). |
+| `STRIPE_PRICE_ID` | Default Stripe price identifier used when creating checkout sessions. |
+| `LOG_FILE` | Optional path to append structured API logs. |
 
 Set `VITE_API_BASE_URL` in your `.env` file if the API is hosted on a different origin (for example `http://localhost:4000`).
 
@@ -96,6 +101,48 @@ NODE
 ```
 
 Store the printed token in `localStorage` (`iqn_license_token`) or set it as an HTTP-only cookie from your auth service.
+
+### License administration
+
+The API keeps all license, seat, and usage information in a persistent JSON database (`data/license-db.json` by default).
+
+* Every time a client downloads the exam bank the server records a usage event and the device's seat identifier.
+* Seats are automatically allocated per unique device (stored locally under `iqn_seat_id`). When all seats are consumed further downloads are rejected until a seat is freed.
+* License status, renewal reminders, and seat availability are exposed to the frontend. The React app now shows the current license banner at the top of the interface and refreshes details on startup.
+* The frontend automatically includes an `X-Seat-Id` header for every API request so that seat usage can be enforced per device.
+
+Admin endpoints (all require the `x-admin-token` header matching `ADMIN_API_KEY`):
+
+```bash
+# Issue a new license with 5 seats and a one-year expiration
+curl -X POST "http://localhost:4000/api/admin/licenses" \
+  -H "Content-Type: application/json" \
+  -H "x-admin-token: $ADMIN_API_KEY" \
+  -d '{
+    "licenseId": "customer-123",
+    "seats": 5,
+    "userEmail": "owner@example.com",
+    "userName": "Customer Owner",
+    "tier": "team",
+    "expiresAt": "2026-01-01T00:00:00.000Z"
+  }'
+```
+
+The response includes a ready-to-use signed license token and the license summary. Additional admin endpoints:
+
+- `GET /api/admin/licenses` – list all licenses with seat usage and status.
+- `GET /api/admin/licenses/:licenseId` – fetch a single license record.
+- `POST /api/admin/licenses/:licenseId/revoke` – revoke a license (optional JSON body `{ "reason": "..." }`).
+- `POST /api/admin/licenses/:licenseId/restore` – restore a revoked license.
+- `POST /api/admin/licenses/:licenseId/renew` – update the expiration date.
+- `GET /api/admin/licenses/:licenseId/usage` – show recent usage events and download counts.
+- `POST /api/admin/licenses/:licenseId/checkout` – create a Stripe Checkout session (requires `STRIPE_SECRET_KEY`).
+
+### Monitoring, rate limiting & logging
+
+* All API routes are guarded by an in-memory rate limiter (20 requests/min for downloads, 30 requests/min for admin endpoints).
+* Prometheus metrics are exposed at `GET /metrics` (request counters, durations, and per-license download totals).
+* Structured JSON logs are printed to stdout and optionally appended to `LOG_FILE`.
 
 ### Production Build
 

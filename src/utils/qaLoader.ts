@@ -1,4 +1,5 @@
-import { Choice, ChoiceKey, ExamData, Question } from '../types';
+import { Choice, ChoiceKey, ExamData, Question, LicenseInfo, LicenseStatusValue } from '../types';
+import { useLicenseStore } from '../store/useLicenseStore';
 import { shuffleInPlace } from './helpers';
 
 type QAItem = {
@@ -12,14 +13,53 @@ type QuestionsResponse = {
   questions?: QAItem[];
   version?: string;
   updatedAt?: string;
+  licensedTo?: {
+    id: string;
+    status: string;
+    seatsTotal?: number;
+    seatsUsed?: number;
+    seatsRemaining?: number;
+    tier?: string;
+    expiresAt?: string;
+    renewalReminderAt?: string;
+    renewalMessage?: string;
+  };
 };
 
 const KEY_ORDER: ChoiceKey[] = ['A', 'B', 'C', 'D', 'E'];
 const LICENSE_TOKEN_KEYS = ['iqn_license_token', 'licenseToken', 'iqnLicense'];
+const SEAT_ID_STORAGE_KEY = 'iqn_seat_id';
 
 let cachedQuestions: Question[] | null = null;
 let pendingRequest: Promise<Question[]> | null = null;
 let questionBankVersion = 'qa-1.0';
+
+function ensureSeatIdentifier(): string {
+  if (typeof window === 'undefined') {
+    return 'server-seat';
+  }
+  const store = useLicenseStore.getState();
+  const existing = window.localStorage.getItem(SEAT_ID_STORAGE_KEY);
+  if (existing && existing.trim()) {
+    store.setSeatId(existing);
+    return existing;
+  }
+  const seatId = generateSeatId();
+  try {
+    window.localStorage.setItem(SEAT_ID_STORAGE_KEY, seatId);
+  } catch {
+    // Ignore storage errors (private browsing, etc.).
+  }
+  store.setSeatId(seatId);
+  return seatId;
+}
+
+function generateSeatId(): string {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+    return crypto.randomUUID();
+  }
+  return `seat-${Math.random().toString(36).slice(2, 12)}`;
+}
 
 export async function loadAllQAQuestions(forceRefresh = false): Promise<Question[]> {
   if (!forceRefresh && cachedQuestions) {
@@ -47,7 +87,7 @@ export function getQuestionBankVersion(): string {
 }
 
 async function fetchQuestionsFromApi(forceRefresh: boolean): Promise<Question[]> {
-  const headers: HeadersInit = {
+  const headers: Record<string, string> = {
     Accept: 'application/json'
   };
 
@@ -55,6 +95,9 @@ async function fetchQuestionsFromApi(forceRefresh: boolean): Promise<Question[]>
   if (token) {
     headers.Authorization = `Bearer ${token}`;
   }
+
+  const seatId = ensureSeatIdentifier();
+  headers['X-Seat-Id'] = seatId;
 
   const baseUrl = getApiBaseUrl();
   const refreshSuffix = forceRefresh ? '?refresh=true' : '';
@@ -69,19 +112,23 @@ async function fetchQuestionsFromApi(forceRefresh: boolean): Promise<Question[]>
       cache: 'no-store'
     });
   } catch {
+    useLicenseStore.getState().markError('Unable to reach the exam server.');
     throw new Error('Unable to reach the exam server. Please verify your connection and try again.');
   }
 
   if (response.status === 401) {
+    useLicenseStore.getState().markError('Your license token could not be verified.');
     throw new Error('You must be signed in with a valid IQN license to access the exam bank.');
   }
 
   if (response.status === 403) {
+    useLicenseStore.getState().markError('Your IQN license is not active.');
     throw new Error('Your IQN license is not authorized to download exam questions.');
   }
 
   if (!response.ok) {
     const serverMessage = await readServerError(response);
+    useLicenseStore.getState().markError(serverMessage ?? 'Unable to load IQN exam questions.');
     throw new Error(serverMessage ?? `Unable to load IQN exam questions (HTTP ${response.status}).`);
   }
 
@@ -90,10 +137,47 @@ async function fetchQuestionsFromApi(forceRefresh: boolean): Promise<Question[]>
     questionBankVersion = payload.version.trim();
   }
 
+  updateLicenseStoreFromPayload(payload);
+
   const source = Array.isArray(payload.questions) ? payload.questions : [];
   return source
     .map((item) => mapToQuestion(item))
     .filter((question): question is Question => Boolean(question));
+}
+
+export async function refreshLicenseStatus(): Promise<void> {
+  const headers: Record<string, string> = {
+    Accept: 'application/json'
+  };
+  const token = readLicenseToken();
+  if (token) {
+    headers.Authorization = `Bearer ${token}`;
+  }
+  const seatId = ensureSeatIdentifier();
+  headers['X-Seat-Id'] = seatId;
+
+  const baseUrl = getApiBaseUrl();
+  const endpoint = `${baseUrl}/api/licensing/status`;
+
+  try {
+    const response = await fetch(endpoint, {
+      method: 'GET',
+      headers,
+      credentials: 'include',
+      cache: 'no-store'
+    });
+
+    if (!response.ok) {
+      const serverMessage = await readServerError(response);
+      useLicenseStore.getState().markError(serverMessage ?? 'Unable to refresh license status.');
+      return;
+    }
+
+    const payload = (await response.json()) as { license?: QuestionsResponse['licensedTo']; message?: string };
+    updateLicenseStoreFromPayload({ licensedTo: payload.license });
+  } catch {
+    useLicenseStore.getState().markError('Unable to refresh license status.');
+  }
 }
 
 function getApiBaseUrl(): string {
@@ -108,6 +192,37 @@ function getApiBaseUrl(): string {
   }
 
   return trimmed.replace(/\/+$/, '');
+}
+
+function updateLicenseStoreFromPayload(payload: { licensedTo?: QuestionsResponse['licensedTo'] }): void {
+  const store = useLicenseStore.getState();
+  const licensed = payload.licensedTo;
+  if (licensed && typeof licensed.id === 'string' && licensed.id.trim()) {
+    const info: LicenseInfo = {
+      licenseId: licensed.id,
+      status: normalizeLicenseStatus(licensed.status),
+      seatsTotal: typeof licensed.seatsTotal === 'number' ? licensed.seatsTotal : 0,
+      seatsUsed: typeof licensed.seatsUsed === 'number' ? licensed.seatsUsed : 0,
+      seatsRemaining: typeof licensed.seatsRemaining === 'number'
+        ? licensed.seatsRemaining
+        : Math.max(0, (typeof licensed.seatsTotal === 'number' ? licensed.seatsTotal : 0) - (typeof licensed.seatsUsed === 'number' ? licensed.seatsUsed : 0)),
+      tier: licensed.tier,
+      expiresAt: licensed.expiresAt,
+      renewalReminderAt: licensed.renewalReminderAt,
+      renewalMessage: licensed.renewalMessage
+    };
+    store.setFromServer(info, licensed.renewalMessage ?? null);
+    return;
+  }
+  store.markError('License details were not provided by the server.');
+}
+
+function normalizeLicenseStatus(value: string | undefined): LicenseStatusValue {
+  const normalized = typeof value === 'string' ? value.trim().toLowerCase() : '';
+  if (normalized === 'trial' || normalized === 'revoked' || normalized === 'expired') {
+    return normalized;
+  }
+  return 'active';
 }
 
 function readLicenseToken(): string | null {

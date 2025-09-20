@@ -150,6 +150,49 @@ function verifyJwt(token: string): LicenseClaims {
   return payload;
 }
 
+export interface SignLicenseTokenOptions {
+  expiresInSeconds?: number;
+  audience?: string | string[];
+  issuer?: string;
+}
+
+export function signLicenseToken(
+  claims: LicenseClaims & { licenseId: string },
+  options: SignLicenseTokenOptions = {}
+): string {
+  const header = { alg: 'HS256', typ: 'JWT' };
+  const payload: LicenseClaims = {
+    ...claims
+  };
+
+  if (!payload.iss) {
+    payload.iss = options.issuer ?? ISSUER;
+  } else if (options.issuer) {
+    payload.iss = options.issuer;
+  }
+
+  if (!payload.aud) {
+    if (options.audience) {
+      payload.aud = options.audience;
+    } else if (AUDIENCE.size > 0) {
+      payload.aud = Array.from(AUDIENCE);
+    }
+  } else if (options.audience) {
+    payload.aud = options.audience;
+  }
+
+  const nowSeconds = Math.floor(Date.now() / 1000);
+  if (!payload.exp) {
+    const expiresIn = options.expiresInSeconds ?? 60 * 60 * 24 * 30;
+    payload.exp = nowSeconds + expiresIn;
+  }
+
+  const headerEncoded = Buffer.from(JSON.stringify(header)).toString('base64url');
+  const payloadEncoded = Buffer.from(JSON.stringify(payload)).toString('base64url');
+  const signature = createSignature(headerEncoded, payloadEncoded);
+  return `${headerEncoded}.${payloadEncoded}.${signature}`;
+}
+
 function createSignature(header: string, payload: string): string {
   return crypto.createHmac('sha256', SECRET).update(`${header}.${payload}`).digest('base64url');
 }
