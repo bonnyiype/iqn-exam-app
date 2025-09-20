@@ -1,4 +1,3 @@
-import qa from '../../QuestionAnswers/QA.json';
 import { Choice, ChoiceKey, ExamData, Question } from '../types';
 import { shuffleInPlace } from './helpers';
 
@@ -9,37 +8,202 @@ type QAItem = {
   correct_answer: string;
 };
 
-type QARoot = {
-  exam_questions_set_1: QAItem[];
+type QuestionsResponse = {
+  questions?: QAItem[];
+  version?: string;
+  updatedAt?: string;
 };
 
 const KEY_ORDER: ChoiceKey[] = ['A', 'B', 'C', 'D', 'E'];
+const LICENSE_TOKEN_KEYS = ['iqn_license_token', 'licenseToken', 'iqnLicense'];
 
-export function loadAllQAQuestions(): Question[] {
-  const root = qa as unknown as QARoot;
-  const source = Array.isArray(root.exam_questions_set_1) ? root.exam_questions_set_1 : [];
+let cachedQuestions: Question[] | null = null;
+let pendingRequest: Promise<Question[]> | null = null;
+let questionBankVersion = 'qa-1.0';
 
-  return source.map((item) => {
-    const choices: Choice[] = (item.options || []).slice(0, KEY_ORDER.length).map((text, idx) => ({
-      key: KEY_ORDER[idx],
-      text
-    }));
+export async function loadAllQAQuestions(forceRefresh = false): Promise<Question[]> {
+  if (!forceRefresh && cachedQuestions) {
+    return cachedQuestions;
+  }
 
-    // Find correct key by matching text
-    const correctIdx = choices.findIndex(c => normalize(c.text) === normalize(item.correct_answer));
-    const correct: ChoiceKey[] = correctIdx >= 0 ? [KEY_ORDER[correctIdx]] : [];
+  if (!forceRefresh && pendingRequest) {
+    return pendingRequest;
+  }
 
-    return {
-      id: item.id,
-      text: item.question_text,
-      multi: false,
-      choices,
-      correct
-    } as Question;
-  });
+  pendingRequest = fetchQuestionsFromApi(forceRefresh)
+    .then((questions) => {
+      cachedQuestions = questions;
+      return questions;
+    })
+    .finally(() => {
+      pendingRequest = null;
+    });
+
+  return pendingRequest;
 }
 
-// Partition all questions into 15 sets of up to 100 each, last set contains remainder
+export function getQuestionBankVersion(): string {
+  return questionBankVersion;
+}
+
+async function fetchQuestionsFromApi(forceRefresh: boolean): Promise<Question[]> {
+  const headers: HeadersInit = {
+    Accept: 'application/json'
+  };
+
+  const token = readLicenseToken();
+  if (token) {
+    headers.Authorization = `Bearer ${token}`;
+  }
+
+  const baseUrl = getApiBaseUrl();
+  const refreshSuffix = forceRefresh ? '?refresh=true' : '';
+  const endpoint = `${baseUrl}/api/exams/questions${refreshSuffix}`;
+
+  let response: Response;
+  try {
+    response = await fetch(endpoint, {
+      method: 'GET',
+      headers,
+      credentials: 'include',
+      cache: 'no-store'
+    });
+  } catch {
+    throw new Error('Unable to reach the exam server. Please verify your connection and try again.');
+  }
+
+  if (response.status === 401) {
+    throw new Error('You must be signed in with a valid IQN license to access the exam bank.');
+  }
+
+  if (response.status === 403) {
+    throw new Error('Your IQN license is not authorized to download exam questions.');
+  }
+
+  if (!response.ok) {
+    const serverMessage = await readServerError(response);
+    throw new Error(serverMessage ?? `Unable to load IQN exam questions (HTTP ${response.status}).`);
+  }
+
+  const payload = (await response.json()) as QuestionsResponse;
+  if (typeof payload.version === 'string' && payload.version.trim().length > 0) {
+    questionBankVersion = payload.version.trim();
+  }
+
+  const source = Array.isArray(payload.questions) ? payload.questions : [];
+  return source
+    .map((item) => mapToQuestion(item))
+    .filter((question): question is Question => Boolean(question));
+}
+
+function getApiBaseUrl(): string {
+  const raw = (import.meta as { env?: Record<string, string | undefined> }).env?.VITE_API_BASE_URL;
+  if (!raw) {
+    return '';
+  }
+
+  const trimmed = raw.trim();
+  if (trimmed.length === 0) {
+    return '';
+  }
+
+  return trimmed.replace(/\/+$/, '');
+}
+
+function readLicenseToken(): string | null {
+  if (typeof window === 'undefined') {
+    return null;
+  }
+
+  for (const key of LICENSE_TOKEN_KEYS) {
+    const localValue = window.localStorage.getItem(key);
+    if (localValue) {
+      return localValue;
+    }
+    const sessionValue = window.sessionStorage.getItem(key);
+    if (sessionValue) {
+      return sessionValue;
+    }
+  }
+
+  return null;
+}
+
+async function readServerError(response: Response): Promise<string | null> {
+  try {
+    const clone = response.clone();
+    const contentType = clone.headers.get('content-type') || '';
+    if (contentType.includes('application/json')) {
+      const data = await clone.json() as { message?: string; error?: string; details?: string };
+      if (typeof data.message === 'string' && data.message.trim().length > 0) {
+        return data.message.trim();
+      }
+      if (typeof data.error === 'string' && data.error.trim().length > 0) {
+        return data.error.trim();
+      }
+      if (typeof data.details === 'string' && data.details.trim().length > 0) {
+        return data.details.trim();
+      }
+    } else {
+      const text = await clone.text();
+      if (text.trim().length > 0) {
+        return text.trim();
+      }
+    }
+  } catch {
+    // Ignore secondary parsing errors.
+  }
+
+  return null;
+}
+
+function mapToQuestion(item: QAItem): Question | null {
+  if (!item || typeof item !== 'object') {
+    return null;
+  }
+
+  const id = typeof item.id === 'number' && Number.isFinite(item.id)
+    ? item.id
+    : Number(item.id);
+
+  if (!Number.isFinite(id)) {
+    return null;
+  }
+
+  const text = typeof item.question_text === 'string' ? item.question_text.trim() : '';
+  if (!text) {
+    return null;
+  }
+
+  const choices: Choice[] = Array.isArray(item.options)
+    ? item.options.slice(0, KEY_ORDER.length).map((option, idx) => {
+        const value = typeof option === 'string' ? option.trim() : String(option ?? '').trim();
+        if (!value) {
+          return null;
+        }
+        return {
+          key: KEY_ORDER[idx],
+          text: value
+        } as Choice;
+      }).filter((choice): choice is Choice => Boolean(choice))
+    : [];
+
+  if (choices.length === 0) {
+    return null;
+  }
+
+  const correctIdx = choices.findIndex((choice) => normalize(choice.text) === normalize(item.correct_answer));
+  const correct: ChoiceKey[] = correctIdx >= 0 ? [choices[correctIdx].key] : [];
+
+  return {
+    id,
+    text,
+    multi: false,
+    choices,
+    correct
+  } as Question;
+}
+
 export function partitionIntoSets(all: Question[], setSize = 100, totalSets = 15): Question[][] {
   const sorted = [...all].sort((a, b) => a.id - b.id);
   const sets: Question[][] = [];
@@ -50,7 +214,6 @@ export function partitionIntoSets(all: Question[], setSize = 100, totalSets = 15
     sets.push(slice);
     idx += setSize;
   }
-  // If any remaining questions after totalSets*setSize, push them into a final set
   if (idx < sorted.length) {
     sets.push(sorted.slice(idx));
   }
@@ -68,7 +231,7 @@ export function buildExamFromQuestions(questions: Question[], title = 'IQN Exam'
     title,
     questions,
     createdAt: new Date().toISOString(),
-    version: 'qa-1.0'
+    version: questionBankVersion
   };
 }
 
@@ -78,13 +241,12 @@ export function pickWithCoverage(
   cursor: number | undefined,
   sampleSize: number
 ): { selected: Question[]; order: number[]; cursor: number } {
-  const allIds = allQuestions.map(q => q.id);
-  let order = (existingOrder && existingOrder.length === allIds.length)
+  const allIds = allQuestions.map((q) => q.id);
+  let order = existingOrder && existingOrder.length === allIds.length
     ? existingOrder.slice()
     : shuffleInPlace(allIds);
   let ptr = typeof cursor === 'number' && cursor >= 0 && cursor < order.length ? cursor : 0;
 
-  // If not enough remaining, wrap with a fresh shuffle to ensure coverage
   const remaining = order.length - ptr;
   let selectedIds: number[] = [];
   if (remaining >= sampleSize) {
@@ -99,15 +261,12 @@ export function pickWithCoverage(
     ptr = needed;
   }
 
-  // Map ids to questions
-  const idToQ = new Map(allQuestions.map(q => [q.id, q] as const));
-  const selected = selectedIds.map(id => idToQ.get(id)!).filter(Boolean);
+  const idToQ = new Map(allQuestions.map((q) => [q.id, q] as const));
+  const selected = selectedIds.map((id) => idToQ.get(id)!).filter(Boolean);
 
   return { selected, order, cursor: ptr };
 }
 
-function normalize(s: string): string {
-  return String(s || '').trim().toLowerCase();
+function normalize(value: unknown): string {
+  return String(value ?? '').trim().toLowerCase();
 }
-
-

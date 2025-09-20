@@ -48,13 +48,54 @@ A modern, interactive web application for creating and practicing mock exams. Bu
    npm install
    ```
 
-3. **Start development server**
+3. **Start the secure question API** (new terminal)
+   ```bash
+   npm run server:start
+   ```
+
+4. **Start the Vite development server**
    ```bash
    npm run dev
    ```
 
-4. **Open in browser**
-   Navigate to `http://localhost:3000`
+5. **Open in browser**
+   Navigate to `http://localhost:5173`
+
+6. **Authenticate**
+   Sign in to your licensing service so that the app receives a valid JWT or session cookie. For local testing you can store a development token in `localStorage` under the key `iqn_license_token`.
+
+### Licensing & authentication
+
+The IQN question bank is served from the new Node.js backend only after a license check. The API expects either:
+
+- an `Authorization: Bearer &lt;jwt&gt;` header, or
+- a signed session cookie (e.g. `license_token`).
+
+Key environment variables for the API:
+
+| Variable | Description |
+| --- | --- |
+| `LICENSE_JWT_SECRET` | Secret used to verify JWT signatures (change this in production). |
+| `LICENSE_ALLOWED_KEYS` | Optional comma-separated whitelist of license IDs allowed to download the bank. |
+| `CLIENT_ORIGINS` | Comma-separated origins permitted by CORS (defaults to `http://localhost:5173`). |
+
+Set `VITE_API_BASE_URL` in your `.env` file if the API is hosted on a different origin (for example `http://localhost:4000`).
+
+To issue a development token you can run:
+
+```bash
+node --input-type=module <<'NODE'
+import jwt from 'jsonwebtoken';
+const token = jwt.sign(
+  { licenseId: 'demo-license', status: 'active' },
+  process.env.LICENSE_JWT_SECRET || 'replace-this-secret',
+  { audience: 'iqn-exam-app', issuer: 'iqn-licensing-service', expiresIn: '8h' }
+);
+console.log(token);
+NODE
+```
+
+Store the printed token in `localStorage` (`iqn_license_token`) or set it as an HTTP-only cookie from your auth service.
 
 ### Production Build
 
@@ -129,6 +170,10 @@ npm run preview
 
 ```
 IQN EXAM/
+├── server/             # Secure Node.js API for question delivery
+│   ├── middleware/
+│   ├── routes/
+│   └── services/
 ├── src/
 │   ├── components/      # React components
 │   │   ├── Builder/     # Exam builder interface
@@ -140,6 +185,7 @@ IQN EXAM/
 │   ├── types/           # TypeScript definitions
 │   ├── utils/           # Helper functions
 │   └── styles/          # Global styles
+├── QuestionAnswers/     # Source data ingested by the server
 ├── public/              # Static assets
 └── package.json         # Dependencies
 ```

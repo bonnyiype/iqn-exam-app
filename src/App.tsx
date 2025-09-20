@@ -10,9 +10,12 @@ import { loadAllQAQuestions, pickWithCoverage, buildExamFromQuestions, getExamSe
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    return localStorage.getItem('theme') === 'dark' || 
+    return localStorage.getItem('theme') === 'dark' ||
            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
   });
+
+  const [isFetchingQuestions, setIsFetchingQuestions] = useState(false);
+  const [questionLoadError, setQuestionLoadError] = useState<string | null>(null);
 
   const {
     stage,
@@ -65,31 +68,52 @@ function App() {
 
   // Always start a fresh exam from QA.json on first mount (ensures new set on refresh)
   useEffect(() => {
-    startNewExamFromQA();
+    void startNewExamFromQA();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Remove fixed default duration; duration will be set to number of questions when building the exam
 
   // Start a new exam from QA.json using questions for the selected set
-  const startNewExamFromQA = () => {
-    const all = loadAllQAQuestions();
-    let questions = getExamSetQuestions(all, selectedSet, 100, 15);
-    const { order, cursor } = pickWithCoverage(questions, qaOrder || undefined, qaCursor, questions.length);
-    questions = shuffleInPlace(questions);
-    if (settings.shuffleChoices) {
-      questions = questions.map(q => ({ ...q, choices: shuffleInPlace([...q.choices]) }));
+  const startNewExamFromQA = React.useCallback(async () => {
+    setIsFetchingQuestions(true);
+    setQuestionLoadError(null);
+
+    try {
+      const all = await loadAllQAQuestions();
+      if (!Array.isArray(all) || all.length === 0) {
+        throw new Error('No questions are available for download.');
+      }
+
+      let questions = getExamSetQuestions(all, selectedSet, 100, 15);
+      if (!questions.length) {
+        throw new Error(`No questions found for Set ${selectedSet}.`);
+      }
+
+      const { order, cursor } = pickWithCoverage(questions, qaOrder || undefined, qaCursor, questions.length);
+      questions = shuffleInPlace(questions);
+      if (settings.shuffleChoices) {
+        questions = questions.map(q => ({ ...q, choices: shuffleInPlace([...q.choices]) }));
+      }
+
+      const built = buildExamFromQuestions(questions, `IQN Practice Exam • Set ${selectedSet}`);
+      setExam(built);
+
+      if (settings.minutes !== 100) {
+        updateSettings({ minutes: 100 });
+      }
+
+      setQACoverage(order, cursor);
+      startSession(`exam_${Date.now()}`);
+      setStage('exam');
+    } catch (error) {
+      console.error('Failed to load IQN questions from the server', error);
+      const message = error instanceof Error ? error.message : 'Unable to load IQN questions. Please try again.';
+      setQuestionLoadError(message);
+    } finally {
+      setIsFetchingQuestions(false);
     }
-    const built = buildExamFromQuestions(questions, `IQN Practice Exam • Set ${selectedSet}`);
-    setExam(built);
-    // Fixed timing per set: 100 minutes
-    if (settings.minutes !== 100) {
-      updateSettings({ minutes: 100 });
-    }
-    setQACoverage(order, cursor);
-    startSession(`exam_${Date.now()}`);
-    setStage('exam');
-  };
+  }, [loadAllQAQuestions, qaCursor, qaOrder, selectedSet, setExam, setQACoverage, setStage, settings.minutes, settings.shuffleChoices, startSession, updateSettings]);
 
   // Ensure timer reflects current settings.minutes (number of questions) when exam starts
   useEffect(() => {
@@ -206,9 +230,11 @@ function App() {
                 <Button
                   variant="secondary"
                   size="sm"
-                  onClick={() => startNewExamFromQA()}
+                  onClick={() => { void startNewExamFromQA(); }}
+                  disabled={isFetchingQuestions}
+                  aria-busy={isFetchingQuestions}
                 >
-                  New Exam
+                  {isFetchingQuestions ? 'Loading…' : 'New Exam'}
                 </Button>
               </div>
 
@@ -244,6 +270,26 @@ function App() {
             </div>
           </motion.div>
         </header>
+
+        {questionLoadError && (
+          <div className="mb-6">
+            <div className="rounded-xl border border-red-200 bg-red-50/80 p-4 text-red-800 dark:border-red-900 dark:bg-red-950/40 dark:text-red-100">
+              <p className="font-semibold">Unable to load exam questions</p>
+              <p className="mt-1 text-sm">{questionLoadError}</p>
+            </div>
+          </div>
+        )}
+
+        {isFetchingQuestions && (
+          <div className="mb-6">
+            <div className="rounded-xl border border-indigo-200 bg-white/70 p-4 text-indigo-700 shadow-sm dark:border-indigo-800 dark:bg-gray-900/40 dark:text-indigo-200">
+              <p className="font-medium">Preparing your exam set…</p>
+              <p className="mt-1 text-sm text-indigo-600/80 dark:text-indigo-200/70">
+                Fetching the latest IQN questions for Set {selectedSet}.
+              </p>
+            </div>
+          </div>
+        )}
 
         {/* Main Content */}
         <AnimatePresence mode="wait">
@@ -297,8 +343,8 @@ function App() {
                 answers={session.answers}
                 flaggedQuestions={session.flaggedQuestions}
                 summary={summary}
-                onRestart={() => startNewExamFromQA()}
-                onRetake={() => startNewExamFromQA()}
+                onRestart={() => { void startNewExamFromQA(); }}
+                onRetake={() => { void startNewExamFromQA(); }}
               />
             </motion.div>
           )}
