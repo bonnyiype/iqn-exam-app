@@ -1,5 +1,14 @@
 export type ChoiceKey = "A" | "B" | "C" | "D" | "E";
 
+export type AuthStatus = 'unknown' | 'loading' | 'authenticated' | 'unauthenticated' | 'expired';
+
+export interface LicenseInfo {
+  owner: string;
+  plan?: string;
+  expiresAt: string;
+  licenseKeyLast4: string;
+}
+
 export interface Choice {
   key: ChoiceKey;
   text: string;

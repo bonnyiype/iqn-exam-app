@@ -28,6 +28,7 @@ A modern, interactive web application for creating and practicing mock exams. Bu
 - **💾 Progress Saving**: Auto-save exam progress to localStorage
 - **📊 Category Analytics**: Performance breakdown by question categories
 - **🎯 Advanced Settings**: Customizable timer warnings, navigation options, and more
+- **🔐 License Gating**: Server-issued JWT sessions ensure only licensed users can launch exams
 
 ## 🛠️ Installation
 
@@ -48,12 +49,17 @@ A modern, interactive web application for creating and practicing mock exams. Bu
    npm install
    ```
 
-3. **Start development server**
+3. **Start the licensing API** (in a separate terminal)
+   ```bash
+   npm run server
+   ```
+
+4. **Start development server**
    ```bash
    npm run dev
    ```
 
-4. **Open in browser**
+5. **Open in browser**
    Navigate to `http://localhost:3000`
 
 ### Production Build
@@ -143,6 +149,16 @@ IQN EXAM/
 ├── public/              # Static assets
 └── package.json         # Dependencies
 ```
+
+## 🔐 Authentication & Licensing
+
+- The app requires a server-validated license before exams can start. The bundled Node service (`npm run server`) issues signed JWT cookies and checks expiration/revocation on every exam launch.
+- The frontend only persists non-sensitive flags (e.g., whether the license prompt was dismissed); license keys and tokens stay on the server.
+- Sample license keys for local testing:
+  - ✅ `IQN-VALID-0001` – active through 1 Jan 2026
+  - ⛔ `IQN-EXPIRED-0000` – shows the expired license flow
+  - 🚫 `IQN-REVOKED-0000` – demonstrates revoked-license messaging
+- Sign out any time from the header to clear the session cookie.
 
 ## 🎨 Customization
 

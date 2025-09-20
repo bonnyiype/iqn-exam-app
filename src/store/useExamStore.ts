@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { ExamData, ExamSettings, Stage, ExamSession, ChoiceKey } from '../types';
+import { ExamData, ExamSettings, Stage, ExamSession, ChoiceKey, AuthStatus, LicenseInfo } from '../types';
 import { DEFAULT_SETTINGS } from '../utils/sampleData';
 
 interface ExamStore {
@@ -18,6 +18,14 @@ interface ExamStore {
 
   // Exam sets state
   selectedSet: number;
+
+  // Auth state
+  authStatus: AuthStatus;
+  license: LicenseInfo | null;
+  authError: string | null;
+  authLoading: boolean;
+  licenseValidationPending: boolean;
+  hasDismissedLicensePrompt: boolean;
 
   // Actions
   setStage: (stage: Stage) => void;
@@ -42,6 +50,14 @@ interface ExamStore {
   resetAll: () => void;
   loadFromStorage: () => void;
   saveToStorage: () => void;
+
+  // Auth actions
+  authenticateWithLicense: (licenseKey: string) => Promise<void>;
+  checkExistingSession: () => Promise<void>;
+  confirmLicense: () => Promise<boolean>;
+  signOut: () => Promise<void>;
+  setAuthError: (message: string | null) => void;
+  setLicensePromptDismissed: (dismissed: boolean) => void;
 }
 
 export const useExamStore = create<ExamStore>()(
@@ -57,6 +73,12 @@ export const useExamStore = create<ExamStore>()(
       qaOrder: null,
       qaCursor: 0,
       selectedSet: 1,
+      authStatus: 'unknown',
+      license: null,
+      authError: null,
+      authLoading: false,
+      licenseValidationPending: false,
+      hasDismissedLicensePrompt: false,
 
       // Actions
       setStage: (stage) => set({ stage }),
@@ -174,7 +196,190 @@ export const useExamStore = create<ExamStore>()(
 
       saveToStorage: () => {
         // Implementation handled by persist middleware
-      }
+      },
+
+      authenticateWithLicense: async (licenseKey) => {
+        const trimmedKey = licenseKey.trim();
+
+        if (!trimmedKey) {
+          set({
+            authStatus: 'unauthenticated',
+            authError: 'Enter a license key to continue.',
+            license: null,
+            hasDismissedLicensePrompt: false
+          });
+          return;
+        }
+
+        set({ authLoading: true, authError: null });
+
+        try {
+          const response = await fetch('/api/auth/login', {
+            method: 'POST',
+            credentials: 'include',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ licenseKey: trimmedKey })
+          });
+
+          let data: any = {};
+          try {
+            data = await response.json();
+          } catch (error) {
+            data = {};
+          }
+
+          if (!response.ok) {
+            if (response.status === 403 && data?.error === 'license_expired') {
+              set({
+                authStatus: 'expired',
+                license: data?.license ?? null,
+                authError: data?.message ?? 'Your license expired.',
+                authLoading: false,
+                hasDismissedLicensePrompt: false
+              });
+              return;
+            }
+
+            if (response.status === 403 && data?.error === 'license_revoked') {
+              set({
+                authStatus: 'unauthenticated',
+                license: data?.license ?? null,
+                authError: data?.message ?? 'This license has been revoked.',
+                authLoading: false,
+                hasDismissedLicensePrompt: false
+              });
+              return;
+            }
+
+            set({
+              authStatus: 'unauthenticated',
+              license: null,
+              authError: data?.message ?? 'License could not be verified.',
+              authLoading: false,
+              hasDismissedLicensePrompt: false
+            });
+            return;
+          }
+
+          set({
+            authStatus: 'authenticated',
+            license: data?.license ?? null,
+            authError: null,
+            authLoading: false,
+            hasDismissedLicensePrompt: true
+          });
+        } catch (error) {
+          set({
+            authStatus: 'unauthenticated',
+            authError: 'Unable to reach licensing service. Check your connection.',
+            authLoading: false,
+            hasDismissedLicensePrompt: false
+          });
+        }
+      },
+
+      checkExistingSession: async () => {
+        set({ authStatus: 'loading', authLoading: true, authError: null });
+
+        try {
+          const response = await fetch('/api/auth/session', {
+            method: 'GET',
+            credentials: 'include'
+          });
+
+          let data: any = {};
+          try {
+            data = await response.json();
+          } catch (error) {
+            data = {};
+          }
+
+          if (!response.ok) {
+            if (response.status === 403 && data?.error === 'license_expired') {
+              set({
+                authStatus: 'expired',
+                license: data?.license ?? null,
+                authError: data?.message ?? 'Your license expired.',
+                authLoading: false,
+                hasDismissedLicensePrompt: false
+              });
+              return;
+            }
+
+            if (response.status === 403 && data?.error === 'license_revoked') {
+              set({
+                authStatus: 'unauthenticated',
+                license: data?.license ?? null,
+                authError: data?.message ?? 'This license has been revoked.',
+                authLoading: false,
+                hasDismissedLicensePrompt: false
+              });
+              return;
+            }
+
+            set({
+              authStatus: 'unauthenticated',
+              license: null,
+              authError: null,
+              authLoading: false,
+              hasDismissedLicensePrompt: false
+            });
+            return;
+          }
+
+          set({
+            authStatus: 'authenticated',
+            license: data?.license ?? null,
+            authError: null,
+            authLoading: false,
+            hasDismissedLicensePrompt: true
+          });
+        } catch (error) {
+          set({
+            authStatus: 'unauthenticated',
+            authError: 'Unable to reach licensing service. Please try again.',
+            authLoading: false,
+            hasDismissedLicensePrompt: false
+          });
+        }
+      },
+
+      confirmLicense: async () => {
+        set({ licenseValidationPending: true });
+        await get().checkExistingSession();
+        set({ licenseValidationPending: false });
+        return get().authStatus === 'authenticated';
+      },
+
+      signOut: async () => {
+        try {
+          await fetch('/api/auth/logout', {
+            method: 'POST',
+            credentials: 'include'
+          });
+        } catch (error) {
+          // Ignore logout network errors
+        }
+
+        set({
+          authStatus: 'unauthenticated',
+          license: null,
+          authError: null,
+          authLoading: false,
+          licenseValidationPending: false,
+          hasDismissedLicensePrompt: false,
+          stage: 'builder',
+          exam: null,
+          session: null,
+          testReport: null,
+          qaOrder: null,
+          qaCursor: 0
+        });
+      },
+
+      setAuthError: (message) => set({ authError: message }),
+
+      setLicensePromptDismissed: (dismissed) => set({ hasDismissedLicensePrompt: dismissed })
     }),
     {
       name: 'iqn-exam-storage',
@@ -185,7 +390,8 @@ export const useExamStore = create<ExamStore>()(
         session: state.session,
         qaOrder: state.qaOrder,
         qaCursor: state.qaCursor,
-        selectedSet: state.selectedSet
+        selectedSet: state.selectedSet,
+        hasDismissedLicensePrompt: state.hasDismissedLicensePrompt
       })
     }
   )
