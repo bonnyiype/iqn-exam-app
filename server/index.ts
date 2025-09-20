@@ -1,4 +1,5 @@
 import http from 'http';
+import { DEV_SERVER_ORIGINS } from '../config/devServer.js';
 import { buildExamQuestionsResponse } from './routes/exams.js';
 import { HttpError, verifyLicense } from './middleware/licenseAuth.js';
 
@@ -125,7 +126,8 @@ function handleError(res: http.ServerResponse, error: unknown) {
 
 function buildOriginSet(value: string | undefined): Set<string> {
   if (!value) {
-    return new Set(['http://localhost:5173', 'http://127.0.0.1:5173']);
+    // Defaults mirror the Vite dev server origins defined in config/devServer.js.
+    return new Set(DEV_SERVER_ORIGINS);
   }
 
   const entries = value
