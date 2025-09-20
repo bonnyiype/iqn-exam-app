@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, ListChecks, Moon, Sun, Github } from 'lucide-react';
-import { ExamView, ReviewView } from './components';
+import { ExamView, ReviewView, LicenseStatusBanner } from './components';
 import { Button, Badge } from './components/ui';
 import { useExamStore } from './store/useExamStore';
 import { useTimer } from './hooks/useTimer';
 import { calcSummary, shuffleInPlace } from './utils/helpers';
-import { loadAllQAQuestions, pickWithCoverage, buildExamFromQuestions, getExamSetQuestions } from './utils/qaLoader';
+import { loadAllQAQuestions, pickWithCoverage, buildExamFromQuestions, getExamSetQuestions, refreshLicenseStatus } from './utils/qaLoader';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -70,6 +70,10 @@ function App() {
   useEffect(() => {
     void startNewExamFromQA();
     // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    void refreshLicenseStatus();
   }, []);
 
   // Remove fixed default duration; duration will be set to number of questions when building the exam
@@ -269,6 +273,9 @@ function App() {
               </Button>
             </div>
           </motion.div>
+          <div className="mt-4">
+            <LicenseStatusBanner />
+          </div>
         </header>
 
         {questionLoadError && (

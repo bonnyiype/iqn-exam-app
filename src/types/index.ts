@@ -67,3 +67,21 @@ export interface ParseError {
   message: string;
   type: 'warning' | 'error';
 }
+
+export type LicenseStatusValue = 'active' | 'trial' | 'revoked' | 'expired';
+
+export interface LicenseInfo {
+  licenseId: string;
+  status: LicenseStatusValue;
+  seatsTotal: number;
+  seatsUsed: number;
+  seatsRemaining: number;
+  tier?: string;
+  expiresAt?: string;
+  renewalReminderAt?: string;
+  renewalMessage?: string;
+  ownerName?: string;
+  ownerEmail?: string;
+  totalDownloads?: number;
+  lastUsageAt?: string;
+}
