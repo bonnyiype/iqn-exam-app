@@ -85,13 +85,24 @@ function App() {
         throw new Error('No questions are available for download.');
       }
 
-      let questions = getExamSetQuestions(all, selectedSet, 100, 15);
-      if (!questions.length) {
+      const baseQuestions = getExamSetQuestions(all, selectedSet, 100, 15);
+      if (!baseQuestions.length) {
         throw new Error(`No questions found for Set ${selectedSet}.`);
       }
 
-      const { order, cursor } = pickWithCoverage(questions, qaOrder || undefined, qaCursor, questions.length);
-      questions = shuffleInPlace(questions);
+      const coverageResult = pickWithCoverage(baseQuestions, qaOrder || undefined, qaCursor, baseQuestions.length);
+      let coverageQuestions = coverageResult.selected;
+      let nextOrder = coverageResult.order;
+      let nextCursor = coverageResult.cursor;
+
+      if (coverageQuestions.length !== baseQuestions.length) {
+        const fallback = pickWithCoverage(baseQuestions, undefined, undefined, baseQuestions.length);
+        coverageQuestions = fallback.selected;
+        nextOrder = fallback.order;
+        nextCursor = fallback.cursor;
+      }
+
+      let questions = shuffleInPlace(coverageQuestions);
       if (settings.shuffleChoices) {
         questions = questions.map(q => ({ ...q, choices: shuffleInPlace([...q.choices]) }));
       }
@@ -99,11 +110,12 @@ function App() {
       const built = buildExamFromQuestions(questions, `IQN Practice Exam • Set ${selectedSet}`);
       setExam(built);
 
-      if (settings.minutes !== 100) {
-        updateSettings({ minutes: 100 });
+      const durationMinutes = questions.length;
+      if (settings.minutes !== durationMinutes) {
+        updateSettings({ minutes: durationMinutes });
       }
 
-      setQACoverage(order, cursor);
+      setQACoverage(nextOrder, nextCursor);
       startSession(`exam_${Date.now()}`);
       setStage('exam');
     } catch (error) {
