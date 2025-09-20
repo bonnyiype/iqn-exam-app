@@ -47,13 +47,13 @@ export function getQuestionBankVersion(): string {
 }
 
 async function fetchQuestionsFromApi(forceRefresh: boolean): Promise<Question[]> {
-  const headers: HeadersInit = {
+  const headers = new Headers({
     Accept: 'application/json'
-  };
+  });
 
   const token = readLicenseToken();
   if (token) {
-    headers.Authorization = `Bearer ${token}`;
+    headers.set('Authorization', `Bearer ${token}`);
   }
 
   const baseUrl = getApiBaseUrl();
