@@ -3,8 +3,9 @@
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "rootDir": "server",
-    "outDir": "dist/server",
+    "rootDir": ".",
+    "outDir": "dist",
+    "allowJs": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -12,5 +13,5 @@
     "resolveJsonModule": true,
     "verbatimModuleSyntax": true
   },
-  "include": ["server"]
+  "include": ["server", "config/devServer.js"]
 }
