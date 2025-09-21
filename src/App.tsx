@@ -55,6 +55,8 @@ function App() {
     warningTime: settings.timeWarningMinutes * 60
   });
 
+  const { reset: resetTimer, start: startTimer } = timer;
+
   // Dark mode effect
   useEffect(() => {
     if (isDarkMode) {
@@ -99,8 +101,9 @@ function App() {
       const built = buildExamFromQuestions(questions, `IQN Practice Exam • Set ${selectedSet}`);
       setExam(built);
 
-      if (settings.minutes !== 100) {
-        updateSettings({ minutes: 100 });
+      const derivedMinutes = built.questions.length;
+      if (settings.minutes !== derivedMinutes) {
+        updateSettings({ minutes: derivedMinutes });
       }
 
       setQACoverage(order, cursor);
@@ -118,10 +121,10 @@ function App() {
   // Ensure timer reflects current settings.minutes (number of questions) when exam starts
   useEffect(() => {
     if (stage === 'exam' && exam) {
-      timer.reset();
-      timer.start();
+      resetTimer();
+      startTimer();
     }
-  }, [stage, settings.minutes, exam]);
+  }, [stage, settings.minutes, exam, resetTimer, startTimer]);
 
   // Handle answer selection
   const pickAnswer = (question: any, key: any) => {
